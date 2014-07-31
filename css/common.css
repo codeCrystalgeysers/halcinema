@@ -1,0 +1,105 @@
+@charset"utf-8";
+
+
+/* ---------------------------------------------
+        Common
+ --------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    color: dimgray;
+    font: 15px 'YuGothic';
+    text-decoration: none;
+}
+body{
+	margin: 0 auto;
+	width:960px;
+}
+.left {
+    float: left;
+}
+ul {
+    list-style: none;
+}
+
+/* ---------------------------------------------
+        Header
+ --------------------------------------------- */
+header, footer{
+    clear: both;
+    position: relative;
+    width: 100%;
+    background-color: yellowgreen;
+}
+
+header {
+    min-height: 100px;
+}
+#logo{
+	margin:0;
+	width:200px;
+	height:100px;
+    background-color: pink;
+    position: absolute;
+}
+
+#alert{
+	width:100px;
+	height:40px;
+	background-color: red;
+	right: 100px;
+    position: absolute;
+}
+
+#login{
+	width:100px;
+	height:40px;
+	background-color: red;
+    right: 0;
+    position: absolute;
+}
+
+#headMenu{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#headMenu li{
+    float: left;
+    margin: 0 10px;
+    min-width:100px;
+	height:30px;
+    background-color: silver;
+	text-align:center;
+}
+#headMenu li:last-child {
+    margin-right: 0;
+}
+#headMenu li a {
+    display: block;
+}
+
+/* ---------------------------------------------
+        Footer
+ --------------------------------------------- */
+footer {
+    bottom: 0;
+}
+#footMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.footMenuBox {
+    position: relative;
+}
+.footMenuBox h2 a {
+    font-size: 1.3em;
+    background-color: #fff;
+}
+#copyright {
+    display: block;
+    text-align: center;
+}
