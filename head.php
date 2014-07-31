@@ -1,6 +1,7 @@
 <!doctype html>
 <meta charset="UTF-8">
 <meta name="Author" content="codeCrystalgeysers">
+<link rel="stylesheet" type="text/css" href="css/common.css">
 <title>HAL Cinema</title>
 
 <header>
