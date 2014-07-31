@@ -81,6 +81,22 @@ header {
 }
 
 /* ---------------------------------------------
+        Contents
+ --------------------------------------------- */
+main {
+    float: left;
+    width: 660px;
+    background-color: salmon;
+}
+
+#divide {
+    float: left;
+    margin-left: 40px;
+    width: 260px;
+    background-color: tomato;
+}
+
+/* ---------------------------------------------
         Footer
  --------------------------------------------- */
 footer {
