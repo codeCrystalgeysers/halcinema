@@ -1,9 +1,3 @@
-<!doctype html>
-<meta charset="UTF-8">
-<meta name="Author" content="codeCrystalgeysers">
-<link rel="stylesheet" type="text/css" href="css/common.css">
-<title>HAL Cinema</title>
-
 <header>
     <h1 id="logo">HALCinema</h1>
     <div id="alert">
@@ -27,3 +21,4 @@
         </ul>
     </nav>
 </header>
+</html>
