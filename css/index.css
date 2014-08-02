@@ -21,6 +21,12 @@
     background-color: silver;
 }
 
+#sheet {
+    width: 100%;
+    height: 400px;
+    background-color: #f0f0f0;
+}
+
 
 .slideFrame {
 	position: relative;

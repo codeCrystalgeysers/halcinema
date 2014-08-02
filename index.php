@@ -31,23 +31,23 @@ include 'head.php';
 	<div id="cinemaList">リストアップあとで</div>
 </div>
 <div id="reserveArea">
-    座席，人物アイコンやらここに
+    人物アイコンやらここに(draggable?)
     <div id="sheet">
         席が選べるやつな　キャパシティ越えるやつな
     </div>
     <div id="details">
         <dl>
             <dt>選択映画タイトルでる</dt>
-            <dl><img src="nowImg"></dl>
-            <dl>映画詳細情報</dl>
-            <dt>料金うちわけのところ</dt>
-            <dl>
+            <dd><img src="nowImg" id="nowImg"></dd>
+            <dd id="nowDetail">映画詳細情報</dd>
+            <dt id="">料金うちわけのところ</dt>
+            <dd>
                 <span id="ticketTypeAd">大人</span>×1枚
                 <span id="ticketTypeSt">学生</span>×2枚
                 <span id="ticketTypeCh">小人</span>×3枚
                 <span id="ticketTypeSe">シニア</span>×4枚
-            </dl>
-            <dl id="totalPrice">料金合計出る</dl>
+            </dd>
+            <dd id="totalPrice">料金合計出る</dd>
         </dl>
         <form method="post"><!-- action書いてないです，submitが一緒のform内にあります -->
             <input type="submit" name="alertOn" value="アラート">
