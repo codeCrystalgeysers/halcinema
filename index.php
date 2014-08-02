@@ -12,56 +12,74 @@
 include 'head.php';
 ?>
 
+
 <div id="slider">
     <div id="rankTop">A</div>
-    <div class="slideFrame" id="slide-00">
-		<ul class="slideGuide">
-			<li class="slideCell">セル</li>
-			<li class="slideCell">セル</li>
-			<li class="slideCell">セル</li>
-			<li class="slideCell">セル</li>
-			<li class="slideCell">セル</li>
-			<li class="slideCell">セル</li>
-			<li class="slideCell">セル</li>
-		</ul>
-		<div class="slideCtrl left">&lt;</div>
-		<div class="slideCtrl right">&gt;</div>
-	</div>
+    <div class="flexslider">
+        <ul class="slides">
+            <li>セルs <img src="" alt=""></li>
+            <li>セル2</li>
+            <li>セル3</li>
+            <li>セル4</li>
+            <li>セル5</li>
+            <li>セル6</li>
+            <li>セル7</li>
+            <li>セルe</li>
+        </ul>
+    </div>
 	<div id="cinemaToggle">Switch</div>
 	<div id="cinemaList">リストアップあとで</div>
 </div>
 <div id="reserveArea">
-    人物アイコンやらここに(draggable?)
+    <div id="timeLine">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </div>
     <div id="sheet">
+        人物アイコンやらここに(draggable?)<br>
         席が選べるやつな　キャパシティ越えるやつな
     </div>
     <div id="details">
-        <dl>
-            <dt>選択映画タイトルでる</dt>
-            <dd><img src="nowImg" id="nowImg"></dd>
-            <dd id="nowDetail">映画詳細情報</dd>
-            <dt id="">料金うちわけのところ</dt>
-            <dd>
+        <dl id="nowSelect">
+            <dt id="nowTitle">選択映画タイトルでる</dt>
+            <dd id="nowDate">せんたくした日付出力</dd>
+            <dd id="nowSheet">選択座席だす</dd>
+            <dd id="nowSheet">
                 <span id="ticketTypeAd">大人</span>×1枚
                 <span id="ticketTypeSt">学生</span>×2枚
                 <span id="ticketTypeCh">小人</span>×3枚
-                <span id="ticketTypeSe">シニア</span>×4枚
+                <span id="ticketTypeSe">シニア</span>×4枚<!-- パターン一覧 -->
             </dd>
-            <dd id="totalPrice">料金合計出る</dd>
         </dl>
-        <form method="post"><!-- action書いてないです，submitが一緒のform内にあります -->
+        <div id="nowPrice">
+            <span id="totalPrice">合計額</span>
+            <form method="post"><!-- action書いてないです，submitが一緒のform内にあります -->
             <input type="submit" name="alertOn" value="アラート">
             <input type="submit" name="reserveOn" value="予約">
         </form>
+        </div>
     </div>
 </div>
 
-
-
 <script>
-    $("#slide-00").slider();
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        pauseOnHover: true,
+        slideshowSpeed: 4000,
+        animationSpeed: 2000,
+        animation: 'slide',
+        itemWidth: 210,
+        minItems: 3,
+        maxItems: 3
+      });
+    });
 </script>
-
 <?php
 include 'foot.php';
 ?>

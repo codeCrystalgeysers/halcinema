@@ -37,10 +37,22 @@ header {
 }
 #logo{
 	margin:0;
-	width:200px;
+	width:240px;
 	height:100px;
     background-color: pink;
     position: absolute;
+}
+
+#infomation {
+    position: absolute;
+    left: 240px;
+}
+#infomation li {
+    margin-bottom: -15px;
+}
+#infomation li a {
+    font-size: .8em;
+    color: blue;
 }
 
 #alert{
@@ -59,6 +71,10 @@ header {
     position: absolute;
 }
 
+#nowLogin {
+    display: none;
+}
+
 #headMenu{
 	position: absolute;
     right: 0;
@@ -69,7 +85,7 @@ header {
     float: left;
     margin: 0 10px;
     min-width:100px;
-	height:30px;
+	
     background-color: silver;
 	text-align:center;
 }
@@ -78,6 +94,10 @@ header {
 }
 #headMenu li a {
     display: block;
+}
+
+.subMenuList {
+    display: none;
 }
 
 /* ---------------------------------------------
