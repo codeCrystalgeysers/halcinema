@@ -1,0 +1,22 @@
+@charset"utf-8";
+
+/*--------------------------
+		feature
+--------------------------*/
+
+h3{
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+#lefttColumn {
+    float: left;
+    width: 680px;
+    padding : 10px;
+    background-color: orange;
+}
+
+ul{
+	margin-left : 50px;
+}
+

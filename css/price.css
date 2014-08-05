@@ -1,0 +1,55 @@
+@charset"utf-8";
+
+/*--------------------------
+		lefttColumn
+--------------------------*/
+
+h3{
+	width: 100%;
+	border: solid 1px;
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+#lefttColumn {
+    float: left;
+    width: 680px;
+    padding : 10px;
+    background-color: orange;
+}
+
+#tbl1{
+	margin-right: 10px;
+	width: 330px;
+	float: left;
+}
+
+#tbl2{
+	width: 330px;
+	float: right;
+}
+
+#tbl3{
+	margin-top: 10px;
+	width: 330px;
+	float: left;
+}
+
+#fnt{
+	font-size: 25px;
+}
+
+#fnt1{
+	padding: 5px 0 5px 0; 
+	font-size: 20px;
+}
+
+#ddd{
+	height: 100px;
+}
+
+#tbl4{
+	margin-top: 10px;
+	width: 680px;
+	float: left;
+}

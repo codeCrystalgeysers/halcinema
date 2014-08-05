@@ -111,7 +111,6 @@ main {
 
 #divide {
     float: left;
-    margin-left: 40px;
     width: 260px;
     background-color: tomato;
 }
