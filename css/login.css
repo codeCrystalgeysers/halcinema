@@ -8,7 +8,7 @@ main {
 	width: 960px;
 }
 
-#leftcolumn {
+#leftColumn {
 	float:left;
 	text-align:center;
 }
@@ -21,7 +21,7 @@ h2 {
 	margin-top: 50px;
 }
 
-#rightcolumn {
+#rightColumn {
 	float:right;
 	text-align:center;
 }

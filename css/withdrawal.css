@@ -1,0 +1,28 @@
+@charset"uft-8";
+
+* {
+	margin: 0 auto;
+	text-align: center;
+}
+
+main {
+	margin-top: 50px;
+	width: 960px;
+}
+
+#title {
+	width: 150px;
+	border: solid 1px;
+}
+
+h3 {
+	margin-top: 10px;
+}
+
+.form {
+	margin-top: 10px;
+}
+
+#button {
+	margin-top: 30px;
+}
