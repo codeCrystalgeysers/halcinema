@@ -1,0 +1,25 @@
+@charset"utf-8";
+
+* {
+	margin: 0 auto;
+}
+
+main {
+	width: 960px;
+}
+
+.formArea {
+	margin-top: 15px;
+}
+
+h1,h2,#conf{
+	text-align: center;
+}
+
+td {
+	padding: 10px;
+}
+
+#conf {
+	margin-bottom: 15px;
+}

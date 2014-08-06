@@ -1,0 +1,38 @@
+@charset"uft-8";
+
+* {
+	margin: 0;
+}
+
+main {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title {
+	margin-top: 20px;
+	width: 300px;
+	text-align: center;
+	border: solid 1px;
+}
+
+#leftColumn {
+	margin-top: 20px;
+	width: 500px;
+	float: left;
+}
+
+#desc {
+	border: solid 1px;
+}
+
+#tel {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	border-bottom: solid 1px;
+	margin-bottom: 10px;
+}
