@@ -2,6 +2,7 @@
 <meta charset="UTF-8">
 <meta name="Author" content="codeCrystalgeysers">
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
+<link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" type="text/css" href="css/inquiry.css">
 <title>HAL Cinema</title>
 <?php
@@ -9,9 +10,10 @@
 ?>
 
 <main>
-    <div id="title">お問い合わせ</div>
 
     <div id="leftColumn">
+
+    <div id="title">お問い合わせ</div>
 
 	    <div id="desc">
 	    	お問い合わせありがとうございます。<br />
@@ -34,7 +36,53 @@
 	    	<p>mailaddress: <input type="text" name="mailaddress" /></p>
 	    	<br />
 	    	<textarea cols="65" rows="10"></textarea>
+	    	<br />
+	    	<br />
+	    	お問い合わせの内容が該当するものにチェックしてください。<br />
+	    	チェックなしでも送信できます。
+	    	<br />
+	    	<br />
+	    	<input type="checkbox" name="tokyo" value="東京">東京
+	    	<input type="checkbox" name="osaka" value="大阪">大阪
+	    	<input type="checkbox" name="nagoya" value="東京">名古屋
+	    	<input type="checkbox" name="other" value="サイトに関して">サイトに関して
+	    	<br />
+	    	<br />
+	    	<input type="button" name="send" value="送信" />
 	    </div>
+
+	</div><!--leftColumn-->
+
+	<div id="rightColumn">
+
+		<div class="button">
+			チケット予約
+		</div>
+
+		<div class="button">
+			スマートフォンでの予約はこちら
+		</div>
+
+		<table id="movieElection">
+			<tr>
+				<td>○/○　映画総選挙途中経過</td>
+			<tr>
+			<tr>
+				<td>1位　○○○○○○○</td>
+			<tr>
+			<tr>
+				<td>2位　○○○○○○○</td>
+			<tr>
+			<tr>
+				<td>3位　○○○○○○○</td>
+			<tr>
+		</table>
+
+		<div id="bana">
+			広告・バナー
+		</div>
+
+	</div><!--rightColumn-->
 
 </main>
 

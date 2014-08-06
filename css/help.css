@@ -20,21 +20,11 @@ main {
 	width: 300px;
 	text-align: center;
 	border: solid 1px;
-	margin-bottom: 10px;
 }
 
-#desc {
+.question {
 	border: solid 1px;
-}
-
-#tel {
 	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-h3 {
-	border-bottom: solid 1px;
-	margin-bottom: 10px;
 }
 
 #rightColumn {
