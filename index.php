@@ -3,6 +3,7 @@
 <meta name="Author" content="codeCrystalgeysers">
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
 <script src="js/jq2min.js"></script>
+<script src="js/common.js"></script>
 <script src="js/topSlider.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -17,18 +18,24 @@ include 'head.php';
     <div id="rankTop">A</div>
     <div class="flexslider">
         <ul class="slides">
-            <li>セルs <img src="" alt=""></li>
-            <li>セル2</li>
-            <li>セル3</li>
-            <li>セル4</li>
-            <li>セル5</li>
-            <li>セル6</li>
-            <li>セル7</li>
-            <li>セルe</li>
+            <li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
+            </li>
         </ul>
     </div>
 	<div id="cinemaToggle">Switch</div>
-	<div id="cinemaList">リストアップあとで</div>
+	<div id="cinemaList">
+	    <ul>
+	        <li><img src="img/sample.jpg"  data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime"></li>
+	    </ul>
+	</div>
 </div>
 <div id="reserveArea">
     <div id="timeLine">
@@ -43,7 +50,7 @@ include 'head.php';
     </div>
     <div id="sheet">
         人物アイコンやらここに(draggable?)<br>
-        席が選べるやつな　キャパシティ越えるやつな
+        live
     </div>
     <div id="details">
         <dl id="nowSelect">
@@ -72,7 +79,7 @@ include 'head.php';
       $('.flexslider').flexslider({
         pauseOnHover: true,
         slideshowSpeed: 4000,
-        animationSpeed: 2000,
+        animationSpeed: 1200,
         animation: 'slide',
         itemWidth: 210,
         minItems: 3,

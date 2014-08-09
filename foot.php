@@ -25,7 +25,7 @@
                 <ul>
                     <li><a href="price.php">チケット料金</a></li>
                     <li><a href="price.php">グッズ</a></li>
-                    <li><a href="price.php">フード</a></li>
+                    <li><a href="price.php">フード・ドリンク</a></li>
                 </ul>
             </section>
         </div>
@@ -44,7 +44,7 @@
             <section>
                 <h2><a href="theater.php">アクセス</a></h2>
                 <ul>
-                    <li><a href="theater.php">施設案内</a></li>
+                    <li><a href="access.php">HALCinema TOKYO</a></li>
                     <li><a href="#">HALCinema OSAKA</a></li>
                     <li><a href="#">HALCinema NAGOYA</a></li>
                 </ul>
