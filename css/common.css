@@ -82,13 +82,17 @@ header {
 }
 
 #headMenu li{
-    float: left;
     margin: 0 10px;
-    min-width:100px;
-	
-    background-color: silver;
+    min-width:150px;
 	text-align:center;
+    background-color: silver;
 }
+
+#headMenu ul > li {
+    float: left;
+    position: relative;
+}
+
 #headMenu li:last-child {
     margin-right: 0;
 }
@@ -98,6 +102,15 @@ header {
 
 .subMenuList {
     display: none;
+    position: absolute;
+    width: inherit;
+}
+
+.subMenuList li {
+    left: -10px;
+    width: inherit;
+    background-color: #fff;
+    z-index: 99;
 }
 
 /* ---------------------------------------------

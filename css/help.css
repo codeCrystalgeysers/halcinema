@@ -1,0 +1,78 @@
+@charset"uft-8";
+
+/* ---------------------------------------------
+        common
+ --------------------------------------------- */
+
+* {
+	margin: 0;
+}
+
+/* ---------------------------------------------
+        main
+ --------------------------------------------- */
+
+main {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ---------------------------------------------
+        leftColumn
+ --------------------------------------------- */
+
+#leftColumn {
+	margin-top: 50px;
+	width: 700px;
+	float: left;
+}
+
+#title {
+	width: 300px;
+	text-align: center;
+	border: solid 1px;
+}
+
+.question {
+	border: solid 1px;
+	margin-top: 10px;
+}
+
+/* ---------------------------------------------
+        rightColumn
+ --------------------------------------------- */
+
+#rightColumn {
+	margin-top: 50px;
+	float: right;
+	width: 230px;
+}
+
+.button {
+	width: 200px;
+	height: 70px;
+	margin: auto;
+	margin-bottom: 10px;
+	border: solid 1px;
+	text-align: center;
+}
+
+#movieElection {
+	width: 200px;
+	margin: auto;
+	margin-bottom: 10px;
+	border: solid 1px;
+
+}
+
+td {
+	border-bottom: solid 1px;
+}
+
+#bana {
+	width: 200px;
+	height: 300px;
+	margin: auto;
+	border: solid 1px;
+}

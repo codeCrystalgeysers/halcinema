@@ -33,7 +33,13 @@
                     <li><a href="#">上映設備</a></li>
                 </ul>
             </li>
-            <li><a href="price.php">料金</a></li>
+            <li><a href="price.php">料金</a>
+                <ul class="subMenuList">
+                    <li><a href="#">チケット</a></li>
+                    <li><a href="#">グッズ</a></li>
+                    <li><a href="#">フード・ドリンク</a></li>
+                </ul>
+            </li>
             <li><a href="access.php">アクセス</a></li>
         </ul>
     </nav>
