@@ -27,12 +27,104 @@ include 'head.php';
                         cc
                     </figcaption>
                 </figure>
+            </li><li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
+            </li><li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
+            </li><li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
+            </li><li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
+            </li><li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
+            </li><li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
+            </li><li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
+            </li><li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
+            </li><li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
+            </li><li>
+                <figure>
+                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        cc
+                    </figcaption>
+                </figure>
             </li>
         </ul>
     </div>
 	<div id="cinemaToggle">Switch</div>
 	<div id="cinemaList">
 	    <ul>
+	        <li><img src="img/sample.jpg"  data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime"></li>
+	        <li><img src="img/sample.jpg"  data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime"></li>
 	        <li><img src="img/sample.jpg"  data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime"></li>
 	    </ul>
 	</div>

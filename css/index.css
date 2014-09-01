@@ -9,6 +9,7 @@
     float: left;
     width: 240px;
     height: 100px;
+    
     background-color: orange;
 }
 
@@ -21,12 +22,21 @@
     height: 300px;
     background-color: silver;
 }
+#cinemaList li {
+    float: left;
+    width: 240px;
+    height: 100px;
+}
+#cinemaList li img {
+    width: 100%;
+    height: 100%;
+}
 
 #timeLine {
     float: left;
     width: 240px;
     height: 400px;
-    background-color: #fff;
+    background-color: steelblue;
 }
 
 #sheet {

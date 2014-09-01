@@ -1,48 +1,48 @@
-@charset"uft-8";
-
-/* ---------------------------------------------
-        common
- --------------------------------------------- */
-
-* {
-	margin: 0 auto;
-}
-
 /* ---------------------------------------------
         main
  --------------------------------------------- */
 
 main {
-	width: 960px;
+	width: 960px !important;
+    text-align: center;
 }
 
-/* ---------------------------------------------
-        leftColumn
- --------------------------------------------- */
-
-#leftColumn {
-	float:left;
-	text-align:center;
+#loginArea {
+    margin: 50px 0;
+    width: 100%;
 }
 
-h2 {
-	margin-top: 50px;
+#formLogin {
+    margin: 0 auto;
+    width: 400px;
 }
 
-.form {
-	margin-top: 50px;
+#formLogin input {
+    float: left;
+    margin: 30px 0;
 }
 
-/* ---------------------------------------------
-        rightColumn
- --------------------------------------------- */
-
-#rightColumn {
-	float:right;
-	text-align:center;
+#formLogin label {
+    clear: left;
+     float: left;
 }
 
-#logo {
-	width: 300px;
-	margin-top: 200px;
+#mottenai {
+    display: block;
+    float: left;
+    background: #fff;
+}
+/*  まだ考えています！　*/
+
+
+#conf{
+	text-align: center;
+}
+
+td {
+	padding: 10px;
+}
+
+#conf {
+	margin-bottom: 15px;
 }
