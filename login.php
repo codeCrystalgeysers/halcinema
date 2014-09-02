@@ -11,7 +11,7 @@
 
 <main>
 
-	<div id="leftColumn">
+	<div id="leftcolumn">
 		<h2>ログインID/パスワードを入力してください</h2>
 		<div class="form">ログインIDを入力してください：<input type="text" name="id" /></div>
 		<div class="form">パスワードを入力してください：<input type="password" name="pass" /></div>
@@ -19,7 +19,7 @@
 		<div class="form"><a href="#">アカウントをお持ちでない方はこちら…</a></div>
 	</div><!--leftcolumn-->
 
-	<div id="rightColumn">
+	<div id="rightcolumn">
 		<div id="logo">
 			<h1>ロゴ</h1>
 		</div><!--logo-->

@@ -16,11 +16,15 @@ main {
 	width: 960px;
 }
 
+<<<<<<< HEAD
 /* ---------------------------------------------
         leftColumn
  --------------------------------------------- */
 
 #leftColumn {
+=======
+#leftcolumn {
+>>>>>>> parent of 792eebe... てす
 	float:left;
 	text-align:center;
 }
@@ -33,11 +37,15 @@ h2 {
 	margin-top: 50px;
 }
 
+<<<<<<< HEAD
 /* ---------------------------------------------
         rightColumn
  --------------------------------------------- */
 
 #rightColumn {
+=======
+#rightcolumn {
+>>>>>>> parent of 792eebe... てす
 	float:right;
 	text-align:center;
 }
