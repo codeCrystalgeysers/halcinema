@@ -14,7 +14,7 @@
 <main>
 	<div id="schedule">上映スケジュール</div>
 	<div id="day">
-		<div id="back" id="b1">
+		<div id="back">
 			戻る	
 		</div>
 
@@ -24,6 +24,10 @@
 
 		<div id="days">
 			1/2
+		</div>
+
+		<div id="next">
+			戻る	
 		</div>
 	</div>
 
