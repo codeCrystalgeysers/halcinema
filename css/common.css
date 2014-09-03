@@ -116,15 +116,14 @@ header {
 /* ---------------------------------------------
         Contents
  --------------------------------------------- */
-main {
+main{
     float: left;
-    width: 660px;
+    width: 700px;
     background-color: salmon;
 }
 
 #divide {
-    float: left;
-    margin-left: 40px;
+    float: right;
     width: 260px;
     background-color: tomato;
 }
