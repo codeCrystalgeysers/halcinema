@@ -11,7 +11,7 @@
 
 <main>
 
-    
+    <h1>新規会員登録内容確認</h1>
     <div class="formArea">
     <form>
     	<table>
