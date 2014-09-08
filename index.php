@@ -2,8 +2,6 @@
 <meta charset="UTF-8">
 <meta name="Author" content="codeCrystalgeysers">
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
-<script src="js/jq2min.js"></script>
-<script src="js/common.js"></script>
 <script src="js/index.js"></script>
 <script src="js/topSlider.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
