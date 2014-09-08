@@ -4,6 +4,7 @@
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
 <script src="js/jq2min.js"></script>
 <script src="js/common.js"></script>
+<script src="js/index.js"></script>
 <script src="js/topSlider.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -15,15 +16,42 @@ include 'head.php';
 
 
 <div id="slider">
-    <div id="rankTop">A</div>
+    <div id="rankTop"><img src="img/sample.jpg" alt=""></div>
     <div class="flexslider">
         <ul class="slides">
             <li>
                 <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
+                    <img src="img/miura1.jpg" class="moviesPic" data-id="xxxxx" data-title="moviesTitle1" data-date-start="sTime1" data-date-end="eTime1">
                     <figcaption class="moviesCap">
-                        <span class="moviesTitle">Settings</span>
-                        Jacob Cummings
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/miura2.jpg" class="moviesPic" data-id="xxxxx" data-title="moviesTitle2" data-date-start="sTime2" data-date-end="eTime2">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx" data-title="moviesTitle3" data-date-start="sTime3" data-date-end="eTime3">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/3pri.png" class="moviesPic" data-id="xxxxx" data-title="moviesTitle4" data-date-start="sTime4" data-date-end="eTime4">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
                     </figcaption>
                 </figure>
             </li>
