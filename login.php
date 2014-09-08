@@ -13,7 +13,7 @@
 
 	<div id="loginArea">
 		<p>ログインID/パスワードを入力してください</p>
-		<form action="my.php" method="post" id="formLogin">
+		<form action="login_check.php" method="post" id="formLogin">
             <label for="id">ID:</label><input type="text" class="form" name="id">
             <label for="pass">PW:</label><input type="password" class="form" name="pass">
             <input type="submit" class="form" value="ログイン">
