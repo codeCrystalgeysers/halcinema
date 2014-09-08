@@ -15,47 +15,55 @@
     <div class="formArea">
     	<table>
     		<tr>
-    			<td class="">※性名</td>
-                <td>姓&nbsp;：&nbsp;<span>土屋</span>&emsp;名&nbsp;：&nbsp;<span>新保</span></td>
+    			<td>※性名</td>
+                <td>姓&nbsp;：
+                	<div class="result">土屋</div>
+                    &nbsp;名&nbsp;：
+                    <div class="result">新保</div>
+                </td>
     		</tr>
     		<tr>
     			<td>※フリガナ</td>
-                <td><span>セイ&nbsp;：&nbsp;ツチヤ</span>&emsp;<span>メイ&nbsp;：&nbsp;シンボ</span></td>
+                <td>セイ&nbsp;：
+                	<div class="result">ツチヤ</div>
+                    &nbsp;メイ&nbsp;：
+                    <div class="result">シンボ</div>
+                </td>
     		</tr>
     		<tr>
     			<td>※性別</td>
     			<td>
-                    <span>男女</span>
+                    <div class="result">男女</div>
 				</td>
     		</tr>
     		<tr>
     			<td>※生年月日</td>
                 <td>
-                	<span>2014</span>年
-                    <span>9</span>月
-                    <span>3</span>日
+                	<div class="birthday">2014</div>年
+                    <div class="birthday">9</div>月
+                    <div class="birthday">3</div>日
 				</td>
     		</tr>
     		<tr>
-    			<td>※郵便番号</td><td>〒<span>030-3434</span></td>
+    			<td>※郵便番号</td><td>〒<div class="result">030-3434</div></td>
     		</tr>
     		<tr>
-    			<td>※都道府県</td><td><span>東京</span></td>
+    			<td>※都道府県</td><td><div class="result">東京</div></td>
 	    	</tr>
     		<tr>
-    			<td>※市区町村番地</td><td><span>新宿区西新宿７－７－７</span></td>
+    			<td>※市区町村番地</td><td><div class="result">新宿区西新宿７－７－７</div></td>
     		</tr>
     		<tr>
-    			<td>※マンション名</td><td><span>コクーンタワー</span></td>
+    			<td>※マンション名</td><td><div class="result">コクーンタワー</div></td>
     		</tr>
     		<tr>
-    			<td>※ログインID</td><td><span>gotoh</span></td>
+    			<td>※ログインID</td><td><div class="result">gotoh</div></td>
     		</tr>
     		<tr>
-    			<td>※パスワード</td><td><span>jdfijifkf;l</span></td>
+    			<td>※パスワード</td><td><div class="result">jdfijifkf;l</div></td>
     		</tr>
 
-    			<td>※電話番号</td><td><span>03-9898-9889</span></td>
+    			<td>※電話番号</td><td><div class="result">03-9898-9889</div></td>
     		</tr>
     	</table>
     </div>
@@ -64,20 +72,28 @@
     <h2>クレジットカード情報</h2>
     	<table>
     		<tr>
-    			<td>カード会社</td>
-    			<td><span>life</span></td>
+    			<td class="itemName">カード会社</td>
+    			<td class="cardInfo">
+                	<div class="result">life</div>
+                </td>
     		</tr>
     		<tr>
-    			<td>カード名義</td><td><span>sinji gotoh</span></td>
+    			<td class="itemName">カード名義</td>
+                <td class="cardInfo">
+                	<div class="result">sinji gotoh</div>
+                </td>
     		</tr>
     		<tr>
-    			<td>カード番号</td><td><span>456777778788</span></td>
+    			<td class="itemName">カード番号</td>
+                <td class="cardInfo">
+                	<div class="result">456777778788</div>
+                </td>
     		</tr>
     		<tr>
-    			<td>有効期限</td>
-                <td>
-                	<span>3</span>月
-    				<span>2017</span>年
+    			<td class="itemName">有効期限</td>
+                <td class="cardInfo">
+                	<div class="result">3</div>月
+    				<div class="result">2017</div>年
                	</td>
     		</tr>
     	</table>
