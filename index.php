@@ -21,7 +21,7 @@ include 'head.php';
         <ul class="slides">
             <li>
                 <figure>
-                    <img src="img/miura1.jpg" class="moviesPic" data-id="xxxxx1" data-title="moviesTitle1" data-date-start="sTime1" data-date-end="eTime1">
+                    <img src="img/miura1.jpg" class="moviesPic" data-id="xxxxx1" data-title="moviesTitle1">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -30,7 +30,7 @@ include 'head.php';
             </li>
             <li>
                 <figure>
-                    <img src="img/miura2.jpg" class="moviesPic" data-id="xxxxx2" data-title="moviesTitle2" data-date-start="sTime2" data-date-end="eTime2">
+                    <img src="img/miura2.jpg" class="moviesPic" data-id="xxxxx2" data-title="moviesTitle2">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -39,7 +39,7 @@ include 'head.php';
             </li>
             <li>
                 <figure>
-                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx3" data-title="moviesTitle3" data-date-start="sTime3" data-date-end="eTime3">
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx3" data-title="moviesTitle3">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -48,7 +48,7 @@ include 'head.php';
             </li>
             <li>
                 <figure>
-                    <img src="img/3pri.png" class="moviesPic" data-id="xxxxx4" data-title="moviesTitle4" data-date-start="sTime4" data-date-end="eTime4">
+                    <img src="img/3pri.png" class="moviesPic" data-id="xxxxx4" data-title="moviesTitle4">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -62,7 +62,7 @@ include 'head.php';
 	    <ul>
 	        <li>
                 <figure>
-                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx3" data-title="moviesTitle3" data-date-start="sTime3" data-date-end="eTime3">
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx01" data-title="moviesTitle01">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -71,7 +71,7 @@ include 'head.php';
             </li>
 	        <li>
                 <figure>
-                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx3" data-title="moviesTitle3" data-date-start="sTime3" data-date-end="eTime3">
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx02" data-title="moviesTitle02">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -80,7 +80,7 @@ include 'head.php';
             </li>
 	        <li>
                 <figure>
-                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx3" data-title="moviesTitle3" data-date-start="sTime3" data-date-end="eTime3">
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx03" data-title="moviesTitle03">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -92,14 +92,6 @@ include 'head.php';
 </div>
 <div id="reserveArea">
     <div id="timeLine">
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-        </ul>
     </div>
     <div id="sheet">
         人物アイコンやらここに(draggable?)<br>
