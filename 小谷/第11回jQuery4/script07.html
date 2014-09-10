@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<style type="text/css">
+
+	html,body{height:100%;margin:0;padding:0;}
+	body{text-align: center;}
+	#stage{
+		width:500px;
+		height:500px;
+		margin:50px auto;
+		border-right:1px dashed #aaa;
+	}
+	input{width:480px;height:80px;font-size:20px;}
+	div{width:100px;height:100px;color:white;position:relative;}
+	#box1{background:#34495E;}
+	#box2{background:#1ABC9C;}
+	#box3{background:#2ECC71;}
+	#box4{background:#3498DB;}
+	#box5{background:#84980B;}
+
+</style>
+<script type="text/javascript">
+
+$(function(){
+
+	//eachつかって .nameko全部の背景画像をランダム(nameko1〜10)で設定
+	$('.nameko').each( function(){
+		var random = Math.ceil(Math.random()*10);
+		$(this).css( 'background','url(img/nameko'+random+'s.png)' );
+	});
+
+
+
+
+	//btnクリックでランダムでどれかなめこが100ずつ右に動くように。　
+
+	var stage = $('#stage').offset().left;
+	stage += 500;
+	
+	var count = 5;
+	
+	$('#btn').click( function(){
+		var random = Math.floor(Math.random()*count);
+		console.log(count,random);
+		$('.nameko:eq('+random+')').animate( { 'left':'+=100px' }, 200, 'swing', function(){
+			var posi = $(this).offset().left;
+			if( posi >= stage )
+			{
+				count--;
+				$(this).animate( {'bottom':'50px'}, 100, 'linear', function(){
+					$(this).animate( {'bottom':'0px'}, 100, 'linear');
+				} ).removeClass('nameko');
+			}
+		});
+	});
+	//各要素の位置は　$(セレクタ).offset().left　で取得可能  
+	//右の線を超えたなめこは一回とびはねる
+
+
+
+});
+</script>
+</head>
+<body>
+<div id="stage">
+	<div id="box1" class="nameko"></div>
+	<div id="box2" class="nameko"></div>
+	<div id="box3" class="nameko"></div>
+	<div id="box4" class="nameko"></div>
+	<div id="box5" class="nameko"></div>
+</div>
+<input type="button" id="btn" value="GO" />
+<p>
+$(セレクタ).css()　や　$(セレクタ).offset().left　で　divの横の位置がとれるよ
+</p>
+
+</body>
+</html>

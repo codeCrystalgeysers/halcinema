@@ -62,6 +62,4 @@
     </nav>
     <section id="copyright"><p>Copyright &copy;codeCrstalgeysers All rights reserved.</p></section>
 </footer>
-<script src="js/jq2min.js"></script>
-<script src="js/common.js"></script>
 </html>

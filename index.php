@@ -2,6 +2,8 @@
 <meta charset="UTF-8">
 <meta name="Author" content="codeCrystalgeysers">
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
+<script src="js/jq2min.js"></script>
+<script src="js/common.js"></script>
 <script src="js/index.js"></script>
 <script src="js/topSlider.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -19,7 +21,7 @@ include 'head.php';
         <ul class="slides">
             <li>
                 <figure>
-                    <img src="img/miura1.jpg" class="moviesPic" data-id="xxxxx" data-title="moviesTitle1" data-date-start="sTime1" data-date-end="eTime1">
+                    <img src="img/miura1.jpg" class="moviesPic" data-id="xxxxx1" data-title="moviesTitle1" data-date-start="sTime1" data-date-end="eTime1">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -28,7 +30,7 @@ include 'head.php';
             </li>
             <li>
                 <figure>
-                    <img src="img/miura2.jpg" class="moviesPic" data-id="xxxxx" data-title="moviesTitle2" data-date-start="sTime2" data-date-end="eTime2">
+                    <img src="img/miura2.jpg" class="moviesPic" data-id="xxxxx2" data-title="moviesTitle2" data-date-start="sTime2" data-date-end="eTime2">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -37,7 +39,7 @@ include 'head.php';
             </li>
             <li>
                 <figure>
-                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx" data-title="moviesTitle3" data-date-start="sTime3" data-date-end="eTime3">
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx3" data-title="moviesTitle3" data-date-start="sTime3" data-date-end="eTime3">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -46,7 +48,7 @@ include 'head.php';
             </li>
             <li>
                 <figure>
-                    <img src="img/3pri.png" class="moviesPic" data-id="xxxxx" data-title="moviesTitle4" data-date-start="sTime4" data-date-end="eTime4">
+                    <img src="img/3pri.png" class="moviesPic" data-id="xxxxx4" data-title="moviesTitle4" data-date-start="sTime4" data-date-end="eTime4">
                     <figcaption class="moviesCap">
                         <span class="moviesTitle">映画タイトル</span>
                         <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
@@ -58,9 +60,33 @@ include 'head.php';
 	<div id="cinemaToggle">Switch</div>
 	<div id="cinemaList">
 	    <ul>
-	        <li><img src="img/sample.jpg"  data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime"></li>
-	        <li><img src="img/sample.jpg"  data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime"></li>
-	        <li><img src="img/sample.jpg"  data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime"></li>
+	        <li>
+                <figure>
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx3" data-title="moviesTitle3" data-date-start="sTime3" data-date-end="eTime3">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
+                    </figcaption>
+                </figure>
+            </li>
+	        <li>
+                <figure>
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx3" data-title="moviesTitle3" data-date-start="sTime3" data-date-end="eTime3">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
+                    </figcaption>
+                </figure>
+            </li>
+	        <li>
+                <figure>
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx3" data-title="moviesTitle3" data-date-start="sTime3" data-date-end="eTime3">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
+                    </figcaption>
+                </figure>
+            </li>
 	    </ul>
 	</div>
 </div>
