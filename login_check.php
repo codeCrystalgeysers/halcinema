@@ -11,7 +11,7 @@
 	mysql_select_db("halcinema",$con);
 	
 	//SQL実行
-	$sql = "SELECT COUNT(*) FROM user WHERE id='$id' AND password='$pass'";
+	$sql = "SELECT COUNT(*) FROM user WHERE user_id='$id' AND password='$pass'";
 	$res = mysql_query($sql,$con);
 	
 	//DB切断
@@ -26,7 +26,8 @@
 			break;
 		}
 	}
-	if($flag == 0){
+	
+	if($flag == 1){
 		header("location:index.php");
 		exit;
 	}else{
