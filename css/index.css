@@ -47,6 +47,10 @@
     height: 100%;
 }
 
+#reserveArea {
+  position: relative;
+}
+
 #timeLine {
     float: left;
     width: 240px;
@@ -54,13 +58,18 @@
     background-color: steelblue;
 }
 
-#sheet {
-    position: relative;
-    float: right;
+.sheet {
+    position: absolute;
+    right: 0;
     width: 720px;
     height: 400px;
     background: no-repeat center right #f0f0f0;
     background-size: contain;
+}
+
+#details {
+  clear: both;
+  float: left;
 }
 
 #nowSelect, #nowPrice {
@@ -77,6 +86,20 @@
 #nowPrice {
     text-align: right;
     background-color: violet;
+}
+
+#sheet3 ul {
+  width: 100%;
+}
+#sheet3 li {
+  width: 24px;
+  margin: 6px;
+  background-color: gray;
+  float: left;
+}
+
+#sheet3 li:nth-child(20n+1) {
+  clear: left;
 }
 
 /*
@@ -205,5 +228,3 @@ background-color: hotpink;
 /* end ************/
 /******************/
 /******************/
-
-

@@ -6,6 +6,7 @@
 <script src="js/common.js"></script>
 <script src="js/index.js"></script>
 <script src="js/topSlider.js"></script>
+<script src="js/createSheet.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <title>HAL Cinema</title>
@@ -93,9 +94,14 @@ include 'head.php';
 <div id="reserveArea">
     <div id="timeLine">
     </div>
-    <div id="sheet">
-        人物アイコンやらここに(draggable?)<br>
-        live
+    <div class="sheet" id="sheet1">
+
+    </div>
+    <div class="sheet" id="sheet2">
+
+    </div>
+    <div class="sheet" id="sheet3">
+
     </div>
     <div id="details">
         <dl id="nowSelect">
@@ -114,7 +120,7 @@ include 'head.php';
             <form method="post"><!-- action書いてないです，submitが一緒のform内にあります -->
             <input type="submit" name="alertOn" value="アラート">
             <input type="submit" name="reserveOn" value="予約">
-        </form>
+            </form>
         </div>
     </div>
 </div>

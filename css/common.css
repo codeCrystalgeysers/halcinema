@@ -132,6 +132,7 @@ main{
         Footer
  --------------------------------------------- */
 footer {
+  clear: both;
     bottom: 0;
 }
 #footMenu {

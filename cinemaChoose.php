@@ -1,5 +1,5 @@
 <ul>
-    <li><?php echo $_GET['test1'] ?>
+    <li><?php echo $_GET['aj_title'] ?>
     <li>2
     <li>3
     <li>4
