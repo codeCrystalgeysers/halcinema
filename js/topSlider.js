@@ -3,12 +3,6 @@
  * Copyright 2012 WooThemes
  * Contributing Author: Tyler Smith
  */
-;
-$(function(){
-    $('#cinemaToggle').click(function(){
-        $('#cinemaList').slideToggle(300);
-    });
-});
 (function ($) {
 
   //FlexSlider: Object Instance

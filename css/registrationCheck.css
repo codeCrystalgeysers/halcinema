@@ -1,0 +1,89 @@
+@charset"utf-8";
+
+/* ---------------------------------------------
+        common
+ --------------------------------------------- */
+
+* {
+	margin: 0 auto;
+}
+
+/* ---------------------------------------------
+        main
+ --------------------------------------------- */
+
+main {
+	width: 960px;
+}
+
+/* ---------------------------------------------
+        form
+ --------------------------------------------- */
+
+.formArea {
+	margin-top: 15px;
+}
+
+h1,h2,#conf{
+	text-align: center;
+}
+
+h2{
+	margin: 30px 0;
+	font-size: 2em;
+}
+
+td {
+	padding: 10px;
+	background: yellow;
+}
+
+#conf {
+	margin: 15px 0;
+}
+#conf input{
+	padding: 14px 80px;
+	border-style: none;
+	border-radius: 4px;
+	background-color: #00FF80;
+	color: #fff;
+}
+
+.result{
+	display: inline-block;
+	margin-left: 4px;
+	width: 250px;
+	height: 50px;
+	text-align: center;	
+	line-height: 50px;
+	background: #D0A9F5; 
+	border-radius: 4px;
+ }
+ 
+ .birthday{
+	display: inline-block;
+	margin-right: 4px;
+	width: 180px;
+	height: 50px;
+	text-align: center;	
+	line-height: 50px;
+	background: #D0A9F5; 
+	border-radius: 4px;
+ }
+ 
+ .itemName{
+	width: 105px;	
+ }
+ 
+ .cardInfo{
+	width: 607px; 
+ }
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 

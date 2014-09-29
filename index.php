@@ -4,7 +4,9 @@
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
 <script src="js/jq2min.js"></script>
 <script src="js/common.js"></script>
+<script src="js/index.js"></script>
 <script src="js/topSlider.js"></script>
+<script src="js/createSheet.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <title>HAL Cinema</title>
@@ -15,106 +17,42 @@ include 'head.php';
 
 
 <div id="slider">
-    <div id="rankTop">A</div>
+    <div id="rankTop"><img src="img/sample.jpg" alt=""></div>
     <div class="flexslider">
         <ul class="slides">
             <li>
                 <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
+                    <img src="img/miura1.jpg" class="moviesPic" data-id="xxxxx1" data-title="moviesTitle1">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
                     </figcaption>
                 </figure>
-            </li><li>
+            </li>
+            <li>
                 <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
+                    <img src="img/miura2.jpg" class="moviesPic" data-id="xxxxx2" data-title="moviesTitle2">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
                     </figcaption>
                 </figure>
-            </li><li>
+            </li>
+            <li>
                 <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx3" data-title="moviesTitle3">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
                     </figcaption>
                 </figure>
-            </li><li>
+            </li>
+            <li>
                 <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
-                    </figcaption>
-                </figure>
-            </li><li>
-                <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
-                    </figcaption>
-                </figure>
-            </li><li>
-                <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
-                    </figcaption>
-                </figure>
-            </li><li>
-                <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
-                    </figcaption>
-                </figure>
-            </li><li>
-                <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
-                    </figcaption>
-                </figure>
-            </li><li>
-                <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
-                    </figcaption>
-                </figure>
-            </li><li>
-                <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
-                    </figcaption>
-                </figure>
-            </li><li>
-                <figure>
-                    <img src="img/sample.jpg" class="movies" data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime">
-                    <figcaption>
-                        <h3>Settings</h3>
-                        <span>Jacob Cummings</span>
-                        cc
+                    <img src="img/3pri.png" class="moviesPic" data-id="xxxxx4" data-title="moviesTitle4">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
                     </figcaption>
                 </figure>
             </li>
@@ -123,26 +61,47 @@ include 'head.php';
 	<div id="cinemaToggle">Switch</div>
 	<div id="cinemaList">
 	    <ul>
-	        <li><img src="img/sample.jpg"  data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime"></li>
-	        <li><img src="img/sample.jpg"  data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime"></li>
-	        <li><img src="img/sample.jpg"  data-id="xxxxx" data-title="eigaTitle" data-date-start="sTime" data-date-end="eTime"></li>
+	        <li>
+                <figure>
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx01" data-title="moviesTitle01">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
+                    </figcaption>
+                </figure>
+            </li>
+	        <li>
+                <figure>
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx02" data-title="moviesTitle02">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
+                    </figcaption>
+                </figure>
+            </li>
+	        <li>
+                <figure>
+                    <img src="img/take.jpg" class="moviesPic" data-id="xxxxx03" data-title="moviesTitle03">
+                    <figcaption class="moviesCap">
+                        <span class="moviesTitle">映画タイトル</span>
+                        <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span>
+                    </figcaption>
+                </figure>
+            </li>
 	    </ul>
 	</div>
 </div>
 <div id="reserveArea">
     <div id="timeLine">
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-        </ul>
     </div>
-    <div id="sheet">
-        人物アイコンやらここに(draggable?)<br>
-        live
+    <div class="sheet" id="sheet1">
+
+    </div>
+    <div class="sheet" id="sheet2">
+
+    </div>
+    <div class="sheet" id="sheet3">
+
     </div>
     <div id="details">
         <dl id="nowSelect">
@@ -161,7 +120,7 @@ include 'head.php';
             <form method="post"><!-- action書いてないです，submitが一緒のform内にあります -->
             <input type="submit" name="alertOn" value="アラート">
             <input type="submit" name="reserveOn" value="予約">
-        </form>
+            </form>
         </div>
     </div>
 </div>
