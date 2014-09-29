@@ -2,9 +2,11 @@
 <meta charset="UTF-8">
 <meta name="Author" content="codeCrystalgeysers">
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
+<meta http-equiv=”Content-Script-Type” content=”text/javascript” />
 <script src="js/jq2min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/topSlider.js"></script>
+<script src="js/article.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/article.css">
 <title>HAL Cinema</title>
@@ -15,24 +17,26 @@
 	<div id="schedule">上映スケジュール</div>
 	<div id="day">
 		<div id="back">
-			戻る	
 		</div>
 
-		<div id="days">
-			1/1
-		</div>
+        <ul class="days">
+    		<li>1/1</li>
+    		<li>1/2</li>
+            <li>1/2</li>
+            <li>1/2</li>
+            <li>1/2</li>
+            <li>1/2</li>
+            <li>1/2</li>
+            
 
-		<div id="days">
-			1/2
-		</div>
+        </ul>
 
 		<div id="next">
-			戻る	
-		</div>
+        </div>
 	</div>
 
 	<div id="title">
-		作品名
+	       作品名
 	</div>
 
 	<ul id="lst">
