@@ -38,7 +38,7 @@
                     <li><a href="theater.php">上映設備</a></li>
                 </ul>
             </section>
-            
+
         </div>
         <div class="footMenuBox">
             <section>

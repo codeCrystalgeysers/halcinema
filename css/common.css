@@ -1,5 +1,5 @@
 @charset"utf-8";
-
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 /* ---------------------------------------------
         Common
@@ -29,17 +29,18 @@ header, footer{
     clear: both;
     position: relative;
     width: 100%;
-    background-color: yellowgreen;
+    background-color: #52CBCA;
 }
 
 header {
     min-height: 100px;
 }
 #logo{
+  font: 45px white 'Ubuntu';
 	margin:0;
+  line-height: 60px;
 	width:240px;
 	height:100px;
-    background-color: pink;
     position: absolute;
 }
 
@@ -48,6 +49,7 @@ header {
     left: 240px;
 }
 #infomation li {
+    display: block;
     margin-bottom: -15px;
 }
 #infomation li a {
@@ -82,10 +84,9 @@ header {
 }
 
 #headMenu li{
-    margin: 0 10px;
+  margin: 0 20px;
     min-width:150px;
-	text-align:center;
-    background-color: silver;
+	  text-align:center;
 }
 
 #headMenu ul > li {
@@ -132,8 +133,9 @@ main{
         Footer
  --------------------------------------------- */
 footer {
-  clear: both;
+    clear: both;
     bottom: 0;
+    background-color: #0f0f0f;
 }
 #footMenu {
     display: flex;

@@ -6,7 +6,7 @@
 <script src="js/common.js"></script>
 <script src="js/index.js"></script>
 <script src="js/topSlider.js"></script>
-<script src="js/createSheet.js"></script>
+<script src="js/createSeat.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <title>HAL Cinema</title>
@@ -92,23 +92,26 @@ include 'head.php';
 	</div>
 </div>
 <div id="reserveArea">
+    <div id="seats">
+      <div class="seat" id="seat1">
+
+      </div>
+      <div class="seat" id="seat2">
+a
+      </div>
+      <div class="seat" id="seat3">
+
+      </div>
+    </div>
+
     <div id="timeLine">
-    </div>
-    <div class="sheet" id="sheet1">
-
-    </div>
-    <div class="sheet" id="sheet2">
-
-    </div>
-    <div class="sheet" id="sheet3">
-
     </div>
     <div id="details">
         <dl id="nowSelect">
             <dt id="nowTitle">選択映画タイトルでる</dt>
             <dd id="nowDate">せんたくした日付出力</dd>
-            <dd id="nowSheet">選択座席だす</dd>
-            <dd id="nowSheet">
+            <dd id="nowseat">選択座席だす</dd>
+            <dd id="nowseat">
                 <span id="ticketTypeAd">大人</span>×1枚
                 <span id="ticketTypeSt">学生</span>×2枚
                 <span id="ticketTypeCh">小人</span>×3枚

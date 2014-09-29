@@ -36,7 +36,7 @@ $(function(){
                  }
         });
 
-        $('.sheet').css('background-image','url('+eigaPic+')');
+        $('.seat').css('background-image','url('+eigaPic+')');
         $('#nowDate').text('.');
         $('#nowTitle').text(eigaTitle);
     }//cinemaSelect()
