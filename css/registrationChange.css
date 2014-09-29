@@ -1,0 +1,142 @@
+@charset"utf-8";
+
+/* ---------------------------------------------
+        common
+ --------------------------------------------- */
+
+* {
+	margin: 0 auto;
+}
+
+/* ---------------------------------------------
+        main
+ --------------------------------------------- */
+
+main {
+	width: 960px;
+}
+
+/* ---------------------------------------------
+        form
+ --------------------------------------------- */
+
+.formArea {
+	margin-top: 15px;
+}
+
+.box {
+	width: 100%;
+	background-color: blue;
+	font-size: 15px;
+}
+
+.left1 {
+	width: 130px;
+	height: 30px;
+	background-color: red;
+	text-align: center;
+	font-size: 15px;
+	float: left;
+}
+
+.left2 {
+	width: 700px;
+	height: 30px;
+	background-color: yellow;
+	text-align: center;
+	font-size: 15px;
+	float: left;
+}
+
+.left3 {
+	width: 130px;
+	height: 30px;
+	background-color: white;
+	text-align: center;
+	font-size: 15px;
+	float: right;
+}
+
+#change1 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change1 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change2 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change3 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change4 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change5 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change6 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change7 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change8 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change9 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change10 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#change11 {
+	width: 960px;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
