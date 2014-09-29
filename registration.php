@@ -3,7 +3,7 @@
 <meta name="Author" content="codeCrystalgeysers">
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
 <link rel="stylesheet" type="text/css" href="css/common.css">
-<link rel="stylesheet" type="text/css" href="css/registration.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
 <title>HAL Cinema</title>
 <?php
     include 'head.php';
@@ -11,21 +11,23 @@
 
 <main>
 
-    <h1>新規会員登録画面</h1>
+    <h2>新規会員登録画面</h2>
     <div class="formArea">
-    <form>
+    <form action="my.php" method="">
     	<table>
     		<tr>
-    			<td>※性名</td><td>性<input type="text">名<input type="text" name="name"></td>
+    			<td class="">※性名</td><td>性<input type="text">名<input type="text" name="name"></td>
     		</tr>
     		<tr>
     			<td>※フリガナ</td><td>※全角カタカナで入力してください（例　ホンマメイコ<br />セイ<input type="text" name="kana">メイ<input type="text"></td>
     		</tr>
     		<tr>
-    			<td>※性別</td><td><select name="sex">
-    			<option value="男">男</option>
-    			<option value="女">女</option>
-    			</select>
+    			<td>※性別</td>
+    			<td>
+                    <select name="sex">
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                    </select>
 				</td>
     		</tr>
     		<tr>
@@ -133,7 +135,7 @@
     		</tr>
     		<tr>
     			<td>※電話番号</td><td><input type="text" name="phonenum"></td>
-    		</tr>    		    		    		
+    		</tr>
     	</table>
     </form>
     </div>
@@ -188,14 +190,7 @@
 
 </main>
 
-<div id="divide">
-    <aside id="subContent">
-    <?php
-        include 'aside.php';
-    ?>
-    </aside>
-    <div id="links"><!-- 広告 --></div>
-</div>
+
 <?php
     include 'foot.php';
 ?>
