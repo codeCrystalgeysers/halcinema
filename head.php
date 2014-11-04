@@ -11,7 +11,9 @@
         <!-- どう表示だっけ?別ページへリンクある? -->Alert
     </div>
     <div id="login">
-        <button id="btnLogin">ログイン</button>
+	    <form action="login.php">
+            <button id="btnLogin">ログイン</button>
+        </form>
         <div id="nowLogin">
             <p>IDまたは名前表示</p>
             <button id="btnLogout">ログアウト</button>
