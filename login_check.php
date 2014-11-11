@@ -43,6 +43,6 @@
 		}
 		
 	}else{
-		header("location:login.php");
+		header("location:login.php?message=error");
 		exit;
 	}

@@ -10,6 +10,12 @@
 ?>
 
 <main>
+<?php
+	if(isset($_GET["message"])){
+		$message = $_GET["message"];
+		echo $message;
+	}
+?>
 	<div id="loginArea">
 		<p>ログインID/パスワードを入力してください</p>
 		<form action="login_check.php" method="post" id="formLogin">
