@@ -1,4 +1,6 @@
+</div>
 <footer>
+  <div id="footerWrapper">
     <nav id="footMenu">
         <div class="footMenuBox">
             <section>
@@ -61,5 +63,6 @@
         </div>
     </nav>
     <section id="copyright"><p>Copyright &copy;codeCrstalgeysers All rights reserved.</p></section>
+  </div>
 </footer>
 </html>

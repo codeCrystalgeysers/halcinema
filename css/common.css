@@ -7,14 +7,20 @@
 * {
     margin: 0;
     padding: 0;
-    color: dimgray;
+    color: #444;
     font: 15px 'YuGothic';
     text-decoration: none;
 }
 body{
-	margin: 0 auto;
-	width:960px;
+  background-color: #ddd;
 }
+
+#wrapper {
+  clear: both;
+  margin: 0 auto;
+  min-width: 960px;
+}
+
 .left {
     float: left;
 }
@@ -29,89 +35,116 @@ header, footer{
     clear: both;
     position: relative;
     width: 100%;
-    background-color: #52CBCA;
+    background-color: #60d4d4;
 }
-
+#headerWrapper,
+#footerWrapper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
 header {
-    min-height: 100px;
+    height: 100px;
 }
 #logo{
+  position: absolute;
   font: 45px white 'Ubuntu';
-	margin:0;
+  margin-top: 15px;
   line-height: 60px;
-	width:240px;
-	height:100px;
-    position: absolute;
+  width:240px;
 }
 
-#infomation {
-    position: absolute;
-    left: 240px;
+
+/* ---------------------------------------------
+        Header > Login, Alert
+ --------------------------------------------- */
+#loginAlert {
+  position: absolute;
+  right: 0;
 }
-#infomation li {
-    display: block;
-    margin-bottom: -15px;
+#loginWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-#infomation li a {
-    font-size: .8em;
-    color: blue;
+#loginAlert {
+  position: absolute;
+  width:50px;
+  height:40px;
+  background-color: red;
+  top: 0;
+  right: 0;
+}
+#loginBtnIn {
+  position: relative;
+  float: right;
+  width: 70px;
+  right: 0;
+}
+#loginNowIn {
+  display: none;
 }
 
-#alert{
-	width:100px;
-	height:40px;
-	background-color: red;
-	right: 100px;
-    position: absolute;
+/* ---------------------------------------------
+        Header > Menu
+ --------------------------------------------- */
+ #headerContent {
+  position: relative;
+  float: right;
+  margin-left: 50px;
+  width: 670px;
+  height: 100px;
 }
 
-#login{
-	width:100px;
-	height:40px;
-	background-color: red;
-    right: 0;
-    position: absolute;
+#headerInfomation {
+  height: 50px;
+}
+#headerInfomation li {
+  display: block;
+  height: 33%;
+}
+#headerInfomation li a {
+  font-size: .8em;
+  color: blue;
 }
 
-#nowLogin {
-    display: none;
+#headerMenu{
+  position: relative;
+  bottom: 0;
+  height: 50px;
+  display: flex;
 }
-
-#headMenu{
-	position: absolute;
-    right: 0;
-    bottom: 0;
+#headerMenu li{
+  height: 50px;
+	text-align:center;
 }
-
-#headMenu li{
-  margin: 0 20px;
-    min-width:150px;
-	  text-align:center;
+#headerMenu ul > li {
+  float: left;
+  position: relative;
+  border-left: 1px solid white;
 }
-
-#headMenu ul > li {
-    float: left;
-    position: relative;
+#headerMenu li:last-child {
+  padding-right: 0;
+  border-right: 1px solid white;
 }
-
-#headMenu li:last-child {
-    margin-right: 0;
-}
-#headMenu li a {
-    display: block;
+#headerMenu li a {
+  position: relative;
+  top: 50%;
+  margin-left: -1em;
+  height: 50px;
+  color: white;
 }
 
 .subMenuList {
-    display: none;
-    position: absolute;
-    width: inherit;
+  display: none;
+  position: absolute;
+  width: inherit;
 }
 
 .subMenuList li {
-    left: -10px;
-    width: inherit;
-    background-color: #fff;
-    z-index: 99;
+  width: inherit;
+  background-color: #fff;
+  z-index: 99;
 }
 
 /* ---------------------------------------------
@@ -153,4 +186,11 @@ footer {
 #copyright {
     display: block;
     text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  #headerWrapper,
+  #footerWrapper {
+    padding: 0;
+  }
 }

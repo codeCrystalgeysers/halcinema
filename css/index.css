@@ -5,6 +5,11 @@
 /* ---------------------------------------------
         Slider
  --------------------------------------------- */
+#slider {
+  margin: 0 auto;
+  width: 960px;
+}
+
 #rankTop {
     float: left;
     width: 240px;
@@ -60,14 +65,16 @@
 
 #seats {
   position: relative;
+  margin: 0 auto;
+  width: 960px;
   height: 400px;
 }
+
 .seat {
     position: absolute;
     right: 0;
     width: 100%;
     height: 400px;
-    background: no-repeat center right #f0f0f0;
     background-size: cover;
 }
 
