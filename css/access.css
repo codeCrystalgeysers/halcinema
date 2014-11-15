@@ -19,24 +19,27 @@ h3{
 }
 
 #map{
-	margin-top: 10px;
-	width: 100%;
+	margin: 10px 16px;
+	width: 668px;
 	height: 400px;
 	background-color: white;
 }
 
-#hal{
-	margin: 10px;
+#locationBtn{
+	display: flex;
+	justify-content: space-around;
+}
+.hal{
+	margin: 10px 0;
 	width: 200px;
 	height: 50px;
-	float: left;
 	border: solid 1px;
+	cursor: pointer;
 }
 
-#details{
-	margin-top: 20px;
+.details{
+	margin-bottom: 20px;
 	width: 100%;
 	border: solid 1px;
-	clear: both;
 }
 	
