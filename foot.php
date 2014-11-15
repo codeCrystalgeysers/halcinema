@@ -1,8 +1,9 @@
-</div>
+
 <footer>
+  <div id="footerlogo">HALCinema</div>
   <div id="footerWrapper">
-    <nav id="footMenu">
-        <div class="footMenuBox">
+    <nav id="footerMenu">
+        <div class="footerMenuBox">
             <section>
                 <h2><a href="index.php">HALCinema</a></h2>
                 <ul>
@@ -14,7 +15,7 @@
                 </ul>
             </section>
         </div>
-        <div class="footMenuBox">
+        <div class="footerMenuBox">
             <section>
                 <h2><a href="article.php">上映情報</a></h2>
                 <ul>
@@ -31,7 +32,7 @@
                 </ul>
             </section>
         </div>
-        <div class="footMenuBox">
+        <div class="footerMenuBox">
             <section>
                 <h2><a href="theater.php">インフォメーション</a></h2>
                 <ul>
@@ -42,7 +43,7 @@
             </section>
 
         </div>
-        <div class="footMenuBox">
+        <div class="footerMenuBox">
             <section>
                 <h2><a href="theater.php">アクセス</a></h2>
                 <ul>
@@ -52,7 +53,7 @@
                 </ul>
             </section>
         </div>
-        <div class="footMenuBox">
+        <div class="footerMenuBox">
             <section>
                 <ul>
                     <li><a href="#">スマートフォンサイト</a></li>
@@ -62,7 +63,7 @@
             </section>
         </div>
     </nav>
-    <section id="copyright"><p>Copyright &copy;codeCrstalgeysers All rights reserved.</p></section>
   </div>
+  <section id="copyright"><p>Copyright &copy;codeCrstalgeysers All rights reserved.</p></section>
 </footer>
 </html>

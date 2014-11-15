@@ -7,12 +7,12 @@
 * {
     margin: 0;
     padding: 0;
-    color: #444;
+    color: #aaa;
     font: 15px 'YuGothic';
     text-decoration: none;
 }
 body{
-  background-color: #ddd;
+  background-color: #EDEDED;
 }
 
 #wrapper {
@@ -32,10 +32,10 @@ ul {
         Header
  --------------------------------------------- */
 header, footer{
-    clear: both;
-    position: relative;
-    width: 100%;
-    background-color: #60d4d4;
+  clear: both;
+  position: relative;
+  width: 100%;
+  background-color: #60d4d4;
 }
 #headerWrapper,
 #footerWrapper {
@@ -44,14 +44,17 @@ header, footer{
   margin: 0 auto;
 }
 header {
-    height: 100px;
+  height: 100px;
 }
 #logo{
   position: absolute;
-  font: 45px white 'Ubuntu';
-  margin-top: 15px;
+  color: white;
+  font: 30px 'Ubuntu';
+  margin: 15px 10px;
   line-height: 60px;
-  width:240px;
+  width:220px;
+  height: 70px;
+  text-align: center;
 }
 
 
@@ -88,11 +91,10 @@ header {
 /* ---------------------------------------------
         Header > Menu
  --------------------------------------------- */
- #headerContent {
+#headerContent {
   position: relative;
   float: right;
-  margin-left: 50px;
-  width: 670px;
+  width: 720px;
   height: 100px;
 }
 
@@ -105,21 +107,29 @@ header {
 }
 #headerInfomation li a {
   font-size: .8em;
-  color: blue;
+  color: #eee;
 }
 
 #headerMenu{
-  position: relative;
+  right: 0;
   bottom: 0;
   height: 50px;
+}
+#headerMenuList {
+  margin-top: 10px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
 }
 #headerMenu li{
-  height: 50px;
+  position: relative;
+  height: 40px;
 	text-align:center;
 }
-#headerMenu ul > li {
+#headerMenuList li {
   float: left;
+  width: 100%;
   position: relative;
   border-left: 1px solid white;
 }
@@ -129,9 +139,8 @@ header {
 }
 #headerMenu li a {
   position: relative;
-  top: 50%;
-  margin-left: -1em;
-  height: 50px;
+  display: block;
+  height: 40px;
   color: white;
 }
 
@@ -139,9 +148,11 @@ header {
   display: none;
   position: absolute;
   width: inherit;
+  z-index: 99;
 }
-
 .subMenuList li {
+  left: -1px;
+  border-right: 1px solid white;
   width: inherit;
   background-color: #fff;
   z-index: 99;
@@ -151,41 +162,63 @@ header {
         Contents
  --------------------------------------------- */
 main{
-    float: left;
-    width: 700px;
-    background-color: salmon;
+  position: relative;
+  float: left;
+  width: 700px;
 }
 
 #divide {
-    float: right;
-    width: 260px;
-    background-color: tomato;
+  float: right;
+  width: 260px;
+  background-color: tomato;
 }
 
 /* ---------------------------------------------
         Footer
  --------------------------------------------- */
 footer {
-    clear: both;
-    bottom: 0;
-    background-color: #0f0f0f;
+  clear: both;
+  position: relative;
+  background-color: #222;
 }
-#footMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start;
+#footerlogo {
+  position: relative;
+  margin: auto;
+  padding: 40px 0 30px;
+  width: 100%;
+  text-align: center;
+  color: #52CBCA;
 }
-.footMenuBox {
-    position: relative;
+#footerMenu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
 }
-.footMenuBox h2 a {
-    font-size: 1.3em;
-    background-color: #fff;
+.footerMenuBox {
+  position: relative;
 }
-#copyright {
-    display: block;
-    text-align: center;
+.footerMenuBox h2 a {
+  position: relative;
+}
+/* .footerMenuBox h2 a:after {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    background-color: #ccc;
+}
+ */
+#copyright p {
+  position: relative;
+  display: block;
+  padding: 25px 0;
+  width: 100%;
+  font-size: .8em;
+  color: #555;
+  text-align: center;
 }
 
 @media screen and (max-width: 960px) {

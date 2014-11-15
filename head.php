@@ -20,7 +20,7 @@
           </div>
       </div>
       <nav id="headerMenu">
-          <ul>
+          <ul id="headerMenuList">
               <li><a href="index.php">HOME</a></li>
               <li><a href="article.php">上映情報</a>
                   <ul class="subMenuList">

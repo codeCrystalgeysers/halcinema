@@ -94,31 +94,28 @@ include 'head.php';
 <div id="reserveArea">
     <div id="seats">
       <div class="seat" id="seat1">
-
       </div>
       <div class="seat" id="seat2">
-a
       </div>
       <div class="seat" id="seat3">
-
       </div>
+      <div id="seatsBackground"></div>
     </div>
 
-    <div id="timeLine">
-    </div>
-    <div id="details">
-        <dl id="nowSelect">
-            <dt id="nowTitle">選択映画タイトルでる</dt>
-            <dd id="nowDate">せんたくした日付出力</dd>
-            <dd id="nowseat">選択座席だす</dd>
-            <dd id="nowseat">
+    <div id="reserveTimeline"><p>&ensp;</p></div>
+    <div id="reserveDetails">
+        <dl id="reserveNowSelect">
+            <dt id="reserveNowTitle">選択映画タイトルでる</dt>
+            <dd id="reserveNowDate">せんたくした日付出力</dd>
+            <dd id="reserveNowSeatID">選択座席だす</dd>
+            <dd id="reserveNowTickets">
                 <span id="ticketTypeAd">大人</span>×1枚
                 <span id="ticketTypeSt">学生</span>×2枚
                 <span id="ticketTypeCh">小人</span>×3枚
                 <span id="ticketTypeSe">シニア</span>×4枚<!-- パターン一覧 -->
             </dd>
         </dl>
-        <div id="nowPrice">
+        <div id="reserveNowPrice">
             <span id="totalPrice">合計額</span>
             <form method="post"><!-- action書いてないです，submitが一緒のform内にあります -->
             <input type="submit" name="alertOn" value="アラート">
