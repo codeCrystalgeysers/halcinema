@@ -11,108 +11,104 @@
 ?>
 
 <main>
-    <table id="tbl1">
-        <caption>チケット料金</caption>
-        <tr>
-            <td>aa</td>
-            <td>aa</td>
-            <td>一般　1800円</td>
-        </tr>
-        <tr>
-            <td>子ども(高校生以下)　1000円</td>
-        </tr>
-        <tr>
-            <td>ペアシート　4000円</td>
-        </tr>
-        <th colspan="3">特別割引</th>
-        <tr>
-            <td>ファーストデー</td>
-        </tr>
-        <tr>
-            <td>メンズデー</td>
-        </tr>
-        <tr>
-            <td>レディスデー</td>
-        </tr>
-        <tr>
-            <td>カップルデー</td>
-        </tr>
-        <tr>
-            <td>映画の日</td>
-        </tr>
-        <tr>
-            <td>会員割引</td>
-        </tr>
-        <tr>
-            <td>夫婦50割</td>
-        </tr>
-        <tr>
-            <td>レイトショー</td>
-        </tr>
-        <th colspan="3">3D料金</th>
-        <tr>
-            <td id="ddd">映画鑑賞料金＋300円で鑑賞出来ます。</td>
-        </tr>
-        </table>
-        
-        <table>
-        <caption>フード・ドリンク料金</caption>
-        <th colspan="3">【カフェメニュー】</th>
-        <tr>
-            <td>ペプシ</td><td>ペプシネックス</td><td rowspan="4">Sサイズ：200円<br />Mサイズ：300円</td>
-        </tr>
-        <tr>
-            <td>ジンジャーエール</td><td>ホワイトウォーター</td>
-        </tr>
-        <tr>
-            <td>なっちゃんオレンジ</td><td>メロンソーダ</td>
-        </tr>
-        <tr>
-            <td>アイスティー</td><td>ウーロン茶</td>
-        </tr>
-         <tr>
-            <td colspan="2">生ビール</td><td>500円</td>
-        </tr>
-        <th colspan="3">【フード】</th>
-        <tr>
-            <td colspan="2">ポップコーン　塩</td><td>Mサイズ：250円/Lサイズ：400円</td>
-        </tr>
-        <tr>
-            <td colspan="2">ポップコーン　キャラメル</td><td>Mサイズ：350円/Lサイズ：600円</td>
-        </tr>
-        <tr>
-            <td colspan="2">ポップコーン　塩・キャラメル</td><td>ハーフ：550円</td>
-        </tr>
-        <th colspan="3">【セット】</th>
-        <tr>
-            <td colspan="2">ポップコーン　塩　ペア(ポップコーンL×1+ドリンク×2)</td><td>900円</td>
-        </tr>
-        <tr>
-            <td colspan="2">ポップコーン　塩　ドリンクMセット</td><td>500円</td>
-        </tr>
-        <tr>
-            <td colspan="2">ポップコーン　塩　ビールセット</td><td>760円</td>
-        </tr>
-        <tr>
-            <td colspan="2">ポップコーン　キャラメル　ペア(ポップコーンL×1+ドリンク×2)</td><td>1100円</td>
-        </tr>
-        <tr>
-            <td colspan="2">ポップコーン　キャラメル　ドリンクMセット</td><td>600円</td>
-        </tr>
-        <tr>
-            <td colspan="2">ポップコーン　キャラメル　ビールセット</td><td>860円</td>
-        </tr>
-        <tr>
-            <td colspan="2">ポップコーン　ハーフ　ペア(ポップコーンL×1+ドリンク×2)</td><td>1050円</td>
-        </tr>
-        </table>
-        <div id="">
+<div id="prc">
+    <h4>チケット</h4>
+    <div id="tbl1">
+        <div class="tic1">
+            <div class="ttl">【チケット料金】</div> 
+            <div class="tic_price">一般　1800円</div>
+            <div class="tic_price">子ども(高校生以下)　1000円</div>
+            <div class="tic_price">ペアシート　4000円</div>
+        </div>
+
+        <div class="tic2">
+            <div class="ttl">【特別割引】</div>
+            <div class="tic_price">ファーストデー</div>
+            <div class="tic_price">メンズデー</div>
+            <div class="tic_price">レディスデー</div>
+            <div class="tic_price">カップルデー</div>
+            <div class="tic_price">映画の日</div>
+            <div class="tic_price">会員割引</div>
+            <div class="tic_price">夫婦50割</div>
+            <div class="tic_price">レイトショー</div>
+        </div>
+
+          <div class="tic3">
+            <div class="ttl">【3D料金】</div>
+            <div class="tic_price">映画鑑賞料金＋300円で鑑賞出来ます。</div>
+        </div> 
+    </div><!--tbl1-->
+
+    <h4>ドリンク＆フード</h4>
+    <div id="tbl2">
+        <div class="dri_foo_tl">【カフェメニュー】</div>
+        <div class="dri01">
+            <div class="drink">ペプシ</div>
+            <div class="drink">ペプシネックス</div>
+            <div class="drink">ジンジャーエール</div>
+            <div class="drink">ホワイトウォーター</div>
+        </div>
+        <div class="dri01">
+            <div class="drink1">なっちゃんオレンジ</div>
+            <div class="drink1">メロンソーダ</div>
+            <div class="drink1">アイスティー</div>
+            <div class="drink1">ウーロン茶</div>
+        </div>
+        <div class="dri01">
+            <div class="drink_price">Sサイズ：200円<br />Mサイズ：300円</div>
+        </div>
+
+        <div class="dri02">
+            <div class="drink2">生ビール</div>
+            <div class="drink_price1">500円</div>
+        </div>
+
+        <div class="dri_foo_tl">【フード】</div>
+        <div class="ttlfood">
+            <div class="food">ポップコーン　塩</div>
+            <div class="food_price">Mサイズ：250円/Lサイズ：400円</div>
+
+            <div class="food">ポップコーン　キャラメル</div>
+            <div class="food_price">Mサイズ：350円/Lサイズ：600円</div>
+
+            <div class="food">ポップコーン　塩・キャラメル</div>    
+            <div class="food_price">ハーフ：550円</div>
+        </div>
+
+        <div class="dri_foo_tl">【セット】</div>
+        <div class="ttlfood">
+
+            <div class="food">ポップコーン　塩　ペア(ポップコーンL×1+ドリンク×2)</div>    
+            <div class="food_price">900円</div>
+
+            <div class="food">ポップコーン　塩　ドリンクMセット</div>    
+            <div class="food_price">500円</div>
+
+            <div class="food">ポップコーン　塩　ビールセット</div>    
+            <div class="food_price">760円</div>
+
+            <div class="food">ポップコーン　キャラメル　ペア(ポップコーンL×1+ドリンク×2)</div>    
+            <div class="food_price">1100円</div>
+
+            <div class="food">ポップコーン　キャラメル　ドリンクMセット</div>    
+            <div class="food_price">600円</div>
+
+            <div class="food">ポップコーン　キャラメル　ビールセット</div>    
+            <div class="food_price">860円</div>
+
+            <div class="food">ポップコーン　ハーフ　ペア(ポップコーンL×1+ドリンク×2)</div>    
+            <div class="food_price">1050円</div>
+
+        </div>
+    </div>
+        <div class="txttxt">
             <p>
                 <span>注意事項</span>
                 ※割引の併用はできません<br>
                 ※２３時以降に終了する作品は、１８歳未満の方はご入場できません。
             </p>
         </div>
+</div><!--prc-->
 </main>
 
 <div id="divide">

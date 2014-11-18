@@ -17,7 +17,6 @@
 
 #day{
     font-size: 20px;
-    padding: 10px 10px 0 10px;
     margin: 10px;
     width: 660px;
     height: 100px;
@@ -28,7 +27,7 @@
 
 .days li{
     margin: 10px;
-    width: 80px;
+    width: 90px;
     height: 80px;
     background-color: red;
     list-style: none;

@@ -1,39 +1,198 @@
 @charset"utf-8";
 
-/*--------------------------
-		lefttColumn
---------------------------*/
+#prc{
+	padding: 10px 0 0 10px;
+}
 
-h3{
-	width: 100%;
-	border: solid 1px;
-	margin-top: 10px;
+h4{
+	font-color: #1f1f1f;
+	margin: 0 0 10px 0;
 	font-size: 30px;
+	font-weight: bold;
+	width: 670px;
+	border-left: solid 5px black; 
+	border-bottom: solid 1px black; 
+	clear: left; 
 }
 
-#lefttColumn {
-    float: left;
-    width: 680px;
-    padding : 10px;
-    background-color: orange;
+/*-----------------------------
+	#tbl1
+------------------------------*/
+
+#tbl1{
+	width: 100%;
+	height: 300px;
 }
 
 
 
-
-
-
-
-
-
-
-
-#ddd{
-	height: 100px;
-}
-
-#tbl4{
-	margin-top: 10px;
-	width: 680px;
+.tic1{
+	margin: 0 0 20px 0;
 	float: left;
+	background-color: #52cbca;
+	width: 320px;
+}
+
+.tic2{
+	margin: 0 20px 20px 0;
+	float: right;
+	background-color: #52cbca;
+	width: 320px;
+}
+
+.tic3{
+	margin: 0 0 20px 0;
+	float: left;
+	background-color: #52cbca;
+	width: 320px;
+}
+
+
+.ttl{
+	font-color: #1f1f1f;
+	padding: 5px 0 0 5px;
+	font-size: 25px;
+	font-weight: bold;
+	width: 315px;
+	height: 30px;
+	background-color: #03f;
+}
+
+.tic_price{
+	width: 315px;
+	height: 20px;
+	border-top: solid 1px #aaa; 
+	padding: 5px 0 5px 5px;
+}
+
+/*-----------------------------
+	#tbl2
+------------------------------*/
+
+#tbl2{
+	width: 670px;
+	clear: left;
+}
+
+.dri_foo_tl{
+
+	padding: 5px 0 0 5px;
+	font-size: 25px;
+	font-weight: bold;
+	width: 100%;
+	height: 30px;
+	background-color: #03f;
+	clear: both;
+}
+
+.dri01{
+    width: 210px;
+    float: left;
+}
+
+
+.dri02{
+    width: 675px;
+    clear: both;
+}
+
+.drink{
+	padding: 10px 0 0 10px;
+	height: 25px;
+	background-color: #52cbca;
+	border-top: solid 1px #aaa;
+	border-left: solid 1px #aaa;
+}
+
+
+.drink1{
+	padding: 10px 0 0 10px;
+	height: 25px;
+	background-color: #52cbca;
+	border-top: solid 1px #aaa;
+	border-left: solid 1px #aaa;
+}
+
+.drink2{
+	padding: 10px 0 0 10px;
+	width: 409px;
+	height: 25px;
+	background-color: #52cbca;
+	border-top: solid 1px #aaa;
+	border-left: solid 1px #aaa;
+	float: left;
+}
+
+.drink_price{
+
+	font-size: 25px;
+	padding: 40px 0 0 0;
+	width: 254px;
+	height: 103px;
+	text-align: center;
+	background-color: #52cbca;
+	border-top: solid 1px #aaa;
+	border-left: solid 1px #aaa;
+}
+
+
+
+.drink_price1{
+	font-size: 25px;
+	padding: 5px 0 0 0;
+	margin: 0 0 20px 0;
+	width: 254px;
+	height: 30px;
+	text-align: center;
+	background-color: #52cbca;
+	border-top: solid 1px #aaa;
+	border-left: solid 1px #aaa;
+	float: right;
+}
+
+
+
+
+
+.dri_foo_tl{
+	margin: 20px 0 0 0;
+}
+
+.ttlfood{
+	width: 675px;
+	height: 110px;
+
+}
+
+
+.food{
+    width: 410px;
+    height:15px;
+    padding: 10px 0 10px 10px;
+	background-color: #52cbca;
+	border-top: solid 1px #aaa;
+	border-left: solid 1px #aaa;
+	border-right: solid 1px #aaa;
+    float: left;
+}
+
+
+
+.food_price{
+    width: 243px;
+    height: 15px;
+    padding: 10px 0 10px 10px;
+    background-color: #52cbca;
+    border-top: solid 1px #aaa;
+  	float: left;
+
+}
+
+.txttxt{
+	margin: 20px 0 0 0;
+	width: 600px;
+	height: 100px;
+	background-color: #52cbca;
+	float: left;
+	clear: both;
 }
