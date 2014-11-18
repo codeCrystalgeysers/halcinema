@@ -74,7 +74,7 @@ header {
 }
 
 /*#nowLogin {
-    display: none;
+    display: inline-block;
 }*/
 
 #headMenu{
