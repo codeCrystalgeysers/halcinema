@@ -5,6 +5,11 @@
 /* ---------------------------------------------
         Slider
  --------------------------------------------- */
+#slider {
+  margin: 0 auto;
+  width: 960px;
+}
+
 #rankTop {
     float: left;
     width: 240px;
@@ -49,44 +54,72 @@
 
 #reserveArea {
   position: relative;
+  margin: 0 auto;
 }
 
-#timeLine {
+#reserveTimeline {
     position: relative;
-    width: 100%;
+    float: left;
+    width: 240px;
     height: 100px;
     background-color: steelblue;
 }
 
 #seats {
   position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 960px;
   height: 400px;
 }
+#seatsBackground {
+  position: absolute;
+  top: -1%;
+  left: -1%;
+  width: 102%;
+  height: 102%;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: blur(2px) opacity(.7) brightness(30%);
+  background-color: rgba(237,237,237, .4);
+  z-index: -99;
+}
+
 .seat {
     position: absolute;
-    right: 0;
-    width: 100%;
+    left: 50%;
+    margin-left: -480px;
+    width: 960px;
     height: 400px;
-    background: no-repeat center right #f0f0f0;
-    background-size: cover;
+    z-index: 1;
 }
 
-#details {
+#reseerveDetails {
   position: relative;
+  margin: 0 auto;
+  float: left;
 }
 
-#nowSelect, #nowPrice {
+#reserveNowSelect, #reserveNowPrice {
     clear: right;
     position: relative;
     left: 240px;
     width: 720px;
 }
 
-#nowSelect {
-    background-color: gold;
+#reserveNowSelect {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 100px;
+  background-color: gold;
 }
 
-#nowPrice {
+#reserveNowPrice {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
     text-align: right;
     background-color: violet;
 }
