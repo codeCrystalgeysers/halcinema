@@ -3,10 +3,25 @@
 /*--------------------------
 		feature
 --------------------------*/
+.h3 {
+	font-size: 25px;
+	border-left: solid 5px;
+	border-color: blue;
+	margin: 10px;
+}
 
-h3{
-	margin-top: 10px;
-	font-size: 30px;
+.h4 {
+	font-size: 20px;
+	border-left: solid 5px;
+	border-color: blue;
+	margin: 10px;
+}
+
+.h5 {
+	font-size: 15px;
+	border-bottom: dashed 1px;
+	border-color: blue;
+	margin: 10px;
 }
 
 /*--------------------------
@@ -17,10 +32,47 @@ h3{
     float: left;
     width: 680px;
     padding : 10px;
-    background-color: orange;
+    background-color: #ececec;
 }
 
-ul{
-	margin-left : 50px;
+#box1 {
+	margin-top: 10px;
+	padding-top: 10px;
+	background-color: #52cbca;
+	overflow: hidden;
 }
 
+#box1 img {
+	float: left;
+	width: 250px;
+	margin: 10px;
+}
+
+#box1 p {
+	margin: 10px;
+	color: #1f1f1f;
+}
+
+#box2 {
+	margin-top: 10px;
+	padding-top: 10px;
+	background-color: #52cbca;
+	overflow: hidden;
+}
+
+.n_box {
+	float: left;
+	width: 45%;
+	height: 100px;
+	background-color: #E0FFFF;
+	margin: 17px;
+}
+
+.n_box img {
+	height: 100px;
+	float: left;
+}
+
+/*文字色　#1f1f1f
+
+/*薄めの色　　#dbdbdb
