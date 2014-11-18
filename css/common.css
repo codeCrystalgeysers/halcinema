@@ -7,14 +7,20 @@
 * {
     margin: 0;
     padding: 0;
-    color: dimgray;
+    color: #aaa;
     font: 15px 'YuGothic';
     text-decoration: none;
 }
 body{
-	margin: 0 auto;
-	width:960px;
+  background-color: #EDEDED;
 }
+
+#wrapper {
+  clear: both;
+  margin: 0 auto;
+  min-width: 960px;
+}
+
 .left {
     float: left;
 }
@@ -26,131 +32,198 @@ ul {
         Header
  --------------------------------------------- */
 header, footer{
-    clear: both;
-    position: relative;
-    width: 100%;
-    background-color: #52CBCA;
+  clear: both;
+  position: relative;
+  width: 100%;
+  background-color: #60d4d4;
 }
-
+#headerWrapper,
+#footerWrapper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
 header {
-    min-height: 100px;
+  height: 100px;
 }
 #logo{
-  font: 45px white 'Ubuntu';
-	margin:0;
+  position: absolute;
+  color: white;
+  font: 30px 'Ubuntu';
+  margin: 15px 10px;
   line-height: 60px;
-	width:240px;
-	height:100px;
-    position: absolute;
+  width:220px;
+  height: 70px;
+  text-align: center;
 }
 
-#infomation {
-    position: absolute;
-    left: 240px;
+
+/* ---------------------------------------------
+        Header > Login, Alert
+ --------------------------------------------- */
+#loginAlert {
+  position: absolute;
+  right: 0;
 }
-#infomation li {
-    display: block;
-    margin-bottom: -15px;
+#loginWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-#infomation li a {
-    font-size: .8em;
-    color: blue;
+#loginAlert {
+  position: absolute;
+  width:50px;
+  height:40px;
+  background-color: red;
+  top: 0;
+  right: 0;
+}
+#loginBtnIn {
+  position: relative;
+  float: right;
+  width: 70px;
+  right: 0;
+}
+#loginNowIn {
+  display: none;
 }
 
-#alert{
-	width:100px;
-	height:40px;
-	background-color: red;
-	right: 100px;
-    position: absolute;
+/* ---------------------------------------------
+        Header > Menu
+ --------------------------------------------- */
+#headerContent {
+  position: relative;
+  float: right;
+  width: 720px;
+  height: 100px;
 }
 
-#login{
-	width:100px;
-	height:40px;
-	background-color: red;
-    right: 0;
-    position: absolute;
+#headerInfomation {
+  height: 50px;
+}
+#headerInfomation li {
+  display: block;
+  height: 33%;
+}
+#headerInfomation li a {
+  font-size: .8em;
+  color: #eee;
 }
 
-/*#nowLogin {
-    display: none;
-}*/
-
-#headMenu{
-	position: absolute;
-    right: 0;
-    bottom: 0;
+#headerMenu{
+  right: 0;
+  bottom: 0;
+  height: 50px;
 }
-
-#headMenu li{
-  margin: 0 20px;
-    min-width:150px;
-	  text-align:center;
+#headerMenuList {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
 }
-
-#headMenu ul > li {
-    float: left;
-    position: relative;
+#headerMenu li{
+  position: relative;
+  height: 40px;
+	text-align:center;
 }
-
-#headMenu li:last-child {
-    margin-right: 0;
+#headerMenuList li {
+  float: left;
+  width: 100%;
+  position: relative;
+  border-left: 1px solid white;
 }
-#headMenu li a {
-    display: block;
+#headerMenu li:last-child {
+  padding-right: 0;
+  border-right: 1px solid white;
+}
+#headerMenu li a {
+  position: relative;
+  display: block;
+  height: 40px;
+  color: white;
 }
 
 .subMenuList {
-    display: none;
-    position: absolute;
-    width: inherit;
+  display: none;
+  position: absolute;
+  width: inherit;
+  z-index: 99;
 }
-
 .subMenuList li {
-    left: -10px;
-    width: inherit;
-    background-color: #fff;
-    z-index: 99;
+  left: -1px;
+  border-right: 1px solid white;
+  width: inherit;
+  background-color: #fff;
+  z-index: 99;
 }
 
 /* ---------------------------------------------
         Contents
  --------------------------------------------- */
 main{
-    float: left;
-    width: 700px;
-    background-color: salmon;
+  position: relative;
+  float: left;
+  width: 700px;
 }
 
 #divide {
-    float: right;
-    width: 260px;
-    background-color: tomato;
+  float: right;
+  width: 260px;
+  background-color: tomato;
 }
 
 /* ---------------------------------------------
         Footer
  --------------------------------------------- */
 footer {
-    clear: both;
-    bottom: 0;
-    background-color: #0f0f0f;
+  clear: both;
+  position: relative;
+  background-color: #222;
 }
-#footMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start;
+#footerlogo {
+  position: relative;
+  margin: auto;
+  padding: 40px 0 30px;
+  width: 100%;
+  text-align: center;
+  color: #52CBCA;
 }
-.footMenuBox {
-    position: relative;
+#footerMenu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
 }
-.footMenuBox h2 a {
-    font-size: 1.3em;
-    background-color: #fff;
+.footerMenuBox {
+  position: relative;
 }
-#copyright {
-    display: block;
-    text-align: center;
+.footerMenuBox h2 a {
+  position: relative;
+}
+/* .footerMenuBox h2 a:after {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    background-color: #ccc;
+}
+ */
+#copyright p {
+  position: relative;
+  display: block;
+  padding: 25px 0;
+  width: 100%;
+  font-size: .8em;
+  color: #555;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  #headerWrapper,
+  #footerWrapper {
+    padding: 0;
+  }
 }
