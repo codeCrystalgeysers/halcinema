@@ -9,6 +9,9 @@
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/access.css">
 <title>HAL Cinema</title>
+<?php
+    include 'head.php';
+?>
 <script>
 	google.maps.event.addDomListener(window, 'load', init);
 	function init() {
@@ -108,9 +111,7 @@
 					
 	}//#52cbca
 </script>
-<?php
-    include 'head.php';
-?>
+
 
 <main>
     	<h3>アクセス</h3>

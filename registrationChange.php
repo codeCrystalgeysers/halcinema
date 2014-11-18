@@ -75,11 +75,9 @@ function action(n){
         </div>
 
         <div id="change3" class="change" />
-            <select name="sex">
-            	<option value="男">男</option>
-            	<option value="女">女</option>
-            </select>
-        	<br />
+            <input type="radio" name="sex" value="男" />男
+            <input type="radio" name="sex" value="女" />女
+            <br />
         	<input type="button" value="変更する" />
        </div>
 

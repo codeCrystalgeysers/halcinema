@@ -11,13 +11,28 @@
         <!-- どう表示だっけ?別ページへリンクある? -->Alert
     </div>
     <div id="login">
+<?php
+	//セッション開始
+	session_start();
+
+	//セッションチェック
+	if(!isset($_SESSION["id"])){			
+?>
 	    <form action="login.php">
             <button id="btnLogin">ログイン</button>
         </form>
+<?php
+	}else{
+?>
         <div id="nowLogin">
-            <p>IDまたは名前表示</p>
-            <button id="btnLogout">ログアウト</button>
+            <p><?= $_SESSION["id"] ?></p>
+			<form action="logout.php">
+            	<button id="btnLogout">ログアウト</button>
+			</form>
         </div>
+<?php
+	}
+?>
     </div>
     <nav id="headMenu">
         <ul>

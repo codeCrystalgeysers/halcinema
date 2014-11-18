@@ -13,25 +13,26 @@
 
     <h2>新規会員登録画面</h2>
     <div class="formArea">
-    <form action="my.php" method="">
+    <form action="registrationCheck.php" method="POST">
     	<table>
     		<tr>
-    			<td class="">※性名</td><td>性<input type="text">名<input type="text" name="name"></td>
+    			<td class="">※姓名</td>
+				<td>姓<input type="text" name="lastName">名<input type="text" name="firstName"></td>
     		</tr>
     		<tr>
-    			<td>※フリガナ</td><td>※全角カタカナで入力してください（例　ホンマメイコ<br />セイ<input type="text" name="kana">メイ<input type="text"></td>
+    			<td>※フリガナ</td>
+				<td>※全角カタカナで入力してください（例　ホンマメイコ<br />
+				セイ<input type="text" name="kanaLastName">メイ<input type="text" name="kanaFirstName"></td>
     		</tr>
     		<tr>
     			<td>※性別</td>
     			<td>
-                    <select name="sex">
-                    <option value="男">男</option>
-                    <option value="女">女</option>
-                    </select>
+                    <input type="radio" name="sex" value="男" />男
+            		<input type="radio" name="sex" value="女" />女
 				</td>
     		</tr>
     		<tr>
-    			<td>※生年月日</td><td><select name="year"
+    			<td>※生年月日</td><td><select name="birthYear">
 					<?php
 						$nowYear = date("Y");
     					for($i=1970;$i<=$nowYear;$i++){
@@ -39,14 +40,14 @@
     					}
     				?>
 	    		</select>年
-    			<select name="month">
+    			<select name="birthMonth">
     				<?php 
     					for($i=1;$i<13;$i++){
     						echo "<option value=".$i.">".$i;
     					}
     				?>
     			</select>月
-    			<select name="day">
+    			<select name="birthDay">
     				<?php
     					for($i=1;$i<32;$i++){
     						echo "<option value=".$i.">".$i;
@@ -121,45 +122,45 @@
     			<td>※ログインID</td><td>※○文字以上の半角英数字で入力してください<br /><input type="text" name="id"></td>
     		</tr>
     		<tr>
-    			<td rowspan="2">※パスワード</td><td>※半角英数字で入力してください<br />※記号は使用できません<br /><input type="text" name="pass1"></td>
+    			<td rowspan="2">※パスワード</td><td>※半角英数字で入力してください<br />※記号は使用できません<br /><input type="password" name="pass1"></td>
     		</tr>
     		<tr>
-    			<td>※パスワードを再入力してください<br /><input type="text" name="pass2"></td>
+    			<td>※パスワードを再入力してください<br /><input type="password" name="pass2"></td>
     		</tr>
     		<tr>
-    			<td>※電話番号</td><td><input type="text" name="phonenum"></td>
+    			<td>※電話番号</td><td><input type="text" name="phoneNum"></td>
     		</tr>
     	</table>
-    </form>
+   <!-- </form>-->
     </div>
 
     <div class="formArea">
     <h2>クレジットカード情報</h2>
-    <form>
+   <!-- <form>-->
     	<table>
     		<tr>
     			<td>カード会社</td>
     			<td><select name="company">
-    				<option>visa</option>
-    				<option>JCB</option>
-    				<option>MasterCard</option>
+    				<option value="visa">visa
+    				<option value="JCB">JCB
+    				<option value="MasterCard">MasterCard
     			</select></td>
     		</tr>
     		<tr>
-    			<td>カード名義</td><td>例）MEIKO HONMA<br /><input type="text" name="cardname"></td>
+    			<td>カード名義</td><td>例）MEIKO HONMA<br /><input type="text" name="cardName"></td>
     		</tr>
     		<tr>
-    			<td>カード番号</td><td>例）1111222233334444<br /><input type="text" name="cardnum"></td>
+    			<td>カード番号</td><td>例）1111222233334444<br /><input type="text" name="cardNum"></td>
     		</tr>
     		<tr>
-    			<td>有効期限</td><td><select name="monthlimit">
+    			<td>有効期限</td><td><select name="limitMonth">
 	    			<?php 
     					for($i=1;$i<13;$i++){
     						echo "<option value=".$i.">".$i;
     					}
     				?>
     			</select>月
-    			<select>
+    			<select name="limitYear">
     				<?php 
     					for($i=0;$i<4;$i++){
 							$limitYear = $nowYear + $i;
@@ -169,11 +170,13 @@
     			</select>年</td>
     		</tr>
     	</table>
-    </form>
+    <!--</form>-->
     </div>
 
     <div id="conf">
-    	<input type="button" value="入力内容を確認する">
+		<!--<form action="registrationCheck.php">-->
+    		<input type="submit" value="入力内容を確認する">
+		</form>
     </div>
 
 </main>

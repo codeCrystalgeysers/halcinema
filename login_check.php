@@ -23,16 +23,20 @@
 	mysql_close($con);
 
 	//ログイン処理
-	$flag = 0;
+	$success = FALSE;
 	while($row = mysql_fetch_array($res)){
 		$count = $row[0];
 		if($count == 1){
-			$flag = 1;
+			$success = TRUE;
 			break;
 		}
 	}
-	//flag: 1が成功　0が失敗
-	if($flag == 1){
+	//success: TRUEが成功　FALSEが失敗
+	if($success == TRUE){
+		//session
+		session_start();
+		$_SESSION["id"] = $id;
+		
 		mb_language("ja");
 		mb_internal_encoding("UTF-8");
 		if(mb_send_mail("$address", "HALCinemaからのお知らせ", "$text", "From: info@halcinema.com")){

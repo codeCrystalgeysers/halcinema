@@ -7,63 +7,142 @@
 <title>HAL Cinema</title>
 <?php
     include 'head.php';
+	
+	if(isset($_POST["lastName"])) {
+		$lastName = $_POST["lastName"];
+	}
+	
+	if(isset($_POST["firstName"])) {
+		$firstName = $_POST["firstName"];
+	}
+	
+	if(isset($_POST["kanaLastName"])) {
+		$kanaLastName = $_POST["kanaLastName"];
+	}
+	
+	if(isset($_POST["kanaFirstName"])) {
+		$kanaFirstName = $_POST["kanaFirstName"];
+	}
+	
+	if(isset($_POST["sex"])) {
+		$sex = $_POST["sex"];
+	}
+	
+	if(isset($_POST["birthYear"])) {
+		$birthYear = $_POST["birthYear"];
+	}
+	
+	if(isset($_POST["birthMonth"])) {
+		$birthMonth = $_POST["birthMonth"];
+	}
+	
+	if(isset($_POST["birthDay"])) {
+		$birthDay = $_POST["birthDay"];
+	}
+	
+	if(isset($_POST["state"])) {
+		$state = $_POST["state"];
+	}
+	
+	if(isset($_POST["post"])) {
+		$post = $_POST["post"];
+	}
+	
+	if(isset($_POST["address"])) {
+		$address = $_POST["address"];
+	}
+	
+	if(isset($_POST["mansion"])) {
+		$mansion = $_POST["mansion"];
+	}
+	
+	if(isset($_POST["id"])) {
+		$id = $_POST["id"];
+	}
+	
+	if(isset($_POST["pass1"])) {
+		$pass = $_POST["pass1"];
+	}
+	
+	if(isset($_POST["phoneNum"])) {
+		$phoneNum = $_POST["phoneNum"];
+	}
+	
+	if(isset($_POST["company"])) {
+		$company = $_POST["company"];
+	}
+	
+	if(isset($_POST["cardName"])) {
+		$cardName = $_POST["cardName"];
+	}
+	
+	if(isset($_POST["cardNum"])) {
+		$cardNum = $_POST["cardNum"];
+	}
+	
+	if(isset($_POST["limitMonth"])) {
+		$limitMonth = $_POST["limitMonth"];
+	}
+	
+	if(isset($_POST["limitYear"])) {
+		$limitYear = $_POST["limitYear"];
+	}
 ?>
 
 <main>
-
     <h2>新規会員登録確認画面</h2>
     <div class="formArea">
     	<table>
     		<tr>
     			<td>※性名</td>
                 <td>姓&nbsp;：
-                	<div class="result">土屋</div>
+                	<div class="result"><?= $lastName ?></div>
                     &nbsp;名&nbsp;：
-                    <div class="result">新保</div>
+                    <div class="result"><?= $firstName ?></div>
                 </td>
     		</tr>
     		<tr>
     			<td>※フリガナ</td>
                 <td>セイ&nbsp;：
-                	<div class="result">ツチヤ</div>
+                	<div class="result"><?= $kanaLastName ?></div>
                     &nbsp;メイ&nbsp;：
-                    <div class="result">シンボ</div>
+                    <div class="result"><?= $kanaFirstName ?></div>
                 </td>
     		</tr>
     		<tr>
     			<td>※性別</td>
     			<td>
-                    <div class="result">男女</div>
+                    <div class="result"><?= $sex ?></div>
 				</td>
     		</tr>
     		<tr>
     			<td>※生年月日</td>
                 <td>
-                	<div class="birthday">2014</div>年
-                    <div class="birthday">9</div>月
-                    <div class="birthday">3</div>日
+                	<div class="birthday"><?= $birthYear ?></div>年
+                    <div class="birthday"><?= $birthMonth ?></div>月
+                    <div class="birthday"><?= $birthDay ?></div>日
 				</td>
     		</tr>
     		<tr>
-    			<td>※郵便番号</td><td>〒<div class="result">030-3434</div></td>
+    			<td>※郵便番号</td><td>〒<div class="result"><?= $post ?></div></td>
     		</tr>
     		<tr>
-    			<td>※都道府県</td><td><div class="result">東京</div></td>
+    			<td>※都道府県</td><td><div class="result"><?= $state ?></div></td>
 	    	</tr>
     		<tr>
-    			<td>※市区町村番地</td><td><div class="result">新宿区西新宿７－７－７</div></td>
+    			<td>※市区町村番地</td><td><div class="result"><?= $address ?></div></td>
     		</tr>
     		<tr>
-    			<td>※マンション名</td><td><div class="result">コクーンタワー</div></td>
+    			<td>※マンション名</td><td><div class="result"><?= $mansion ?></div></td>
     		</tr>
     		<tr>
-    			<td>※ログインID</td><td><div class="result">gotoh</div></td>
+    			<td>※ログインID</td><td><div class="result"><?= $id ?></div></td>
     		</tr>
     		<tr>
-    			<td>※パスワード</td><td><div class="result">jdfijifkf;l</div></td>
+    			<td>※パスワード</td><td><div class="result"><?= $pass ?></div></td>
     		</tr>
 
-    			<td>※電話番号</td><td><div class="result">03-9898-9889</div></td>
+    			<td>※電話番号</td><td><div class="result"><?= $phoneNum ?></div></td>
     		</tr>
     	</table>
     </div>
@@ -74,26 +153,26 @@
     		<tr>
     			<td class="itemName">カード会社</td>
     			<td class="cardInfo">
-                	<div class="result">life</div>
+                	<div class="result"><?= $company ?></div>
                 </td>
     		</tr>
     		<tr>
     			<td class="itemName">カード名義</td>
                 <td class="cardInfo">
-                	<div class="result">sinji gotoh</div>
+                	<div class="result"><?= $cardName ?></div>
                 </td>
     		</tr>
     		<tr>
     			<td class="itemName">カード番号</td>
                 <td class="cardInfo">
-                	<div class="result">456777778788</div>
+                	<div class="result"><?= $cardNum ?></div>
                 </td>
     		</tr>
     		<tr>
     			<td class="itemName">有効期限</td>
                 <td class="cardInfo">
-                	<div class="result">3</div>月
-    				<div class="result">2017</div>年
+                	<div class="result"><?= $limitMonth ?></div>月
+    				<div class="result"><?= $limitYear ?></div>年
                	</td>
     		</tr>
     	</table>
