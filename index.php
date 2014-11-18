@@ -10,11 +10,9 @@
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <title>HAL Cinema</title>
-<h1>aaaaaaaaaaaaaaaaa</h1>
 <?php
 include 'head.php';
 ?>
-
 
 <div id="slider">
     <div id="rankTop"><img src="img/sample.jpg" alt=""></div>
@@ -102,7 +100,7 @@ include 'head.php';
       <div id="seatsBackground"></div>
     </div>
 
-    <div id="reseveBreakdown">
+    <div id="reserveBreakdown">
       <div id="reserveTimeline"><p>&ensp;</p></div>
       <div id="reserveDetails">
           <dl id="reserveNowSelect">

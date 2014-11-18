@@ -94,11 +94,10 @@
     z-index: 1;
 }
 
-#reserverBreakdown {
+#reserveBreakdown {
   position: relative;
   margin: 0 auto;
   width: 960px;
-  height: 500px;
 }
 
 #reserveDetails {
