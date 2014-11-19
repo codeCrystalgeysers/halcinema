@@ -14,6 +14,7 @@
 
 main {
 	width: 960px;
+	background: #fff;
 }
 
 /* ---------------------------------------------
@@ -28,10 +29,100 @@ h1,h2,#conf{
 	text-align: center;
 }
 
+h2{
+	margin-top: 30px;
+	font-size: 18px;
+}
+
 td {
-	padding: 10px;
+	padding: 15px 25px;
+}
+
+
+.red{
+	margin-bottom: 5px;
+	color: #F04043;
+}
+
+input,select{
+	margin: 5px 0;
+	height: 28px;
+	background: #E1E1E1;
+	border: 1px solid #fff;
+}
+
+input[type="button"]{
+	padding: 0 10px;
+}
+
+input:hover,select:hover{
+	border: 1px solid #52CBCA;
+	outline: none;
+}
+
+input:focus,select:focus{
+	border: 1px solid #2E2E2E;
+	outline: none;
+}
+
+.strSpace{
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.cardFormTitle{
+	width: 93px;
+}
+
+.cardFormInput{
+	width: 397px;
 }
 
 #conf {
-	margin-bottom: 15px;
+	margin: 15px 0;
 }
+
+#outerBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 330px;
+	height: 50px;
+	background: #52CBCA;
+}
+
+#innerBox{
+	width: 322px;
+	height: 42px;
+	background: #52CBCA;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #52CBCA;
+}
+
+#outerBox:hover > #innerBox{
+	border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

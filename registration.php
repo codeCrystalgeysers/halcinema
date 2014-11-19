@@ -3,7 +3,7 @@
 <meta name="Author" content="codeCrystalgeysers">
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
 <link rel="stylesheet" type="text/css" href="css/common.css">
-<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="css/registration.css">
 <title>HAL Cinema</title>
 <?php
     include 'head.php';
@@ -17,12 +17,22 @@
     	<table>
     		<tr>
     			<td class="">※姓名</td>
-				<td>姓<input type="text" name="lastName">名<input type="text" name="firstName"></td>
+				<td>
+                    姓
+                    <input class="strSpace" type="text" name="lastName">
+                    名
+                    <input class="strSpace" type="text" name="firstName">
+                </td>
     		</tr>
     		<tr>
     			<td>※フリガナ</td>
-				<td>※全角カタカナで入力してください（例　ホンマメイコ<br />
-				セイ<input type="text" name="kanaLastName">メイ<input type="text" name="kanaFirstName"></td>
+				<td>
+                <div class="red">※全角カタカナで入力してください（例　ホンマメイコ</div>
+				    セイ
+                    <input class="strSpace" type="text" name="kanaLastName">
+                    メイ
+                    <input class="strSpace" type="text" name="kanaFirstName">
+                </td>
     		</tr>
     		<tr>
     			<td>※性別</td>
@@ -32,7 +42,9 @@
 				</td>
     		</tr>
     		<tr>
-    			<td>※生年月日</td><td><select name="birthYear">
+    			<td>※生年月日</td>
+                <td>
+                <select class="strSpace" name="birthYear">
 					<?php
 						$nowYear = date("Y");
     					for($i=1970;$i<=$nowYear;$i++){
@@ -40,14 +52,14 @@
     					}
     				?>
 	    		</select>年
-    			<select name="birthMonth">
-    				<?php 
+    			<select class="strSpace" name="birthMonth">
+    				<?php
     					for($i=1;$i<13;$i++){
     						echo "<option value=".$i.">".$i;
     					}
     				?>
     			</select>月
-    			<select name="birthDay">
+    			<select class="strSpace" name="birthDay">
     				<?php
     					for($i=1;$i<32;$i++){
     						echo "<option value=".$i.">".$i;
@@ -57,10 +69,17 @@
 				</td>
     		</tr>
     		<tr>
-    			<td>※郵便番号</td><td>※半角数字、ハイフンなしで入力してください<br />〒<input type="text" name="post"><input type="button" value="住所を検索する" /></td>
+    			<td>※郵便番号</td>
+                <td>
+                    <div class="red">※半角数字、ハイフンなしで入力してください</div>
+                    〒
+                    <input class="strSpace" type="text" name="post">
+                    <input class="strSpace" type="button" value="住所を検索する" />
+                </td>
     		</tr>
     		<tr>
-    			<td>※都道府県</td><td><select name="state">
+    			<td>※都道府県</td>
+                <td><select name="state">
 					<option value="" selected>--選択--
 					<option value="北海道">北海道
 					<option value="青森県">青森県
@@ -113,55 +132,88 @@
 	    		</td>
 	    	</tr>
     		<tr>
-    			<td>※市区町村番地</td><td>例）埼玉県秩父市熊木町8番<br /><input type="text" name="address"></td>
+    			<td>※市区町村番地</td>
+                <td>
+                    <div class="red">例）埼玉県秩父市熊木町8番</div>
+                    <input type="text" name="address">
+                </td>
     		</tr>
     		<tr>
-    			<td>※マンション名</td><td>例）河合荘203号室<br /><input type="text" name="mansion"></td>
+    			<td>※マンション名</td>
+                <td>
+                    <div class="red">例）河合荘203号室</div>
+                    <input type="text" name="mansion">
+                </td>
     		</tr>
     		<tr>
-    			<td>※ログインID</td><td>※○文字以上の半角英数字で入力してください<br /><input type="text" name="id"></td>
+    			<td>※ログインID</td>
+                <td>
+                    <div class="red">※○文字以上の半角英数字で入力してください</div>
+                    <input type="text" name="id">
+                </td>
     		</tr>
     		<tr>
-    			<td rowspan="2">※パスワード</td><td>※半角英数字で入力してください<br />※記号は使用できません<br /><input type="password" name="pass1"></td>
+    			<td rowspan="2">※パスワード</td>
+                <td>
+                    <div class="red">※半角英数字で入力してください</div>
+                    <div class="red">※記号は使用できません</div>
+                    <input type="password" name="pass1">
+                </td>
     		</tr>
     		<tr>
-    			<td>※パスワードを再入力してください<br /><input type="password" name="pass2"></td>
+    			<td>
+                    <div class="red">※パスワードを再入力してください</div>
+                    <input type="password" name="pass2">
+                </td>
     		</tr>
     		<tr>
-    			<td>※電話番号</td><td><input type="text" name="phoneNum"></td>
+    			<td>※電話番号</td>
+                <td><input type="text" name="phoneNum"></td>
     		</tr>
     	</table>
    <!-- </form>-->
     </div>
 
-    <div class="formArea">
     <h2>クレジットカード情報</h2>
+    <div class="formArea">
    <!-- <form>-->
     	<table>
     		<tr>
-    			<td>カード会社</td>
-    			<td><select name="company">
+    			<td class="cardFormTitle">カード会社</td>
+    			<td class="cardFormInput">
+                    <select name="company">
     				<option value="visa">visa
     				<option value="JCB">JCB
     				<option value="MasterCard">MasterCard
-    			</select></td>
+    			</select>
+                </td>
     		</tr>
     		<tr>
-    			<td>カード名義</td><td>例）MEIKO HONMA<br /><input type="text" name="cardName"></td>
+    			<td class="cardFormTitle">カード名義</td>
+                <td>
+                    <div class="red">例）MEIKO HONMA</div>
+                    <input type="text" name="cardName">
+                </td>
     		</tr>
     		<tr>
-    			<td>カード番号</td><td>例）1111222233334444<br /><input type="text" name="cardNum"></td>
+    			<td class="cardFormTitle">カード番号</td>
+                <td>
+                    <div class="red">例）1111222233334444</div>
+                    <input type="text" name="cardNum">
+                </td>
     		</tr>
     		<tr>
-    			<td>有効期限</td><td><select name="limitMonth">
-	    			<?php 
+    			<td class="cardFormTitle">有効期限</td>
+                <td class="cardFormInput">
+                <select class="strSpace" name="limitMonth">
+	    			<?php
     					for($i=1;$i<13;$i++){
     						echo "<option value=".$i.">".$i;
     					}
     				?>
     			</select>月
-    			<select name="limitYear">
-    				<?php 
+    			<select class="strSpace" name="limitYear">
+    				<?php
     					for($i=0;$i<4;$i++){
 							$limitYear = $nowYear + $i;
     						echo "<option value=".$limitYear.">".$limitYear;
@@ -175,7 +227,9 @@
 
     <div id="conf">
 		<!--<form action="registrationCheck.php">-->
-    		<input type="submit" value="入力内容を確認する">
+        <div id="outerBox">
+    		<input id="innerBox" type="submit" value="入力内容を確認する">
+        </div>
 		</form>
     </div>
 
