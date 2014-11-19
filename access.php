@@ -21,27 +21,13 @@
                   zoom: 15,
                   center: HAL,
                   disableDefaultUI: true,
-                  styles: /*[
-	                  {"featureType":"water","elementType":"geometry","stylers":[{"color":"#3b342c"}]},
-	                  {"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#26755a"}]},
-	                  {"featureType":"poi","elementType":"geometry","stylers":[{"color":"#1f8a70"}]},
-	                  {"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#cec6b3"}]},
-	                  {"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#26755a"},{"lightness":-20}]},
-	                  {"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#26755a"},{"lightness":-17}]},
-	                  {"elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"},{"visibility":"on"},{"weight":0.9}]},
-	                  {"elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},
-	                  {"featureType":"poi","elementType":"labels","stylers":[{"visibility":"simplified"}]},
-	                  {"elementType":"labels.icon","stylers":[{"visibility":"off"}]},
-	                  {"featureType":"transit","elementType":"geometry","stylers":[{"color":"#1f8a70"},{"lightness":-10}]},
-	                  {"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#26755a"},{"weight":0.7}]}
-                  ]};*/
-	[{"featureType": "landscape",
-        "stylers": [
-            {"saturation": -100},
-            {"lightness": 65},
-            {"visibility": "on"}
-        ]
-    },
+                  styles:[
+				  {"featureType": "landscape",
+        			"stylers": [
+            			{"saturation": -100},
+            			{"lightness": 65},
+            			{"visibility": "on"}
+        			]},
     {"featureType": "poi",
         "stylers": [
             {"saturation": -100},
@@ -109,7 +95,7 @@
 					btns = document.getElementsByTagName('.hal');
 					
 					
-	}//#52cbca
+	}
 </script>
 
 
@@ -120,41 +106,47 @@
     	</div><!--map-->
 
 		<div id="locationBtn">
-    	<div class="hal">
-    	    HAL東京
-    	</div><!--hal-->
-    	<div class="hal">
-    	    HAL大阪
-    	</div><!--hal-->
-    	<div class="hal">
-    	    HAL名古屋
-    	</div><!--hal-->
+            <div class="hal">
+                HAL東京
+            </div><!--hal-->
+            <div class="hal">
+                HAL大阪
+            </div><!--hal-->
+            <div class="hal">
+                HAL名古屋
+            </div><!--hal-->
         </div>
 
     	<table class="details">
         	<tr>
-        	    <td>住所</td>
+        	    <td class="detailTitle"><span>住所</span></td>
+                <td>東京都新宿区西新宿1-7-3</td>
         	</tr>
         	<tr>
-				<td>電話番号</td>
+				<td class="detailTitle"><span>電話番号</span></td>
+                <td>03-3344-1010</td>
 			</tr>
-		</table>
 	
-		<table class="details">
 			<tr>
-				<td>駐車場</td>
+				<td class="detailTitle"><span>駐車場</span></td>
+                <td>ショッピングモール駐車場</td>
 			</tr>
 			<tr>
-				<td>関連施設</td>
+				<td class="detailTitle"><span>関連施設</span></td>
+                <td>ショッピングモール</td>
 			</tr>
-		</table>
 	
-		<table class="details">
 			<tr>
-				<td>車をご利用の方</td>
+				<td class="detailTitle"><span>車をご利用の方</span></td>
+                <td>ショッピングモール内駐車場をご利用いただけます。</td>
 			</tr>
 			<tr>
-				<td>電車をご利用の方</td>
+				<td class="detailTitle"><span>電車をご利用の方</span></td>
+                <td>
+                    JR：新宿駅<br>
+                    東京メトロ 丸ノ内線：新宿駅<br>
+                    都営地下鉄　大江戸線：新宿駅　都庁前駅
+                </td>
 			</tr>
 		</table>
 </main>

@@ -4,11 +4,16 @@
 		leftColumn
 --------------------------*/
 
+main{
+	background: #fff;
+}
+
 h3{
 	width: 100%;
-	border: solid 1px;
-	margin-top: 10px;
+	background: ;
+	margin-top: 30px;
 	font-size: 30px;
+	text-indent: 0.5em;
 }
 
 #lefttColumn {
@@ -19,27 +24,53 @@ h3{
 }
 
 #map{
-	margin: 10px 16px;
+	margin: 20px 16px;
 	width: 668px;
-	height: 400px;
-	background-color: white;
+	height: 398px;
+	border: 1px solid dimgray;
 }
 
 #locationBtn{
 	display: flex;
 	justify-content: space-around;
 }
+
 .hal{
 	margin: 10px 0;
 	width: 200px;
 	height: 50px;
-	border: solid 1px;
+	background: #52CBCA;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
 	cursor: pointer;
 }
 
 .details{
-	margin-bottom: 20px;
-	width: 100%;
-	border: solid 1px;
+	margin: 20px 0 50px 16px;
+	background: ;
 }
+
+/*.details td{
+	padding: 10px 70px 10px 16px;
+}*/
+.detailTitle{
+	padding: 10px 105px 10px 0;
+}
+
+.detailTitle span{
+	padding-left: 5px;
+	border-left: 3px solid dimgray;
+}
+
+
+
+
+
+
+
+
+
+
+
 	
