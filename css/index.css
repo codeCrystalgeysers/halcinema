@@ -6,7 +6,8 @@
         Movies List
  --------------------------------------------- */
 #slider {
-  margin: 10px auto 0;
+  margin: auto;
+  padding-top: 10px;
   width: 960px;
 }
 #movies {

@@ -12,9 +12,15 @@
     text-decoration: none;
 }
 body{
-  background-color: #EDEDED;
+  background-color: #282828;
 }
 
+#cover {
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #ECECEC;
+}
 #wrapper {
   clear: both;
   margin: 0 auto;
@@ -130,6 +136,7 @@ header {
   right: 0;
 }
 #loginAlert {
+  display: none;
   position: absolute;
   width:50px;
   height:40px;
@@ -202,11 +209,12 @@ header {
   padding-right: 0;
 }
 #headerMenu li a {
+  color: gray;
   position: relative;
   display: block;
   height: 50px;
   top: 30%;
-  text-shadow: 0 1px 0 white;
+  text-shadow: 0 2px 0 #fafafa;
 }
 
 .subMenuList {
@@ -249,12 +257,12 @@ main{
 footer {
   clear: both;
   position: relative;
-  background-color: #222;
+  background-color: #282828;
 }
 #footerlogo {
   position: relative;
   margin: auto;
-  padding: 40px 0 30px;
+  padding: 40px 0 20px;
   width: 100%;
   text-align: center;
   color: #52CBCA;
@@ -265,12 +273,14 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-content: flex-start;
+  text-shadow: 0 -1px 1px #333, 0 1px 1px black;
 }
 .footerMenuBox {
   position: relative;
 }
-.footerMenuBox h2 a {
+.footerMenuBox h2 {
   position: relative;
+  margin-top: 10px;
 }
 /* .footerMenuBox h2 a:after {
     content:'';
@@ -296,20 +306,4 @@ footer {
   #footerWrapper {
     padding: 0;
   }
-}
-
-
-
-
-/*------------------
-  ttt
--------------------*/
-
-
-.ttt{
-    padding: 5px;
-    margin: 10px 0 0 10px;
-    font-size: 30px;
-    font-color: #1f1f1f;
-    height: 30px;
 }

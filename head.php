@@ -38,7 +38,6 @@
       </div>
       <nav id="headerMenu">
           <ul id="headerMenuList">
-              <!-- <li><a href="index.php">HOME</a></li> -->
               <li><a href="article.php">上映情報</a>
                   <ul class="subMenuList">
                       <li><a href="#">スケジュール</a></li>
@@ -64,4 +63,5 @@
       </nav>
     </div>
 </header>
+<div id="cover">
 <div id="wrapper">
