@@ -68,6 +68,10 @@
 		$phoneNum = $_POST["phoneNum"];
 	}
 	
+	if(isset($_POST["mailAddress"])) {
+		$mailAddress = $_POST["mailAddress"];
+	}
+	
 	if(isset($_POST["company"])) {
 		$company = $_POST["company"];
 	}
@@ -144,6 +148,9 @@
 
     			<td>※電話番号</td><td><div class="result"><?= $phoneNum ?></div></td>
     		</tr>
+			<tr>
+    			<td>※メールアドレス</td><td><div class="result"><?= $mailAddress ?></div></td>
+    		</tr>
     	</table>
     </div>
 
@@ -179,7 +186,9 @@
     </div>
 
     <div id="conf">
-    	<input type="button" value="この内容で登録する">
+		<form action="registrationComplete.php">
+	    	<button>この内容で登録する</button>
+		</form>
     </div>
 
 </main>

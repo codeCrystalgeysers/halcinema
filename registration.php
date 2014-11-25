@@ -170,6 +170,10 @@
     			<td>※電話番号</td>
                 <td><input type="text" name="phoneNum"></td>
     		</tr>
+			<tr>
+    			<td>※メールアドレス</td>
+				<td><input type="text" name="mailAddress"></td>
+    		</tr>
     	</table>
    <!-- </form>-->
     </div>
