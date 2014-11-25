@@ -6,7 +6,7 @@
         Slider
  --------------------------------------------- */
 #slider {
-  margin: 0 auto;
+  margin: 30px auto 0;
   width: 960px;
 }
 
@@ -35,7 +35,7 @@
 
 #cinemaToggle {
     text-align: center;
-    background-color: skyblue;
+    background-color: #52CBCA;
 }
 #cinemaList {
     display: none;
@@ -54,15 +54,15 @@
 
 #reserveArea {
   position: relative;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
-#reserveTimeline {
+#reserveTimetable {
     position: relative;
     float: left;
-    width: 240px;
+    width: 480px;
     height: 100px;
-    background-color: steelblue;
+    /* background-color: steelblue; */
 }
 
 #seats {
@@ -72,32 +72,30 @@
   min-width: 960px;
   height: 400px;
 }
+#seatLoading {
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 960px;
+  height: 100%;
+}
 #seatsBackground {
   position: absolute;
   top: -1%;
-  left: -1%;
-  width: 102%;
+  width: 100%;
   height: 102%;
   background-position: center;
   background-size: cover;
-  -webkit-filter: blur(2px) opacity(.7) brightness(30%);
+  -webkit-filter: blur(2px) opacity(.7);
   background-color: rgba(237,237,237, .4);
   z-index: -99;
 }
 
-.seat {
-    position: absolute;
-    left: 50%;
-    margin-left: -480px;
-    width: 960px;
-    height: 400px;
-    z-index: 1;
-}
-
 #reserveBreakdown {
   position: relative;
-  margin: 0 auto;
+  margin: 30px auto 0;
   width: 960px;
+  height: 100px;
 }
 
 #reserveDetails {
@@ -107,130 +105,40 @@
 }
 
 #reserveNowSelect, #reserveNowPrice {
-    clear: right;
-    position: relative;
-    left: 240px;
-    width: 720px;
+  clear: right;
+  position: relative;
 }
 
 #reserveNowSelect {
   position: relative;
   float: left;
-  width: 300px;
+  width: 240px;
   height: 100px;
-  background-color: gold;
+  /* background-color: gold; */
 }
 
 #reserveNowPrice {
   position: relative;
   float: left;
-  width: 100px;
+  width: 240px;
   height: 100px;
-    text-align: right;
-    background-color: violet;
+  text-align: right;
+  background-color: #ef5d5d;
+}
+#totalPrice {
+  color: #fff;
+  display: inline-block;
+  line-height: 30px;
+}
+#totalPriceYen {
+  display: inline-block;
+  color: #fff;
+  font-size: 30px;
+}
+#totalPriceYen:before {
+  content: '¥ ';
 }
 
-#seats > ul {
-  width: 100%;
-}
-#seats li {
-  position: relative;
-  float: left;
-  margin: 15px 2px;
-  width: 24px;
-  height: 24px;
-  text-align: center;
-  overflow: visible;
-}
-
-#seat1 {
-    z-index: -1;
-}
-#seat2 ul {
-  margin-top: 20px;
-}
-#seat3 {
-  z-index: -1;
-}
-
-#seats li p {
-  width: 24px;  height: 24px;
-  background-color: #fff;
-}
-
-.pair {
-    width: 49px !important;
-    background-color: pink;
-
-}
-
-#seat1 li:nth-child(1), #seat1 li:nth-child(18), #seat1 li:nth-child(43), #seat1 li:nth-child(76) {
-    clear: left;
-}
-
-#seat1 li:nth-child(1), #seat1 li:nth-child(18), #seat1 li:nth-child(76) {
-    margin-left: 130px;
-}
-
-#seat1 li:nth-child(46), #seat1 li:nth-child(71) {
-    margin-right: 20px;
-}
-
-#seat2 li:nth-child(33n+1) {
-  clear: left;
-}
-
-#seat2 li:nth-child(33n-3) {
-  margin-left: 20px;
-}
-#seat2 li:nth-child(33n+4) {
-  margin-right: 20px;
-}
-#seat2 li:nth-child(33n-2) p{
-  color: orange;
-}
-#seat2 li:nth-child(33n-1) p, #seat2 li:nth-child(33n+2) p{
-  position: absolute;
-  bottom: 10px;
-  width: 20px;
-  height: 20px;
-}
-#seat2 li:nth-child(33n-1) p, #seat2 li:nth-child(33n+2) p{
-  color: green;
-}
-
-#seat2 li:nth-child(33n) p, #seat2 li:nth-child(33n+1) p{
-  position: relative;
-  color: blue;
-}
-
-#seat2 li:nth-child(33n) p, #seat2 li:nth-child(33n+1) p{
-  position: absolute;
-  bottom: 20px;
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-}
-
-#seat2 li:nth-child(4) p, #seat2 li:nth-child(30) p{
-  position: absolute;
-  bottom: -10px;
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-}
-#seat2 li:nth-child(166) p, #seat2 li:nth-child(167) p,
-#seat2 li:nth-child(197) p, #seat2 li:nth-child(198) p {
-  display: none;
-}
-
-#seat3 li:nth-child(20n+1) {
-  clear: left;
-}
-
-.en1 {
-  color: red
-}
 /*
  * jQuery FlexSlider v2.2.0
  * http://www.woothemes.com/flexslider/
@@ -272,7 +180,7 @@
 /* FlexSlider Necessary Styles
 *********************************/
 .flexslider {margin:0; padding:0; overflow: hidden}
-.flexslider .slides > li { background-color:yellow; width: 240px; height: 100px; display:none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li { width: 240px; height: 100px; display:none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img { max-width:240px; }
 .flex-pauseplay span {text-transform:capitalize;}
 

@@ -7,6 +7,7 @@ $(function(){
     $('#cinemaToggle').click(function(){
         $('#cinemaList').slideToggle(300);
         $('#cinemaList li').click(function(){
+            $()
             $(this).parent().parent().slideUp(300);
             cinemaSelect($(this));
         });

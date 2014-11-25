@@ -129,11 +129,11 @@ header {
   float: left;
   width: 100%;
   position: relative;
-  border-left: 1px solid white;
+  /* border-left: 1px solid white; */
 }
 #headerMenu li:last-child {
   padding-right: 0;
-  border-right: 1px solid white;
+  /* border-right: 1px solid white; */
 }
 #headerMenu li a {
   position: relative;
@@ -145,15 +145,21 @@ header {
 .subMenuList {
   display: none;
   position: absolute;
+  left: -1px;
   width: inherit;
   z-index: 99;
 }
 .subMenuList li {
-  left: -1px;
   border-right: 1px solid white;
   width: inherit;
-  background-color: #fff;
+  background-color: rgba(255,255,255,.8);
   z-index: 99;
+}
+.subMenuList li:last-child {
+  border-bottom: 1px solid white;
+}
+.subMenuList li a {
+  color: #52CBCA !important;
 }
 
 /* ---------------------------------------------
@@ -166,7 +172,7 @@ main{
 }
 
 #divide {
-  float: right;
+  float: left;
   width: 260px;
   background-color: tomato;
 }

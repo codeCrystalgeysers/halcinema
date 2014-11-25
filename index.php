@@ -91,17 +91,12 @@ include 'head.php';
 </div>
 <div id="reserveArea">
     <div id="seats">
-      <div class="seat" id="seat1">
-      </div>
-      <div class="seat" id="seat2">
-      </div>
-      <div class="seat" id="seat3">
-      </div>
+      <div id="seatLoading"></div>
       <div id="seatsBackground"></div>
     </div>
 
     <div id="reserveBreakdown">
-      <div id="reserveTimeline"><p>&ensp;</p></div>
+      <div id="reserveTimetable"><p>&ensp;</p></div>
       <div id="reserveDetails">
           <dl id="reserveNowSelect">
               <dt id="reserveNowTitle">選択映画タイトルでる</dt>
@@ -116,6 +111,7 @@ include 'head.php';
           </dl>
           <div id="reserveNowPrice">
               <span id="totalPrice">合計額</span>
+              <span id="totalPriceYen">2400</span>
               <form method="post"><!-- action書いてないです，submitが一緒のform内にあります -->
               <input type="submit" name="alertOn" value="アラート">
               <input type="submit" name="reserveOn" value="予約">
