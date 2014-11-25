@@ -4,139 +4,92 @@
         common
  --------------------------------------------- */
 
-* {
+/** {
 	margin: 0 auto;
+}*/
+
+/* ---------------------------------------------
+        Left-Column
+ --------------------------------------------- */
+#left{
+	background: transparent;
 }
 
 /* ---------------------------------------------
-        main
+        Right-Column form
  --------------------------------------------- */
-
-main {
-	width: 960px;
+ #right{
+	background: #f5f5f5;
 }
-
-/* ---------------------------------------------
-        form
- --------------------------------------------- */
-
+#right h2{
+	font-size: 1.5em;
+	margin: 30px 0 25px 40px;
+}
 .formArea {
 	margin-top: 15px;
 }
-
 .box {
-	width: 100%;
-	background-color: blue;
-	font-size: 15px;
+	width: 600px;
+	overflow: hidden;
+	margin-left: 40px;
+	border-bottom: 1px solid #eeec6f;/*#fce443*/
 }
-
+.left1,
+.left2,
+.left3{
+	height: 40px;
+	line-height: 40px;
+	color: #7c7c7c;
+}
 .left1 {
-	width: 130px;
-	height: 30px;
-	background-color: red;
-	text-align: center;
-	font-size: 15px;
+	width: 110px;
 	float: left;
 }
-
 .left2 {
-	width: 700px;
-	height: 30px;
-	background-color: yellow;
+	width: 380px;
 	text-align: center;
-	font-size: 15px;
 	float: left;
 }
-
 .left3 {
-	width: 130px;
-	height: 30px;
-	background-color: white;
+	width: auto;
 	text-align: center;
-	font-size: 15px;
-	float: right;
+	float: left;
 }
-
-#change1 {
+.toggleBtn{
+	padding: 7px 40px;
+	color: #fff;
+}
+input[type="button"]{
+	border: none;
+	outline: none;
+	background: #c2c2c2;
+	cursor: pointer;
+}
+input[type="button"]:hover{
+	opacity: 0.5;
+}
+/*#change1 {
 	width: 960px;
 	background-color: blue;
 	text-align: center;
 	color: white;
-}
-
-#change1 {
-	width: 960px;
-	background-color: blue;
+}*/
+.change{
+	clear: both;
+	width: 610px;
+	background-color: #e4e4e4;
 	text-align: center;
-	color: white;
+	color: #7c7c7c;
 }
-
-#change2 {
-	width: 960px;
-	background-color: blue;
-	text-align: center;
-	color: white;
+.change input,
+select,
+label{
+	border: none;
+	margin: 15px 7px;
+	color: #7c7c7c;
 }
-
-#change3 {
-	width: 960px;
-	background-color: blue;
-	text-align: center;
-	color: white;
-}
-
-#change4 {
-	width: 960px;
-	background-color: blue;
-	text-align: center;
-	color: white;
-}
-
-#change5 {
-	width: 960px;
-	background-color: blue;
-	text-align: center;
-	color: white;
-}
-
-#change6 {
-	width: 960px;
-	background-color: blue;
-	text-align: center;
-	color: white;
-}
-
-#change7 {
-	width: 960px;
-	background-color: blue;
-	text-align: center;
-	color: white;
-}
-
-#change8 {
-	width: 960px;
-	background-color: blue;
-	text-align: center;
-	color: white;
-}
-
-#change9 {
-	width: 960px;
-	background-color: blue;
-	text-align: center;
-	color: white;
-}
-
-#change10 {
-	width: 960px;
-	background-color: blue;
-	text-align: center;
-	color: white;
-}
-
-#change11 {
-	width: 960px;
-	background-color: blue;
-	text-align: center;
-	color: white;
+.change input[type="button"]{
+	margin-top: 0;
+	padding: 7px 30px;
+	color: #fff;
 }

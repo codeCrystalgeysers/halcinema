@@ -1,153 +1,68 @@
 @charset"utf-8";
 
-
 /* ---------------------------------------------
-        Common
+        Aside
  --------------------------------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    color: dimgray;
-    font: 15px 'YuGothic';
-    text-decoration: none;
-}
-body{
-	margin: 0 auto;
-	width:960px;
-}
-.left {
-    float: left;
-}
-ul {
-    list-style: none;
-}
-
-/* ---------------------------------------------
-        Header
- --------------------------------------------- */
-header, footer{
-    clear: both;
-    position: relative;
-    width: 100%;
-    background-color: yellowgreen;
-}
-
-header {
-    min-height: 100px;
-}
-#logo{
-	margin:0;
-	width:240px;
-	height:100px;
-    background-color: pink;
-    position: absolute;
-}
-
-#infomation {
-    position: absolute;
-    left: 240px;
-}
-#infomation li {
-    margin-bottom: -15px;
-}
-#infomation li a {
-    font-size: .8em;
-    color: blue;
-}
-
-#alert{
-	width:100px;
-	height:40px;
-	background-color: red;
-	right: 100px;
-    position: absolute;
-}
-
-#login{
-	width:100px;
-	height:40px;
-	background-color: red;
-    right: 0;
-    position: absolute;
-}
-
-#nowLogin {
-    display: none;
-}
-
-#headMenu{
-	position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-#headMenu li{
-    margin: 0 10px;
-    min-width:150px;
-	text-align:center;
-    background-color: silver;
-}
-
-#headMenu ul > li {
-    float: left;
-    position: relative;
-}
-
-#headMenu li:last-child {
-    margin-right: 0;
-}
-#headMenu li a {
-    display: block;
-}
-
-.subMenuList {
-    display: none;
-    position: absolute;
-    width: inherit;
-}
-
-.subMenuList li {
-    left: -10px;
-    width: inherit;
-    background-color: #fff;
-    z-index: 99;
-}
-
-/* ---------------------------------------------
-        Contents
- --------------------------------------------- */
-#right{
-    float: left;
-    width: 700px;
-    background-color: salmon;
-}
-
 #left{
     float: left;
     width: 260px;
     background-color: tomato;
+    margin-top: 20px;
+    padding-bottom: 30px;
 }
-
-/* ---------------------------------------------
-        Footer
- --------------------------------------------- */
-footer {
-    bottom: 0;
+#userName{
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #7c7c7c;
 }
-#footMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start;
+aside input{
+    border: none;
+    width: 160px;
+    height: 25px;
+    background: #7b7b7b;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
-.footMenuBox {
-    position: relative;
+aside input:hover{
+    opacity: 0.7;
 }
-.footMenuBox h2 a {
-    font-size: 1.3em;
-    background-color: #fff;
+aside{
+    margin-left: 28px;
 }
-#copyright {
+aside nav{
+    margin-bottom: 15px;
+}
+#localMenu a{
     display: block;
-    text-align: center;
+    padding: 12px 0;
+    width: 70%;
+    height: 100%;
+    color: #7c7c7c;
+}
+#localMenu a:hover{
+    color: #fff;
+    background: #d5d5d5;
+}
+#links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ---------------------------------------------
+        Contents
+ --------------------------------------------- */
+ #contentsWrap{
+    width: 960px;
+    margin: 0 auto;
+}
+#right{
+    float: left;
+    width: 680px;
+    background-color: salmon;
+    margin: 20px;
+    margin-right: 0px;
+    padding-bottom: 30px;
 }
