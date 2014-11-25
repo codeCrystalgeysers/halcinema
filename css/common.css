@@ -239,6 +239,10 @@ header {
 /* ---------------------------------------------
         Contents
  --------------------------------------------- */
+#contentsWrap{
+  width: 960px;
+  margin: 0 auto;
+}
 main{
   position: relative;
   float: left;
@@ -247,7 +251,8 @@ main{
 
 #divide {
   float: left;
-  width: 260px;
+  width: 240px;
+  margin: 70px 0 0 20px;
   background-color: tomato;
 }
 
