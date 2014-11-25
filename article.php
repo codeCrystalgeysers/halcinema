@@ -20,7 +20,7 @@
 		</div>
 
         <ul class="days">
-    		<li>1</li>
+    		<li><img src="img/img1.jpg"></li>
     		<li>2</li>
             <li>3</li>
             <li>4</li>
@@ -35,7 +35,7 @@
         </div>
 	</div>
 
-	<div id="title">
+	<div class="title">
 	       作品名
 	</div>
 
@@ -56,7 +56,7 @@
         <li id="movietime">→</li>
     </ul>
 
-    <div id="title">
+    <div class="title">
 		作品名
 	</div>
 	

@@ -35,7 +35,7 @@
 
           <div class="tic3">
             <div class="ttl">【3D料金】</div>
-            <div class="tic_price">映画鑑賞料金＋300円で鑑賞出来ます。</div>
+            <div class="tic_price1">映画鑑賞料金＋300円で鑑賞出来ます。</div>
         </div> 
     </div><!--tbl1-->
 
