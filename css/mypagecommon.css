@@ -54,10 +54,10 @@ aside nav{
 /* ---------------------------------------------
         Contents
  --------------------------------------------- */
- #contentsWrap{
+/*#contentsWrap{
     width: 960px;
     margin: 0 auto;
-}
+}*/
 #right{
     float: left;
     width: 680px;
