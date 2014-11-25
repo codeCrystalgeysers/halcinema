@@ -100,7 +100,7 @@
 
 
 <main>
-    	<h3>アクセス</h3>
+    	<h3 class="ttt">アクセス</h3>
     	<div id="map">
         	グーグルマップ
     	</div><!--map-->

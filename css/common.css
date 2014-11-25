@@ -225,3 +225,19 @@ footer {
     padding: 0;
   }
 }
+
+
+
+
+/*------------------
+  ttt
+-------------------*/
+
+
+.ttt{
+    padding: 5px;
+    margin: 10px 0 0 10px;
+    font-size: 30px;
+    font-color: #1f1f1f;
+    height: 30px;    
+}

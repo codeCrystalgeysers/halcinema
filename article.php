@@ -14,7 +14,7 @@
     include 'head.php';
 ?>
 <main>
-	<div id="schedule">上映スケジュール</div>
+	<div class="ttt">上映スケジュール</div>
 	<div id="day">
 		<div id="back">
 		</div>
@@ -35,7 +35,7 @@
         </div>
 	</div>
 
-	<div class="title">
+	<div class="ttt">
 	       作品名
 	</div>
 
@@ -56,7 +56,7 @@
         <li id="movietime">→</li>
     </ul>
 
-    <div class="title">
+    <div class="ttt">
 		作品名
 	</div>
 	
