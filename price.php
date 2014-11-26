@@ -13,7 +13,7 @@
 <div id="contentsWrap">
     <main>
     <div id="prc">
-        <h4>チケット</h4>
+        <div class="ttt">チケット</div>
         <div id="tbl1">
             <div class="tic1">
                 <div class="ttl">【チケット料金】</div>
@@ -40,7 +40,7 @@
             </div>
         </div><!--tbl1-->
 
-        <h4>ドリンク＆フード</h4>
+        <div class="ttt">ドリンク＆フード</div>
         <div id="tbl2">
             <div class="dri_foo_tl">【カフェメニュー】</div>
             <div class="dri01">
