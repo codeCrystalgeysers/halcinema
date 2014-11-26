@@ -5,6 +5,7 @@ main {
 	margin: 0 auto;
 	background-color: #fff;
 }
+
 /* ---------------------------------------------
         form
  --------------------------------------------- */
@@ -79,6 +80,7 @@ input:focus,select:focus{
 	width: 330px;
 	height: 50px;
 	background: #52CBCA;
+	margin: 0 auto;
 }
 
 #innerBox{

@@ -28,10 +28,8 @@
     			<td>※フリガナ</td>
 				<td>
                 <div class="red">※全角カタカナで入力してください（例　ホンマメイコ</div>
-				    セイ
-                    <input class="strSpace" type="text" name="kanaLastName">
-                    メイ
-                    <input class="strSpace" type="text" name="kanaFirstName">
+				    セイ<input class="strSpace" type="text" name="kanaLastName">
+                    メイ<input class="strSpace" type="text" name="kanaFirstName">
                 </td>
     		</tr>
     		<tr>
