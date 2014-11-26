@@ -273,7 +273,7 @@ footer {
   color: #52CBCA;
 }
 #footerMenu {
-  position: relative;
+  position: rezlative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
