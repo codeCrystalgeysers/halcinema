@@ -53,20 +53,57 @@
     			<select class="strSpace" name="birthMonth">
     				<?php
     					for($i=1;$i<13;$i++){
-    						echo "<option value=".$i.">".$i;
+							if($i <= 9){
+	    						echo "<option value=0".$i.">".$i;
+							}else{
+								echo "<option value=".$i.">".$i;
+							}
     					}
     				?>
     			</select>月
     			<select class="strSpace" name="birthDay">
     				<?php
     					for($i=1;$i<32;$i++){
-    						echo "<option value=".$i.">".$i;
+    						if($i <= 9){
+	    						echo "<option value=0".$i.">".$i;
+							}else{
+								echo "<option value=".$i.">".$i;
+							}
     					}
     				?>
     			</select>日
 				</td>
     		</tr>
+       		<tr>
+    			<td>※ログインID</td>
+                <td>
+                    <div class="red">※○文字以上の半角英数字で入力してください</div>
+                    <input type="text" name="id">
+                </td>
+    		</tr>
     		<tr>
+    			<td rowspan="2">※パスワード</td>
+                <td>
+                    <div class="red">※半角英数字で入力してください</div>
+                    <div class="red">※記号は使用できません</div>
+                    <input type="password" name="pass1">
+                </td>
+    		</tr>
+    		<tr>
+    			<td>
+                    <div class="red">※パスワードを再入力してください</div>
+                    <input type="password" name="pass2">
+                </td>
+    		</tr>
+    		<tr>
+    			<td>※電話番号</td>
+                <td><input type="text" name="phoneNum"></td>
+    		</tr>
+			<tr>
+    			<td>※メールアドレス</td>
+				<td><input type="text" name="mailAddress"></td>
+    		</tr>
+			<tr>
     			<td>※郵便番号</td>
                 <td>
                     <div class="red">※半角数字、ハイフンなしで入力してください</div>
@@ -132,45 +169,16 @@
     		<tr>
     			<td>※市区町村番地</td>
                 <td>
-                    <div class="red">例）埼玉県秩父市熊木町8番</div>
+                    <div class="red">例）秩父市熊木町8番</div>
                     <input type="text" name="address">
                 </td>
     		</tr>
     		<tr>
-    			<td>※マンション名</td>
+    			<td>マンション名</td>
                 <td>
                     <div class="red">例）河合荘203号室</div>
                     <input type="text" name="mansion">
                 </td>
-    		</tr>
-    		<tr>
-    			<td>※ログインID</td>
-                <td>
-                    <div class="red">※○文字以上の半角英数字で入力してください</div>
-                    <input type="text" name="id">
-                </td>
-    		</tr>
-    		<tr>
-    			<td rowspan="2">※パスワード</td>
-                <td>
-                    <div class="red">※半角英数字で入力してください</div>
-                    <div class="red">※記号は使用できません</div>
-                    <input type="password" name="pass1">
-                </td>
-    		</tr>
-    		<tr>
-    			<td>
-                    <div class="red">※パスワードを再入力してください</div>
-                    <input type="password" name="pass2">
-                </td>
-    		</tr>
-    		<tr>
-    			<td>※電話番号</td>
-                <td><input type="text" name="phoneNum"></td>
-    		</tr>
-			<tr>
-    			<td>※メールアドレス</td>
-				<td><input type="text" name="mailAddress"></td>
     		</tr>
     	</table>
    <!-- </form>-->
