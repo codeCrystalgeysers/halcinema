@@ -1,12 +1,12 @@
 $(function(){
 
-    $('.slides li, #rankTop').click(function(){
+    $('#movies li').click(function(){
         cinemaSelect($(this));
     });
 
-    $('#cinemaToggle').click(function(){
-        $('#cinemaList').slideToggle(300);
-        $('#cinemaList li').click(function(){
+    $('#moviesToggle').click(function(){
+        $('#moviesSub').slideToggle(300);
+        $('#moviesSub li').click(function(){
             $(this).parent().parent().slideUp(300);
             cinemaSelect($(this));
         });

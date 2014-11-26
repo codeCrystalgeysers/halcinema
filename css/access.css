@@ -4,17 +4,6 @@
 		leftColumn
 --------------------------*/
 
-main{
-}
-
-
-#lefttColumn {
-    float: left;
-    width: 680px;
-    padding : 10px;
-    background-color: orange;
-}
-
 #map{
 	margin: 20px 16px;
 	width: 668px;
@@ -65,4 +54,3 @@ main{
 
 
 
-	

@@ -1,6 +1,6 @@
 <header>
   <div id="headerWrapper">
-    <h1 id="logo">HALCinema</h1>
+    <a href="index.php"><h1 id="logo">HALCinema</h1></a>
     <div id="headerContent">
       <nav>
           <ul id="headerInfomation">
@@ -18,7 +18,7 @@
 	session_start();
 
 	//セッションチェック
-	if(!isset($_SESSION["id"])){			
+	if(!isset($_SESSION["id"])){
 ?>
 		<form action="login.php">
         	<button id="loginBtnIn">ログイン</button>
@@ -38,7 +38,6 @@
       </div>
       <nav id="headerMenu">
           <ul id="headerMenuList">
-              <li><a href="index.php">HOME</a></li>
               <li><a href="article.php">上映情報</a>
                   <ul class="subMenuList">
                       <li><a href="#">スケジュール</a></li>
@@ -64,4 +63,5 @@
       </nav>
     </div>
 </header>
+<div id="cover">
 <div id="wrapper">

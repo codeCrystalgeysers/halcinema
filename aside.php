@@ -1,11 +1,12 @@
-
+ASIDE
+<!--
 		<div id="reservation">
 			チケット予約
-		</div><!--reservation-->
+		</div>
 	
 		<div id="phoneReservation">
 			チケット予約
-		</div><!--phoneReservation-->
+		</div>
 	
 		<table border="1">
 			<tr>
@@ -23,4 +24,4 @@
 			<tr>
 				<td>締め切りまであと○○日</td>
 			</tr>
-		</table>
+		</table> -->
