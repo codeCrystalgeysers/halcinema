@@ -21,7 +21,7 @@
 
         <ul class="days">
     		<li><img src="img/img1.jpg"></li>
-    		<li>2</li>
+    		<li><img src="img/img2.jpg"></li>
             <li>3</li>
             <li>4</li>
             <li>5</li>
