@@ -24,7 +24,7 @@ body{
 #wrapper {
   clear: both;
   margin: 0 auto;
-  min-width: 960px;
+  width: 960px;
 }
 
 .left {
@@ -188,7 +188,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   border-radius: 50px 0 0 0;
-  box-shadow: -2px -2px 1px 1px rgba(0,0,0,.1);
+  box-shadow: -2px -2px 0px 1px rgb(60, 182, 183);
   align-content: flex-start;
 }
 #headerMenu li{
@@ -229,7 +229,7 @@ header {
 .subMenuList li {
   width: inherit;
   border-radius: none !important;
-  background-color: rgba(255,255,255,.8);
+  background-color: rgb(60, 182, 183);
   z-index: 99;
 }
 .subMenuList li a {
@@ -278,7 +278,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-content: flex-start;
-  text-shadow: 0 -1px 1px #333, 0 1px 1px black;
+  text-shadow: 0 -1px 1px black;
 }
 .footerMenuBox {
   position: relative;

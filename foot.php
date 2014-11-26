@@ -1,4 +1,4 @@
-
+</div>
 <footer>
   <div id="footerlogo">HALCinema</div>
   <div id="footerWrapper">
@@ -67,4 +67,5 @@
   <section id="copyright"><p>Copyright &copy;codeCrstalgeysers All rights reserved.</p></section>
 </footer>
 </div>
+<script src="js/common.js"></script>
 </html>

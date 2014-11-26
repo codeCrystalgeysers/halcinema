@@ -1,19 +1,8 @@
-@charset"utf-8";
-
-/* ---------------------------------------------
-        common
- --------------------------------------------- */
-
-* {
-	margin: 0 auto;
-}
-
-/* ---------------------------------------------
-        main
- --------------------------------------------- */
 
 main {
 	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
 }
 
 /* ---------------------------------------------
@@ -21,14 +10,18 @@ main {
  --------------------------------------------- */
 
 .formArea {
+	margin: 0 auto;
 	margin-top: 15px;
+	width: 960px;
 }
 
-h1,h2,#conf{
+.formHeader,#conf{
+	background-color: red;
 	text-align: center;
 }
 
-h2{
+.formHeader{
+	color: red;
 	margin: 30px 0;
 	font-size: 2em;
 }
@@ -54,9 +47,9 @@ td {
 	margin-left: 4px;
 	width: 250px;
 	height: 50px;
-	text-align: center;	
+	text-align: center;
 	line-height: 50px;
-	background: #D0A9F5; 
+	background: #D0A9F5;
 	border-radius: 4px;
  }
  
@@ -65,18 +58,18 @@ td {
 	margin-right: 4px;
 	width: 180px;
 	height: 50px;
-	text-align: center;	
+	text-align: center;
 	line-height: 50px;
-	background: #D0A9F5; 
+	background: #D0A9F5;
 	border-radius: 4px;
  }
  
  .itemName{
-	width: 105px;	
+	width: 105px;
  }
  
  .cardInfo{
-	width: 607px; 
+	width: 607px;
  }
 
 

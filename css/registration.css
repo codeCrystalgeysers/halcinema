@@ -1,35 +1,25 @@
 @charset"utf-8";
 
-/* ---------------------------------------------
-        common
- --------------------------------------------- */
-
-* {
-	margin: 0 auto;
-}
-
-/* ---------------------------------------------
-        main
- --------------------------------------------- */
-
 main {
 	width: 960px;
-	background: #fff;
+	margin: 0 auto;
+	background-color: #fff;
 }
-
 /* ---------------------------------------------
         form
  --------------------------------------------- */
 
 .formArea {
+	margin: 0 auto;
 	margin-top: 15px;
+	width: 600px;
 }
 
-h1,h2,#conf{
+.formHeader,#conf{
 	text-align: center;
 }
 
-h2{
+.formHeader{
 	margin-top: 30px;
 	font-size: 18px;
 }
@@ -92,6 +82,7 @@ input:focus,select:focus{
 }
 
 #innerBox{
+	margin: 0 auto;
 	width: 322px;
 	height: 42px;
 	background: #52CBCA;
@@ -103,26 +94,3 @@ input:focus,select:focus{
 #outerBox:hover > #innerBox{
 	border: 1px solid #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

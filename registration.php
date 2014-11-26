@@ -11,7 +11,7 @@
 
 <main>
 
-    <h2>新規会員登録画面</h2>
+    <div class="formHeader">新規会員登録</div>
     <div class="formArea">
     <form action="registrationCheck.php" method="POST">
     	<table>
@@ -178,7 +178,7 @@
    <!-- </form>-->
     </div>
 
-    <h2>クレジットカード情報</h2>
+    <div class="formHeader">クレジットカード情報</div>
     <div class="formArea">
    <!-- <form>-->
     	<table>
@@ -232,7 +232,7 @@
     <div id="conf">
 		<!--<form action="registrationCheck.php">-->
         <div id="outerBox">
-    		<input id="innerBox" type="submit" value="入力内容を確認する">
+    		  <input id="innerBox" type="submit" value="入力内容を確認する">
         </div>
 		</form>
     </div>
