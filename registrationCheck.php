@@ -40,22 +40,6 @@
 		$birthDay = $_POST["birthDay"];
 	}
 	
-	if(isset($_POST["state"])) {
-		$state = $_POST["state"];
-	}
-	
-	if(isset($_POST["post"])) {
-		$post = $_POST["post"];
-	}
-	
-	if(isset($_POST["address"])) {
-		$address = $_POST["address"];
-	}
-	
-	if(isset($_POST["mansion"])) {
-		$mansion = $_POST["mansion"];
-	}
-	
 	if(isset($_POST["id"])) {
 		$id = $_POST["id"];
 	}
@@ -70,6 +54,22 @@
 	
 	if(isset($_POST["mailAddress"])) {
 		$mailAddress = $_POST["mailAddress"];
+	}
+	
+	if(isset($_POST["state"])) {
+		$state = $_POST["state"];
+	}
+	
+	if(isset($_POST["post"])) {
+		$post = $_POST["post"];
+	}
+	
+	if(isset($_POST["address"])) {
+		$address = $_POST["address"];
+	}
+	
+	if(isset($_POST["mansion"])) {
+		$mansion = $_POST["mansion"];
 	}
 	
 	if(isset($_POST["company"])) {
@@ -128,18 +128,6 @@
 				</td>
     		</tr>
     		<tr>
-    			<td>※郵便番号</td><td>〒<div class="result"><?= $post ?></div></td>
-    		</tr>
-    		<tr>
-    			<td>※都道府県</td><td><div class="result"><?= $state ?></div></td>
-	    	</tr>
-    		<tr>
-    			<td>※市区町村番地</td><td><div class="result"><?= $address ?></div></td>
-    		</tr>
-    		<tr>
-    			<td>※マンション名</td><td><div class="result"><?= $mansion ?></div></td>
-    		</tr>
-    		<tr>
     			<td>※ログインID</td><td><div class="result"><?= $id ?></div></td>
     		</tr>
     		<tr>
@@ -150,6 +138,18 @@
     		</tr>
 			<tr>
     			<td>※メールアドレス</td><td><div class="result"><?= $mailAddress ?></div></td>
+    		</tr>
+			<tr>
+    			<td>※郵便番号</td><td>〒<div class="result"><?= $post ?></div></td>
+    		</tr>
+    		<tr>
+    			<td>※都道府県</td><td><div class="result"><?= $state ?></div></td>
+	    	</tr>
+    		<tr>
+    			<td>※市区町村番地</td><td><div class="result"><?= $address ?></div></td>
+    		</tr>
+    		<tr>
+    			<td>マンション名</td><td><div class="result"><?= $mansion ?></div></td>
     		</tr>
     	</table>
     </div>
@@ -186,7 +186,21 @@
     </div>
 
     <div id="conf">
-		<form action="registrationComplete.php">
+		<form action="registrationComplete.php" method="post">
+			<input type="hidden" name="userName" value="<?= $lastName.$firstName ?>">
+			<input type="hidden" name="userRuby" value="<?= $kanaLastName.$kanaFirstName ?>">
+			<input type="hidden" name="userSex" value="<?= $sex ?>">
+			<input type="hidden" name="userBirthDate" value="<?= $birthYear.$birthMonth.$birthDay ?>">
+			<input type="hidden" name="userID" value="<?= $id ?>">
+			<input type="hidden" name="userPass" value="<?= $pass ?>">
+			<input type="hidden" name="userPhoneNum" value="<?= $phoneNum ?>">
+			<input type="hidden" name="userMailAddress" value="<?= $mailAddress ?>">
+			<input type="hidden" name="userPost" value="<?= $post ?>">
+			<input type="hidden" name="userAddress" value="<?= $state.$address.$mansion ?>">
+			<input type="hidden" name="cardCompany" value="<?= $company ?>">
+			<input type="hidden" name="cardName" value="<?= $cardName ?>">
+			<input type="hidden" name="cardNum" value="<?= $cardNum ?>">
+			<input type="hidden" name="cardLimit" value="<?= $limitMonth.$limitYear ?>">
 	    	<button>この内容で登録する</button>
 		</form>
     </div>

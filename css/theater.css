@@ -8,18 +8,61 @@
 	color: #fff;
 	font-weight: bold;
 	font-size: 20px;
+<<<<<<< HEAD
+=======
+	font-weight: bold;
+	color: #52CBCA;
+	/* text-shadow: 1px 1px 0 #eee; */
+>>>>>>> origin/master
 	margin: 10px;
 }
 
 .h5 {
 	color: #fff;
 	font-size: 15px;
+<<<<<<< HEAD
 	border-bottom: solid 1px #ddd;
+=======
+	font-weight: bold;
+	color: #52CBCA;
+>>>>>>> origin/master
 }
 
 /*--------------------------
 		leftColumn
 --------------------------*/
+
+.ttt {
+	position: relative;
+	width: 704px;
+	left: -20px;
+	padding: 4px 0;
+	padding-left: 1.1em;
+	height: 30px;
+	margin-top: 30px;
+	font-size: 1.1em;
+	background-color: #444;
+	border-radius: 3px 3px 0 0;
+	color: whitesmoke;
+}
+.ttt:before {
+	content: '';
+	position: absolute;
+	top: 38px;
+	left: 0;
+	border: 10px solid transparent;
+	border-top: 10px solid #222;
+	border-right: 10px solid #222;
+}
+.ttt:after {
+	content: '';
+	position: absolute;
+	top: 38px;
+	right: 0px;
+	border: 10px solid transparent;
+	border-top: 10px solid #222;
+	border-left: 10px solid #222;
+}
 
 #lefttColumn {
     float: left;
@@ -28,10 +71,16 @@
 }
 
 #box1 {
+<<<<<<< HEAD
 	margin-top: 10px;
 	padding: 10px;
 	background-color: #52cbca;
+=======
+>>>>>>> origin/master
 	overflow: hidden;
+	width: 640px;
+	padding: 0 21px;
+	background-color: white;
 }
 
 #box1 img {
@@ -42,15 +91,15 @@
 }
 
 #box1 p {
-	margin: 10px;
-	color: #1f1f1f;
+	color: #666;
+	text-indent: 1em;
 }
 
 #box2 {
-	margin-top: 10px;
-	padding-top: 10px;
-	background-color: #52cbca;
+	padding: 20px 0;
+	width: 682px;
 	overflow: hidden;
+	background-color: white;
 }
 
 .n_box {
@@ -58,7 +107,7 @@
 	width: 45%;
 	height: 100px;
 	background-color: #E0FFFF;
-	margin: 17px;
+	margin: 0 17px 34px;
 }
 
 .n_box img {
