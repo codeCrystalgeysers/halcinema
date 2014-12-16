@@ -37,23 +37,12 @@
 	$count = mysql_query($sql2,$con);
 ?>
   
-
-<<<<<<< HEAD
-
- 
-
-=======
->>>>>>> origin/master
-<div id="contentsWrap">
+ <div id="contentsWrap">
     <main>
     	<div class="ttt">上映スケジュール</div>
     	<div id="day">
     		<div id="back">
     		</div>
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 
             <ul class="days">
 <?php

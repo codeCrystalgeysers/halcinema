@@ -1,4 +1,4 @@
-@charset"utf-8";
+1@charset"utf-8";
 
 
 
@@ -137,7 +137,7 @@
 #seatLoading {
   position: relative;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #333;
   width: 960px;
   height: 100%;
 }

@@ -8,25 +8,21 @@
 
 #day{
     font-size: 20px;
-    margin: 10px;
     width: 100%;
-    height: 200px;
+    height: 100px;
     background-color: #52cbca;
     position: relative;
     overflow: hidden;
 }
 
-#day img{
-    width: 100%;
-    height: 100%;
-}
-
 .days li{
-    margin: 10px;
-    width: 155px;
-    height: 190px;
+    margin: 5px 5px 0 5px;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
     background-color: #eee;
     list-style: none;
+    border-radius: 10px;
     float: left;
     overflow: hidden;
 }
@@ -35,7 +31,7 @@
 .days{
     font-size: 20px;
     width: 1000px;
-    height: 190px;
+    height: 100px;
     position: absolute;
     overflow: hidden;
     left: 0;
@@ -43,7 +39,7 @@
 
 
 #back{
-    margin: 80px 0 0 5px;
+    margin: 10px 0 0 5px;
     background-image: url(../img/yajirusi1.png);
     width: 20px;
     height: 20px;
@@ -56,7 +52,7 @@
 }
 
 #next{
-    margin: 80px 5px 0 0;
+    margin: 10px 5px 0 0;
     background-image: url(../img/yajirusi.png);
     width: 20px;
     height: 20px;
@@ -85,23 +81,55 @@
     clear: both;
 }
 
-#timelist{
-    margin: 10px;
-    background-color: white;
+.sttt{
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 5px;
+    width: 695px;
+    height: 30px;
+    background-color: red;
     clear: both;
+}
+.screenimg{
+    margin: 0 1px 0 0;
+    width: 100px;
+    height: 183px;
+    background-color: #fff;
+    float: left;
+}
+
+.iimmgg{
+    margin: 20px 0 0 10px;
+
+    width: 80px;
+    height: 80px;
+    background-color: #eee;
 }
 
 .lst{
-    clear: both;
-    margin: 1px;
-    height: 40px;
+    width: 599px;
+    float: right;
+    height: 60px;
+    border-bottom: dotted 1px #eee;
     background-color: white;
 }
 
+.screen{
+    margin: 5px 0 0 0;
+    padding: 5px 0 5px 5px;
+    font-size: 10px;
+    width: 100px;
+    height: 40px;
+    float: left;
+    border-right: solid 1px #eee;
+}
 
 .movietime{
-    width: 110px;
+    margin: 5px 0 0 0;
+    padding: 5px 0 0 5px;
+    font-size: 10px;
+    width: 90px;
     height: 40px;
-    border-style: black 1px solid;
     float: left;
+    border-right: solid 1px #eee;
 }
