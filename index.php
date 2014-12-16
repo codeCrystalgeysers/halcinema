@@ -9,21 +9,42 @@
 <title>HAL Cinema</title>
 <?php
 include 'head.php';
+include 'getMovieDB.php';
 ?>
 
 <div id="slider">
     <div id="reserveTimetable">
       <ul id="reserveTimetableDate" class="left">
-        <li>10/12</li>
-        <li>10/13</li>
-        <li>10/14</li>
-        <li>10/15</li>
+        <?php
+          while ($time = mysql_fetch_array($res2)){
+            $a = substr($time['date'],5,strlen($time['date'])-5);
+            echo "<li data-date='".str_replace("-", "/", $a)."'>".str_replace("-", "/", $a)."</li>";
+          }
+        ?>
       </ul>
       <ul id="reserveTimetableTime" class="left">
-        <li>12:00 ~ 14:00</li>
-        <li>14:30 ~ 16:30</li>
-        <li>17:00 ~ 19:00</li>
-        <li>19:30 ~ 21:30</li>
+        <?php
+        mysql_data_seek($res2, 0);
+          while ($time = mysql_fetch_array($res2)){
+            $a = substr($time['start_time'],0,strlen($time['start_time'])-3);
+            $c = split(":",$a);
+            mysql_data_seek($res, 0);
+            while($movie = mysql_fetch_array($res)){
+              if($movie['movie_id'] == $time['movie_id']){
+                $H = sprintf("%2d",$movie['time']/60);
+                $H = ($c[0]+$H);
+                $i = $movie['time']%60;
+                $i = ($c[1]+$i);
+                if($i == 60){
+                  $H = $H + 1;
+                  $i = sprintf("%02d",0);
+                }
+                $b = $H.":".$i;
+              }
+            }
+            echo "<li data-time='".$a."-".$b."'>".$a."-".$b."</li>";
+          }
+        ?>
       </ul>
     </div>
     <div id="movies">
@@ -62,12 +83,13 @@ include 'head.php';
 	<div id="moviesSub" class="moviesList">
 	    <ul>
       <?php 
+          mysql_data_seek($res, 0);
           while($movie = mysql_fetch_array($res)){
             echo("<li>
                     <figure>
-                      <img src='img/thumbnail/".$movie[0]."' class='moviesPic' data-id='xxxxx1' data-title='moviesTitle1'>
+                      <img src='img/thumbnail/".$movie['image']."' class='moviesPic' data-id='".$movie['movie_id']."' data-title='".$movie['title']."'>
                       <figcaption class='moviesCap'>
-                          <span class='moviesTitle'>映画タイトル</span>
+                          <span class='moviesTitle'>".$movie['title']."</span>
                           <!-- <span class='moviesCategory'>(カテゴリ表示の仕方は検討中)</span> -->
                       </figcaption>
                     </figure>
@@ -85,7 +107,6 @@ include 'head.php';
       <div id="seatLoading"></div>
       <div id="seatsBackground"></div>
     </div>
-
     <div id="reserveBreakdown">
       <div id="reserveDetails">
         <dl id="reserveNowSelect">

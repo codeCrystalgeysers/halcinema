@@ -43,10 +43,10 @@
 		mysql_close($con);
 		mb_language("ja");
 		mb_internal_encoding("UTF-8");
-		if(mb_send_mail("$address", "HALCinemaからのお知らせ", "$text", "From: info@halcinema.com")){
-			header("location:index.php");
-			exit;
-		}
+		mb_send_mail("$address", "HALCinemaからのお知らせ", "$text", "From: info@halcinema.com");
+		header("location:index.php");
+		exit;
+		
 	}else{
 		header("location:login.php?message=error");
 		exit;
