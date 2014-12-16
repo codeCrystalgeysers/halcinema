@@ -130,10 +130,10 @@ header {
   right: 0;
 }
 #loginWrapper {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0;height: 20px;
 }
 #loginAlert {
   display: none;
@@ -187,8 +187,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-radius: 50px 0 0 0;
-  box-shadow: -2px -2px 0px 1px rgb(60, 182, 183);
+  border-radius: 50px 50px 0 0;
+  box-shadow: 1px -2px 0px 1px rgb(60, 182, 183);
   align-content: flex-start;
 }
 #headerMenu li{
@@ -207,6 +207,7 @@ header {
 }
 #headerMenu li:last-child {
   padding-right: 0;
+  border-radius: 0 50px 0 0;
 }
 #headerMenu li a {
   color: gray;

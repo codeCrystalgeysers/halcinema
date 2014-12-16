@@ -5,17 +5,27 @@
 --------------------------*/
 
 .h4 {
+	color: #fff;
+	font-weight: bold;
 	font-size: 20px;
+<<<<<<< HEAD
+=======
 	font-weight: bold;
 	color: #52CBCA;
 	/* text-shadow: 1px 1px 0 #eee; */
+>>>>>>> origin/master
 	margin: 10px;
 }
 
 .h5 {
+	color: #fff;
 	font-size: 15px;
+<<<<<<< HEAD
+	border-bottom: solid 1px #ddd;
+=======
 	font-weight: bold;
 	color: #52CBCA;
+>>>>>>> origin/master
 }
 
 /*--------------------------
@@ -61,6 +71,12 @@
 }
 
 #box1 {
+<<<<<<< HEAD
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #52cbca;
+=======
+>>>>>>> origin/master
 	overflow: hidden;
 	width: 640px;
 	padding: 0 21px;
@@ -69,8 +85,9 @@
 
 #box1 img {
 	float: left;
-	width: 250px;
-	margin: 10px;
+	width: 200px;
+	height: 200px;
+	margin: 0 10px 0 10px;
 }
 
 #box1 p {
