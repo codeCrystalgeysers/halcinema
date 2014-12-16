@@ -19,40 +19,49 @@
     <main>
     	<div class="ttt">上映スケジュール</div>
     	<div id="day">
-    		<div id="back">
-    		</div>
 
             <ul class="days">
-        		<li><img src="img/img1.jpg"></li>
-        		<li><img src="img/img2.jpg"></li>
-                <li><img src="img/img1.jpg"></li>
-                <li><img src="img/img2.jpg"></li>
-                <li><img src="img/img1.jpg"></li>
-                <li><img src="img/img2.jpg"></li>
-                <li><img src="img/img1.jpg"></li>
-                <li><img src="img/img2.jpg"></li>
+        		<li>1/2</li>
+        		<li>1/2</li>
+                <li>1/2</li>
+                <li>1/2</li>
+                <li>1/2</li>
+                <li>1/2</li>
+                <li>1/2</li>
             </ul>
 
-    		<div id="next">
-            </div>
     	</div>
 
-    	<div class="ttt">
+    	<div class="sttt">
     	       作品名
     	</div>
-
+        <div class="screenimg">
+            <div class="iimmgg">
+                画像
+            </div>
+        </div>
     	<ul class="lst">
-            <li class="movietime">11:00～<br />△</li>
-            <li class="movietime">13:00～<br />△</li>
-            <li class="movietime">15:00～<br />△</li>
-            <li class="movietime">17:00～<br />△</li>
+            <li class="screen">シアター1</li>
+            <li class="movietime">13:00～</li>
+            <li class="movietime">15:00～</li>
+            <li class="movietime">17:00～</li>
         </ul>
         <ul class="lst">
-            <li class="movietime">11:00～<br />△</li>
-            <li class="movietime">13:00～<br />△</li>
-            <li class="movietime">15:00～<br />△</li>
-            <li class="movietime">17:00～<br />△</li>
+            <li class="screen">シアター3</li>
+            <li class="movietime">13:00～</li>
+            <li class="movietime">15:00～</li>
+            <li class="movietime">17:00～</li>
+            <li class="movietime">17:00～</li>
+            <li class="movietime">17:00～</li>
         </ul>
+
+        <ul class="lst">
+            <li class="screen">シアター5</li>
+            <li class="movietime">13:00～</li>
+            <li class="movietime">15:00～</li>
+            <li class="movietime">17:00～</li>
+        </ul>
+
     </main>
 
     <div id="divide">
