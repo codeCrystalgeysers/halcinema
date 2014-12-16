@@ -14,24 +14,16 @@
     include 'head.php';
 ?>
 
-<<<<<<< HEAD
-        <ul class="days">
-    		<li><img src="img/img1.jpg"></li>
-    		<li><img src="img/img2.jpg"></li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            
-=======
+
+ 
+
 <div id="contentsWrap">
     <main>
     	<div class="ttt">上映スケジュール</div>
     	<div id="day">
     		<div id="back">
     		</div>
->>>>>>> origin/master
+
 
             <ul class="days">
         		<li><img src="img/img1.jpg"></li>
