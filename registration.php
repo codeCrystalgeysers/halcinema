@@ -19,24 +19,24 @@
     			<td class="">※姓名</td>
 				<td>
                     姓
-                    <input class="strSpace" type="text" name="lastName" required>
+                    <input class="strSpace" type="text" name="lastName">
                     名
-                    <input class="strSpace" type="text" name="firstName" required>
+                    <input class="strSpace" type="text" name="firstName">
                 </td>
     		</tr>
     		<tr>
     			<td>※フリガナ</td>
 				<td>
                 <div class="red">※全角カタカナで入力してください（例　ホンマメイコ</div>
-				    セイ<input class="strSpace" type="text" name="kanaLastName" required>
-                    メイ<input class="strSpace" type="text" name="kanaFirstName" required>
+				    セイ<input class="strSpace" type="text" name="kanaLastName">
+                    メイ<input class="strSpace" type="text" name="kanaFirstName">
                 </td>
     		</tr>
     		<tr>
     			<td>※性別</td>
     			<td>
-                    <input type="radio" name="sex" value="男" required />男
-            		<input type="radio" name="sex" value="女" required />女
+                    <input type="radio" name="sex" value="男" />男
+            		<input type="radio" name="sex" value="女" />女
 				</td>
     		</tr>
     		<tr>
@@ -78,7 +78,7 @@
     			<td>※ログインID</td>
                 <td>
                     <div class="red">※○文字以上の半角英数字で入力してください</div>
-                    <input type="text" name="id" required>
+                    <input type="text" name="id">
                 </td>
     		</tr>
     		<tr>
@@ -86,44 +86,34 @@
                 <td>
                     <div class="red">※半角英数字で入力してください</div>
                     <div class="red">※記号は使用できません</div>
-<?php
-	if(isset($_GET["error"])){
-		$error = $_GET["error"];
-		
-		if($error == "pass"){
-			echo "パスワードが一致していません。";
-		}
-	}
-?>
-                    <input type="password" name="pass1" required>
+                    <input type="password" name="pass1">
                 </td>
     		</tr>
     		<tr>
     			<td>
                     <div class="red">※パスワードを再入力してください</div>
-                    <input type="password" name="pass2" required>
+                    <input type="password" name="pass2">
                 </td>
     		</tr>
     		<tr>
     			<td>※電話番号</td>
-                <td><input type="text" name="phoneNum" required></td>
+                <td><input type="text" name="phoneNum"></td>
     		</tr>
 			<tr>
     			<td>※メールアドレス</td>
-				<td><input type="text" name="mailAddress" required></td>
+				<td><input type="text" name="mailAddress"></td>
     		</tr>
 			<tr>
     			<td>※郵便番号</td>
                 <td>
                     <div class="red">※半角数字、ハイフンなしで入力してください</div>
                     〒
-                    <input class="strSpace" type="text" name="post" required>
+                    <input class="strSpace" type="text" name="post">
                     <input class="strSpace" type="button" value="住所を検索する" />
                 </td>
     		</tr>
     		<tr>
     			<td>※都道府県</td>
-
                 <td><select name="state">
 					<option value="" selected>--選択--
 					<option value="北海道">北海道
@@ -174,23 +164,13 @@
 					<option value="鹿児島県">鹿児島県
 					<option value="沖縄県">沖縄県
 	    		</select>
-				
-<?php
-	if(isset($_GET["error"])){
-		$error = $_GET["error"];
-		
-		if($error == "state"){
-			echo "都道府県を選択してください。";
-		}
-	}
-?>
 	    		</td>
 	    	</tr>
     		<tr>
     			<td>※市区町村番地</td>
                 <td>
                     <div class="red">例）秩父市熊木町8番</div>
-                    <input type="text" name="address" required>
+                    <input type="text" name="address">
                 </td>
     		</tr>
     		<tr>
@@ -209,9 +189,9 @@
    <!-- <form>-->
     	<table>
     		<tr>
-    			<td class="cardFormTitle">※カード会社</td>
+    			<td class="cardFormTitle">カード会社</td>
     			<td class="cardFormInput">
-                <select name="company" required>
+                    <select name="company">
     				<option value="visa">visa
     				<option value="JCB">JCB
     				<option value="MasterCard">MasterCard
@@ -219,30 +199,30 @@
                 </td>
     		</tr>
     		<tr>
-    			<td class="cardFormTitle">※カード名義</td>
+    			<td class="cardFormTitle">カード名義</td>
                 <td>
                     <div class="red">例）MEIKO HONMA</div>
-                    <input type="text" name="cardName" required>
+                    <input type="text" name="cardName">
                 </td>
     		</tr>
     		<tr>
-    			<td class="cardFormTitle">※カード番号</td>
+    			<td class="cardFormTitle">カード番号</td>
                 <td>
                     <div class="red">例）1111222233334444</div>
-                    <input type="text" name="cardNum" required>
+                    <input type="text" name="cardNum">
                 </td>
     		</tr>
     		<tr>
-    			<td class="cardFormTitle">※有効期限</td>
+    			<td class="cardFormTitle">有効期限</td>
                 <td class="cardFormInput">
-                <select class="strSpace" name="limitMonth" required>
+                <select class="strSpace" name="limitMonth">
 	    			<?php
     					for($i=1;$i<13;$i++){
     						echo "<option value=".$i.">".$i;
     					}
     				?>
     			</select>月
-    			<select class="strSpace" name="limitYear" required>
+    			<select class="strSpace" name="limitYear">
     				<?php
     					for($i=0;$i<4;$i++){
 							$limitYear = $nowYear + $i;

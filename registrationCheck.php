@@ -8,110 +8,89 @@
 <?php
     include 'head.php';
 	
-	//if(isset($_POST["lastName"])) {
+	if(isset($_POST["lastName"])) {
 		$lastName = $_POST["lastName"];
-	//}
+	}
 	
-	//if(isset($_POST["firstName"])) {
+	if(isset($_POST["firstName"])) {
 		$firstName = $_POST["firstName"];
-	//}
+	}
 	
-	//if(isset($_POST["kanaLastName"])) {
+	if(isset($_POST["kanaLastName"])) {
 		$kanaLastName = $_POST["kanaLastName"];
-	//}
+	}
 	
-	//if(isset($_POST["kanaFirstName"])) {
+	if(isset($_POST["kanaFirstName"])) {
 		$kanaFirstName = $_POST["kanaFirstName"];
-	//}
+	}
 	
-	//if(isset($_POST["sex"])) {
+	if(isset($_POST["sex"])) {
 		$sex = $_POST["sex"];
-	//}
+	}
 	
-	//if(isset($_POST["birthYear"])) {
+	if(isset($_POST["birthYear"])) {
 		$birthYear = $_POST["birthYear"];
-	//}
+	}
 	
-	//if(isset($_POST["birthMonth"])) {
+	if(isset($_POST["birthMonth"])) {
 		$birthMonth = $_POST["birthMonth"];
-	//}
+	}
 	
-	//if(isset($_POST["birthDay"])) {
+	if(isset($_POST["birthDay"])) {
 		$birthDay = $_POST["birthDay"];
-	//}
+	}
 	
-	//if(isset($_POST["id"])) {
+	if(isset($_POST["id"])) {
 		$id = $_POST["id"];
-	//}
+	}
 	
-	//if(isset($_POST["pass1"])) {
+	if(isset($_POST["pass1"])) {
 		$pass = $_POST["pass1"];
-	//}
-	
-	//if(isset($_POST["pass2"])) {
-			$pass2 = $_POST["pass2"];
-	//}
-	
-	if($pass != $pass2){
-		header("location:registration.php?error=pass");
-		exit;
 	}
 	
-	//if(isset($_POST["phoneNum"])) {
+	if(isset($_POST["phoneNum"])) {
 		$phoneNum = $_POST["phoneNum"];
-	//}
-	
-	//if(isset($_POST["mailAddress"])) {
-		$mailAddress = $_POST["mailAddress"];
-	//}
-	
-	//if(isset($_POST["state"])) {
-		$state = $_POST["state"];
-	//}
-	
-	if($state == ""){
-		header("location:registration.php?error=state");
-		exit;
 	}
 	
-	//if(isset($_POST["post"])) {
-		$post = $_POST["post"];
-	//}
+	if(isset($_POST["mailAddress"])) {
+		$mailAddress = $_POST["mailAddress"];
+	}
 	
-	//if(isset($_POST["address"])) {
+	if(isset($_POST["state"])) {
+		$state = $_POST["state"];
+	}
+	
+	if(isset($_POST["post"])) {
+		$post = $_POST["post"];
+	}
+	
+	if(isset($_POST["address"])) {
 		$address = $_POST["address"];
-	//}
+	}
 	
 	if(isset($_POST["mansion"])) {
 		$mansion = $_POST["mansion"];
 	}
 	
-	//if(isset($_POST["company"])) {
+	if(isset($_POST["company"])) {
 		$company = $_POST["company"];
-	//}
+	}
 	
-	//if(isset($_POST["cardName"])) {
+	if(isset($_POST["cardName"])) {
 		$cardName = $_POST["cardName"];
-	//}
+	}
 	
-	//if(isset($_POST["cardNum"])) {
+	if(isset($_POST["cardNum"])) {
 		$cardNum = $_POST["cardNum"];
-	//}
+	}
 	
 	if(isset($_POST["limitMonth"])) {
 		$limitMonth = $_POST["limitMonth"];
-		
-		if($limitMonth < 10){
-			$limitMonth = "0".$limitMonth;
-		}
 	}
 	
 	if(isset($_POST["limitYear"])) {
 		$limitYear = $_POST["limitYear"];
 	}
-	
-	
-	$limitDay = date("t", mktime(0, 0, 0, $limitMonth, $limitYear));
 ?>
 
 <main>
@@ -221,7 +200,7 @@
 			<input type="hidden" name="cardCompany" value="<?= $company ?>">
 			<input type="hidden" name="cardName" value="<?= $cardName ?>">
 			<input type="hidden" name="cardNum" value="<?= $cardNum ?>">
-			<input type="hidden" name="cardLimit" value="<?= $limitYear.$limitMonth.$limitDay ?>">
+			<input type="hidden" name="cardLimit" value="<?= $limitMonth.$limitYear ?>">
 	    	<button>この内容で登録する</button>
 		</form>
     </div>
