@@ -1,12 +1,36 @@
 $(function(){
 
-    $('#headerMenu li').hover(
-        function(){
-            $(this).find('ul').stop().slideDown(200);
-        },
-        function(){
-            $(this).find('ul').stop().slideUp(200);
-        }
-    );
+    $('#headerMenu').mouseover(function(){
+      $('header').stop().animate({
+        'height': 200
+      }, {
+        'duration': 250,
+        'queue': false
+      });
+      
+      $('#headerMenuListSub').animate({
+        'opacity': 1
+      }, {
+        'duration': 250,
+        'queue': false
+      });
+    });
+    
+    $('#headerMenu').mouseleave(function(){
+      $('header').stop().animate({
+        'height': 100
+      }, {
+        'duration': 250,
+        'queue': false
+      });
+      
+      $('#headerMenuListSub').animate({
+        'opacity': 0
+      }, {
+        'duration': 250,
+        'queue': false
+      });
+    });
+    
 
 });

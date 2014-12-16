@@ -7,7 +7,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: #aaa;
+    color: #999;
     font: 15px 'YuGothic';
     text-decoration: none;
 }
@@ -19,7 +19,7 @@ body{
   clear: both;
   margin: 0 auto;
   width: 100%;
-  background-color: #ECECEC;
+  background-color: #efefef;
 }
 #wrapper {
   clear: both;
@@ -41,7 +41,8 @@ header, footer{
   clear: both;
   position: relative;
   width: 100%;
-  background-color: #52CBCA;
+  overflow: hidden;
+  background-color: #ececec;
 }
 #headerWrapper,
 #footerWrapper {
@@ -51,66 +52,16 @@ header, footer{
 }
 header {
   height: 100px;
-  box-shadow: -2px -2px 0px 1px rgba(0,0,0,.1) inset;
 }
 #logo{
   position: absolute;
-  color: white;
+  color: #52CBCA;
   font: 40px 'Ubuntu';
   margin-top: 15px;
   line-height: 60px;
   width: 400px;
   height: 85px;
   overflow: hidden;
-  text-shadow: rgb(60, 182, 183) 1px 1px,
-    rgb(60, 182, 183) 2px 2px,
-    rgb(60, 182, 183) 3px 3px,
-    rgb(60, 182, 183) 4px 4px,
-    rgb(60, 182, 183) 5px 5px,
-    rgb(60, 182, 183) 6px 6px,
-    rgb(60, 182, 183) 7px 7px,
-    rgb(60, 182, 183) 8px 8px,
-    rgb(60, 182, 183) 9px 9px,
-    rgb(60, 182, 183) 10px 10px,
-    rgb(60, 182, 183) 11px 11px,
-    rgb(60, 182, 183) 12px 12px,
-    rgb(60, 182, 183) 13px 13px,
-    rgb(60, 182, 183) 14px 14px,
-    rgb(60, 182, 183) 15px 15px,
-    rgb(60, 182, 183) 16px 16px,
-    rgb(60, 182, 183) 17px 17px,
-    rgb(60, 182, 183) 18px 18px,
-    rgb(60, 182, 183) 19px 19px,
-    rgb(60, 182, 183) 20px 20px,
-    rgb(60, 182, 183) 21px 21px,
-    rgb(60, 182, 183) 22px 22px,
-    rgb(60, 182, 183) 23px 23px,
-    rgb(60, 182, 183) 24px 24px,
-    rgb(60, 182, 183) 25px 25px,
-    rgb(60, 182, 183) 26px 26px,
-    rgb(60, 182, 183) 27px 27px,
-    rgb(60, 182, 183) 28px 28px,
-    rgb(60, 182, 183) 29px 29px,
-    rgb(60, 182, 183) 30px 30px,
-    rgb(60, 182, 183) 31px 31px,
-    rgb(60, 182, 183) 32px 32px,
-    rgb(60, 182, 183) 33px 33px,
-    rgb(60, 182, 183) 34px 34px,
-    rgb(60, 182, 183) 35px 35px,
-    rgb(60, 182, 183) 36px 36px,
-    rgb(60, 182, 183) 37px 37px,
-    rgb(60, 182, 183) 38px 38px,
-    rgb(60, 182, 183) 39px 39px,
-    rgb(60, 182, 183) 40px 40px,
-    rgb(60, 182, 183) 41px 41px,
-    rgb(60, 182, 183) 42px 42px,
-    rgb(60, 182, 183) 43px 43px,
-    rgb(60, 182, 183) 44px 44px,
-    rgb(60, 182, 183) 45px 45px,
-    rgb(60, 182, 183) 46px 46px,
-    rgb(60, 182, 183) 47px 47px,
-    rgb(60, 182, 183) 48px 48px,
-    rgb(60, 182, 183) 49px 49px;
 }
 #logo:before {
   content: 'HOME';
@@ -133,13 +84,14 @@ header {
   /* display: none; */
   position: absolute;
   top: 0;
-  right: 0;height: 20px;
+  right: 0;
+  height: 20px;
 }
 #loginAlert {
   display: none;
   position: absolute;
-  width:50px;
-  height:40px;
+  width: 50px;
+  height: 40px;
   background-color: red;
   top: 0;
   right: 0;
@@ -159,16 +111,16 @@ header {
   position: relative;
   float: right;
   width: 720px;
-  height: 50px;
+  height: 100px;
+  top: 0;
 }
 
 #headerInfomation {
-  height: 50px;
+  height: 0;
 }
 #headerInfomation li {
   display: none;
   /* display: block; */
-  height: 33%;
 }
 #headerInfomation li a {
   font-size: .8em;
@@ -178,63 +130,51 @@ header {
 #headerMenu{
   clear: both;
   position: relative;
-  right: 0;
-  bottom: 0;
-  height: 50px;
   width: 100%;
+  height: 100px;
 }
 #headerMenuList {
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-radius: 50px 50px 0 0;
-  box-shadow: 1px -2px 0px 1px rgb(60, 182, 183);
   align-content: flex-start;
+  align-items: center;
 }
-#headerMenu li{
+#headerMenu li {
   position: relative;
-  height: 50px;
+  height: 1em;
 	text-align:center;
 }
 #headerMenuList li {
   float: left;
   width: 100%;
   position: relative;
-  background-color: #ECECEC;
-}
-#headerMenu li:first-child {
-  border-radius: 50px 0 0 0;
-}
-#headerMenu li:last-child {
-  padding-right: 0;
-  border-radius: 0 50px 0 0;
-}
-#headerMenu li a {
-  color: gray;
-  position: relative;
-  display: block;
-  height: 50px;
-  top: 30%;
-  text-shadow: 0 2px 0 #fafafa;
 }
 
-.subMenuList {
-  display: none;
-  position: absolute;
-  left: -1px;
-  width: inherit;
-  border-radius: none;
-  z-index: 99;
-  background-color: #ECECEC;
+#headerMenuList li a {
+  display: block;
 }
-.subMenuList li {
-  width: inherit;
-  border-radius: none !important;
-  background-color: rgb(60, 182, 183);
-  z-index: 99;
+
+#headerMenuListSub {
+  opacity: 0;
+  position: relative;
+  top: -2em;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: top;
 }
-.subMenuList li a {
-  /* color: #52CBCA!important; */
+#headerMenuListSub li {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+#headerMenuListSub li a {
+  display: block;
 }
 
 /* ---------------------------------------------

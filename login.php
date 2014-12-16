@@ -17,16 +17,21 @@
 	}
 ?>
 	<div id="loginArea">
-		<p>ログインID/パスワードを入力してください</p>
 		<form action="login_check.php" method="post" id="formLogin">
-            <label for="id">ID:</label><input type="text" class="form" name="id">
-            <label for="pass">PW:</label><input type="password" class="form" name="pass">
-            <input type="submit" class="form" value="ログイン">
+      <div>
+        <label for="id">ID</label><input type="text" class="form" name="id">
+      </div>
+      <div>
+        <label for="pass">Pass Word</label><input type="password" class="form" name="pass">
+      </div>
+      <div>
+        <input type="submit" class="form" value="ログイン">
+      </div>
 		</form>
-		<a href="registration.php" id="mottenai">アカウントをお持ちでない方はこちら</a></div>
+		<a href="registration.php" id="mottenai">アカウントをお持ちでない方はこちら</a>
+  </div>
 	</div><!--#loginarea　デザイン周り考え中！-->
 </main>
-
 <?php
     include 'foot.php';
 ?>
