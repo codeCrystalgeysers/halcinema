@@ -1,4 +1,18 @@
 $(function(){
+  
+    $('#movies li').click(function(){
+      connect();
+    });
+    
+    function connect(){
+      $.ajax({
+        url: 'screen1.html',
+        get: 'post',
+        success: function(data){
+          $('#seatLoading').html(data);
+        }
+      });
+    }
 
     $('#movies li').click(function(){
         cinemaSelect($(this));
@@ -37,8 +51,8 @@ $(function(){
         });
 
         $('#seatsBackground').css('background-image','url('+eigaPic+')');
-        $('#nowDate').text('.');
-        $('#nowTitle').text(eigaTitle);
+        $('#reserveNowDate').text('.');
+        $('#reserveNowTitle').text(eigaTitle);
     }//cinemaSelect()
 
 

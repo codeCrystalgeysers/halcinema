@@ -104,7 +104,9 @@ include 'remove.php';
 </div>
 <div id="reserveArea">
     <div id="seats">
-      <div id="seatLoading"></div>
+      <div id="seatLoading">
+        
+      </div>
       <div id="seatsBackground"></div>
     </div>
     <div id="reserveBreakdown">
