@@ -28,6 +28,7 @@ include 'head.php';
     </div>
     <div id="movies">
       <ul id="moviesTop3" class="moviesList">
+      
         <li>
           <figure>
             <img src="img/miura1.jpg" class="moviesPic" data-id="xxxxx1" data-title="moviesTitle1">
@@ -60,80 +61,24 @@ include 'head.php';
 	<div id="moviesToggle">その他の上映中映画 ▼</div>
 	<div id="moviesSub" class="moviesList">
 	    <ul>
-        <li>
-          <figure>
-              <img src="img/take.jpg" class="moviesPic" data-id="xxxxx01" data-title="moviesTitle01">
-              <figcaption class="moviesCap">
-                <span class="moviesTitle">映画タイトル</span>
-                <!-- <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span> -->
-              </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/take.jpg" class="moviesPic" data-id="xxxxx02" data-title="moviesTitle02">
-            <figcaption class="moviesCap">
-              <span class="moviesTitle">映画タイトル</span>
-              <!-- <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span> -->
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/take.jpg" class="moviesPic" data-id="xxxxx03" data-title="moviesTitle03">
-            <figcaption class="moviesCap">
-              <span class="moviesTitle">映画タイトル</span>
-              <!-- <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span> -->
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/take.jpg" class="moviesPic" data-id="xxxxx03" data-title="moviesTitle03">
-            <figcaption class="moviesCap">
-              <span class="moviesTitle">映画タイトル</span>
-              <!-- <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span> -->
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/take.jpg" class="moviesPic" data-id="xxxxx03" data-title="moviesTitle03">
-            <figcaption class="moviesCap">
-              <span class="moviesTitle">映画タイトル</span>
-              <!-- <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span> -->
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/take.jpg" class="moviesPic" data-id="xxxxx03" data-title="moviesTitle03">
-            <figcaption class="moviesCap">
-              <span class="moviesTitle">映画タイトル</span>
-              <!-- <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span> -->
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/take.jpg" class="moviesPic" data-id="xxxxx03" data-title="moviesTitle03">
-            <figcaption class="moviesCap">
-              <span class="moviesTitle">映画タイトル</span>
-              <!-- <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span> -->
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/take.jpg" class="moviesPic" data-id="xxxxx03" data-title="moviesTitle03">
-            <figcaption class="moviesCap">
-              <span class="moviesTitle">映画タイトル</span>
-              <!-- <span class="moviesCategory">(カテゴリ表示の仕方は検討中)</span> -->
-            </figcaption>
-          </figure>
-        </li>
+      <?php 
+          while($movie = mysql_fetch_array($res)){
+            echo("<li>
+                    <figure>
+                      <img src='img/thumbnail/".$movie[0]."' class='moviesPic' data-id='xxxxx1' data-title='moviesTitle1'>
+                      <figcaption class='moviesCap'>
+                          <span class='moviesTitle'>映画タイトル</span>
+                          <!-- <span class='moviesCategory'>(カテゴリ表示の仕方は検討中)</span> -->
+                      </figcaption>
+                    </figure>
+                  </li>");
+          }
+      ?>
 	    </ul>
 	</div>
+  <div id="wakana">
+
+  </div>
 </div>
 <div id="reserveArea">
     <div id="seats">

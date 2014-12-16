@@ -5,10 +5,14 @@
 /* ---------------------------------------------
         Movies List
  --------------------------------------------- */
+ #wakana {
+ }
 #slider {
+  position: relative;
   margin: auto;
   padding-top: 10px;
   width: 960px;
+  height: auto;
 }
 #movies {
   margin:0;
@@ -17,11 +21,15 @@
 }
 .moviesList li {
   position: relative;
-  float: left;
+  /*float: left;*/
+  display: inline-block;
   margin: 5px;
   width: 230px;
   height: 100px;
   overflow: hidden;
+}
+#moviesTop3.moviesList li {
+  margin: 5px 0 0 5px;
 }
 .moviesPic {
   display: inline-block;
@@ -86,9 +94,9 @@
   position: relative;
   display: none;
   margin-top: 12px;
-  padding-bottom: 20px;
-  height: 200px;
+  height: auto;
   background-color: whitesmoke;
+  z-index: 99;
 }
 
 /* ---------------------------------------------
@@ -143,6 +151,7 @@
   -webkit-filter: blur(2px) opacity(.7);
   background-color: rgba(237,237,237, .4);
   z-index: -99;
+  display: none;
 }
 
 #reserveBreakdown {
