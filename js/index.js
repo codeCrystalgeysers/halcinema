@@ -6,13 +6,25 @@ $(function(){
     
     function connect(){
       $.ajax({
-        url: 'screen1.html',
+        url: 'screen01.html',
         get: 'post',
         success: function(data){
           $('#seatLoading').html(data);
         }
       });
     }
+    
+    $('.moviesList li').hover(
+      function(){
+        $('.moviesTitle').animate({
+          
+        });
+      },
+      function(){
+        
+      }
+    );
+    
 
     $('#movies li').click(function(){
         cinemaSelect($(this));

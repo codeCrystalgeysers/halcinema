@@ -34,10 +34,11 @@
 .moviesPic {
   display: inline-block;
   position: absolute;
-  top: -50%;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  margin: auto;
   width: 100%;
   height: auto;
   -webkit-transform: scale(1);
@@ -46,26 +47,17 @@
 .moviesCap {
   display: inline-block;
   position: absolute;
-  z-index: -1;
-  bottom: 0;
+  z-index: 9999;
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: rgba(50,50,50, .7);
+  background-color: gold;
   -webkit-transform: scale(1.3);
-  opacity: 0;
-  -webkit-transition: -webkit-transform .2s, top .2s, opacity .5s;
 }
 .moviesTitle {
-  color: #52CBCA;
   font-size: 1.2em;
 }
-.moviesList li:hover .moviesCap {
-  top: 60%;
-  -webkit-transform: scale(1);
-  opacity: 1;
-  z-index: 1;
-}
+
 .moviesList li:hover .moviesPic {
   -webkit-transform: scale(1.03);
   opacity: .4;
@@ -137,7 +129,6 @@
 #seatLoading {
   position: relative;
   margin: 0 auto;
-  background-color: #333;
   width: 960px;
   height: 100%;
 }
@@ -204,4 +195,8 @@
 }
 #totalPriceYen:before {
   content: '¥ ';
+}
+
+#A01:hover {
+  fill: #FFFF00
 }
