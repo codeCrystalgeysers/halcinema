@@ -47,12 +47,13 @@
 .moviesCap {
   display: inline-block;
   position: absolute;
-  z-index: 9999;
+  left: 240px;
   width: 100%;
   height: 100%;
   text-align: center;
   background-color: gold;
-  -webkit-transform: scale(1.3);
+  opacity: 0;
+  z-index: 999;
 }
 .moviesTitle {
   font-size: 1.2em;

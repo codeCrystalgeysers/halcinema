@@ -16,12 +16,16 @@ $(function(){
     
     $('.moviesList li').hover(
       function(){
-        $('.moviesTitle').animate({
-          
-        });
+        $(this).find('.moviesCap').stop().animate({
+          left: 0,
+          opacity: 1
+        }, 300);
       },
       function(){
-        
+        $(this).find('.moviesCap').stop().animate({
+          left: '240px',
+          opacity: 0
+        }, 300);
       }
     );
     
