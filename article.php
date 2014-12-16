@@ -41,9 +41,7 @@
     <main>
     	<div class="ttt">上映スケジュール</div>
     	<div id="day">
-    		<div id="back">
-    		</div>
-
+		
             <ul class="days">
 <?php
 	while($row = mysql_fetch_array($res)){
@@ -52,11 +50,7 @@
 <?php
 	}
 ?>
-
             </ul>
-
-    		<div id="next">
-            </div>
     	</div>
 
     	<div class="ttt">
