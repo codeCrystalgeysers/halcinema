@@ -10,8 +10,8 @@
 <?php
 include 'head.php';
 include 'getMovieDB.php';
+include 'remove.php';
 ?>
-
 <div id="slider">
     <div id="reserveTimetable">
       <ul id="reserveTimetableDate" class="left">

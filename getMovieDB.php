@@ -15,5 +15,5 @@ $hostName = "localhost";
   $res = mysql_query($sql,$con);
   $res2 = mysql_query($sql2,$con);
   $timetable = $res2;
-    mysql_close($con);
+  mysql_close($con);
 ?>
