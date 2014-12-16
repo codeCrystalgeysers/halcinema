@@ -1,15 +1,4 @@
-<?php
-  $hostName = "localhost";
-  $dbmsUser = "root";
-  $dbmsPass = ""; 
-  $con = mysql_connect($hostName,$dbmsUser,$dbmsPass);
-  mysql_select_db("halcinema",$con);
-  $date = date("Y-m-d");
-  $date3 = date("Y-m-d",mktime(0,0,0,date("m"),date("d")+3,date("Y")));
-  $sql = "SELECT image FROM movie WHERE opening_day <= '$date3' AND end_day >= '$date'";
-  $res = mysql_query($sql,$con); 
-    mysql_close($con);
-?>
+
 <header>
   <div id="headerWrapper">
     <a href="index.php"><h1 id="logo">HALCinema</h1></a>
