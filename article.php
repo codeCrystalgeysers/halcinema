@@ -13,7 +13,7 @@
 <?php
     include 'head.php';
 ?>
-  
+
 
 <div id="contentsWrap">
     <main>

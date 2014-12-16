@@ -1,3 +1,4 @@
+
 <header>
   <div id="headerWrapper">
     <a href="index.php"><h1 id="logo">HALCinema</h1></a>
@@ -28,9 +29,10 @@
 ?>
           <div id="loginNowIn">
               <p><?= $_SESSION["id"] ?></p>
-			  <form action="logout.php">
-	              <button id="loginBtnOut">ログアウト</button>
-              </form>
+                <a href="mypage.php">マイページ</a>
+			          <form action="logout.php">
+                  <button id="loginBtnOut">ログアウト</button>
+                </form>
           </div>
 <?php
 	}
@@ -38,27 +40,26 @@
       </div>
       <nav id="headerMenu">
           <ul id="headerMenuList">
-              <li><a href="article.php">上映情報</a>
-                  <ul class="subMenuList">
-                      <li><a href="#">スケジュール</a></li>
-                      <li><a href="#">作品情報・イベント</a></li>
-                  </ul>
-              </li>
-              <li><a href="theater.php">インフォメーション</a>
-                  <ul class="subMenuList">
-                      <li><a href="#">お知らせ</a></li>
-                      <li><a href="#">施設案内</a></li>
-                      <li><a href="#">上映設備</a></li>
-                  </ul>
-              </li>
-              <li><a href="price.php">料金</a>
-                  <ul class="subMenuList">
-                      <li><a href="#">チケット</a></li>
-                      <li><a href="#">グッズ</a></li>
-                      <li><a href="#">フード・ドリンク</a></li>
-                  </ul>
-              </li>
+              <li><a href="article.php">上映情報</a></li>
+              <li><a href="theater.php">インフォメーション</a></li>
+              <li><a href="price.php">料金</a></li>
               <li><a href="access.php">アクセス</a></li>
+          </ul>
+          <ul id="headerMenuListSub">
+            <li>&ensp;
+              </li>
+            <li>
+              <a href="#">お知らせ</a>
+              <a href="#">施設案内</a>
+              <a href="#">上映設備</a>
+              </li>
+            <li>
+              <a href="#">チケット</a>
+              <a href="#">グッズ</a>
+              <a href="#">フード・ドリンク</a>
+              </li>
+            <li>&ensp;
+              </li>
           </ul>
       </nav>
     </div>

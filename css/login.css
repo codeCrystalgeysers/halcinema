@@ -3,74 +3,38 @@
  --------------------------------------------- */
 
 main {
-	width: 960px !important;
+	width: 100% !important;
     text-align: center;
+		background-color: pink;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* ---------------------------------------------
-        leftColumn
- --------------------------------------------- */
-
-#leftColumn {
-=======
-#leftcolumn {
->>>>>>> parent of 792eebe... てす
-	float:left;
-	text-align:center;
-=======
 #loginArea {
-    margin: 50px 0;
-    width: 100%;
+	padding: 50px 0;
+	background-color: #ECECEC;
 }
 
 #formLogin {
-    margin: 0 auto;
-    width: 400px;
->>>>>>> origin/master
+}
+
+#formLogin div {
+	margin-bottom: 10px;
+}
+
+#formLogin div label {
+	display: inline-block;
+	width: 150px;
+	letter-spacing: 2px;
 }
 
 #formLogin input {
-    float: left;
-    margin: 30px 0;
+	width: 200px;
+	padding: 0 5px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
 }
 
-#formLogin label {
-    clear: left;
-     float: left;
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* ---------------------------------------------
-        rightColumn
- --------------------------------------------- */
-
-#rightColumn {
-=======
-#rightcolumn {
->>>>>>> parent of 792eebe... てす
-	float:right;
-	text-align:center;
-=======
-#mottenai {
-    display: block;
-    float: left;
-    background: #fff;
-}
-/*  まだ考えています！　*/
-
-
-#conf{
-	text-align: center;
-}
-
-td {
-	padding: 10px;
->>>>>>> origin/master
-}
-
-#conf {
-	margin-bottom: 15px;
+#formLogin input[type='submit'] {
+	margin-top: 10px;
+	padding: 5px 40px;
+	width: auto;
 }
