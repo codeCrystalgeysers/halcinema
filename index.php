@@ -82,7 +82,7 @@ include 'remove.php';
 	<div id="moviesToggle">その他の上映中映画 ▼</div>
 	<div id="moviesSub" class="moviesList">
 	    <ul>
-      <?php 
+      <?php
           mysql_data_seek($res, 0);
           while($movie = mysql_fetch_array($res)){
             echo("<li>
@@ -104,17 +104,20 @@ include 'remove.php';
 </div>
 <div id="reserveArea">
     <div id="seats">
-      <div id="seatLoading">
-        
-      </div>
+      <div id="seatLoading"></div>
+      <ul id="seatChara">
+        <li><img src="img/human1.png" alt=""></li>
+        <li><img src="img/human2.png" alt=""></li>
+        <li><img src="img/human3.png" alt=""></li>
+      </ul>
       <div id="seatsBackground"></div>
     </div>
     <div id="reserveBreakdown">
       <div id="reserveDetails">
         <dl id="reserveNowSelect">
-          <dt id="reserveNowTitle">Erat lorem ipsum veroeros consequat</dt>
+          <dt id="reserveNowTitle">愛のむきだし</dt>
           <dd id="reserveNowDate">10/14 12:00 ~ 14:00</dd>
-          <dd id="reserveNowSeatID">選択座席だす</dd>
+          <dd id="reserveNowSeatID">A-31, D-2</dd>
           <!-- <dd id="reserveNowTickets">
             <span id="ticketTypeAd">大人</span>×1枚
             <span id="ticketTypeSt">学生</span>×2枚

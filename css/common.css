@@ -19,7 +19,7 @@ body{
   clear: both;
   margin: 0 auto;
   width: 100%;
-  background-color: #efefef;
+  background-color: #ececec;
 }
 #wrapper {
   clear: both;
@@ -115,6 +115,7 @@ header {
   top: 0;
 }
 
+/* 使っていない */
 #headerInfomation {
   height: 0;
 }
@@ -154,6 +155,10 @@ header {
 
 #headerMenuList li a {
   display: block;
+  text-shadow: 1px 1px 0 #fbfbfb;
+}
+#headerMenuList li a:hover {
+  color: silver;
 }
 
 #headerMenuListSub {
@@ -175,6 +180,9 @@ header {
 
 #headerMenuListSub li a {
   display: block;
+}
+#headerMenuListSub li a:hover {
+  color: silver;
 }
 
 /* ---------------------------------------------
@@ -204,6 +212,7 @@ footer {
   clear: both;
   position: relative;
   background-color: #282828;
+  border-top: 1px solid gray;
 }
 #footerlogo {
   position: relative;

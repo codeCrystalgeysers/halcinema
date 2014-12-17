@@ -56,7 +56,14 @@
   z-index: 999;
 }
 .moviesTitle {
-  font-size: 1.2em;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 1em;
 }
 
 .moviesList li:hover .moviesPic {
@@ -115,8 +122,8 @@
   overflow: auto;
 }
 #reserveTimetableDate {
-  width: 60px;
-  text-align: center;
+}
+#reserveTimetableTime {
 }
 
 #seats {
@@ -132,6 +139,17 @@
   margin: 0 auto;
   width: 960px;
   height: 100%;
+}
+#seatChara {
+  position: absolute;
+  top: -50px;
+  right: 60px;
+}
+#seatChara li {
+  float: left;
+}
+#seatChara li img {
+  height: 60px;
 }
 #seatsBackground {
   position: absolute;
@@ -164,11 +182,16 @@
   position: relative;
 }
 
+#reserveNowSelect dt,
+#reserveNowSelect dd {
+  display: block;
+  border-bottom: 1px solid #bbb;
+  box-shadow: 0 1px 1px #fff;
+}
 #reserveNowSelect {
   position: relative;
   float: left;
   width: 240px;
-  background-color: gold;
 }
 #reserveNowSelect > * {
   display: block;
@@ -180,7 +203,7 @@
 #reserveNowPrice {
   position: relative;
   float: left;
-  width: 240px;
+  width: 140px;
   height: 100px;
   text-align: right;
   /* background-color: #ef5d5d; */
