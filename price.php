@@ -32,11 +32,13 @@
                 <div class="tic_price">会員割引</div>
                 <div class="tic_price">夫婦50割</div>
                 <div class="tic_price">レイトショー</div>
+                <div class="tic_price"></div>
             </div>
 
               <div class="tic3">
                 <div class="ttl">【3D料金】</div>
                 <div class="tic_price1">映画鑑賞料金＋300円で鑑賞出来ます。</div>
+                <div class="tic_price"></div>
             </div>
         </div><!--tbl1-->
 
@@ -60,9 +62,13 @@
             </div>
 
             <div class="dri02">
-                <div class="drink2">生ビール</div>
-                <div class="drink_price1">500円</div>
-                <div class="drink_price2"></div>
+                <div class="drink2">
+                    <div class="nama">生ビール</div>
+                    <div class="drink_price1">500円</div>
+                </div>
+                <div class="drink2">
+                </div>
+                
             </div>
 
             <div class="dri_foo_tl">【フード】</div>
@@ -75,6 +81,9 @@
 
                 <div class="food">ポップコーン　塩・キャラメル</div>
                 <div class="food_price">ハーフ：550円</div>
+
+                <div class="drink2">
+                </div>
             </div>
 
             <div class="dri_foo_tl">【セット】</div>
@@ -100,6 +109,9 @@
 
                 <div class="food">ポップコーン　ハーフ　ペア(ポップコーンL×1+ドリンク×2)</div>
                 <div class="food_price">1050円</div>
+
+                <div class="drink2">
+                </div>
 
             </div>
         </div>

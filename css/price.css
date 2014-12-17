@@ -1,6 +1,7 @@
 @charset"utf-8";
 
 #prc{
+	margin: 0 0 10px 0;
 	padding: 10px;
 	overflow: hidden;
 	background-color: white;
@@ -15,13 +16,14 @@
 }
 
 .ttt{
+	margin: 0 0 5px 0;
 	font-size: 20px;
 	font-weight: bold;
 	clear: both;
 }
 
 .tic1{
-	margin: 0 0 20px 0;
+	margin: 0 0 10px 0;
 	float: left;
 	width: 320px;
 }
@@ -35,7 +37,6 @@
 .tic3{
 	margin: 0 0 20px 0;
 	float: left;
-	background-color: ;
 	width: 320px;
 }
 
@@ -60,7 +61,7 @@
 
 .tic_price1{
 	width: 315px;
-	height: 60px;
+	height: 42px;
 	padding: 37px 0 0 5px;
 }
 
@@ -101,9 +102,17 @@
 	height: 25px;
 	background-color: ;
 	border-top: solid 1px #eee;
-	border-right: solid 1px #eee;
 }
-
+.drink:before {
+	transform: rotate( 20deg );
+	content: '';
+	position: absolute;
+	height: inherit;
+	width: 2px;
+	height: 22px;
+	left: 210px;
+	background-color: #eee;
+}
 
 .drink1{
 	padding: 10px 0 0 10px;
@@ -111,52 +120,48 @@
 	border-top: solid 1px #eee;
 }
 
+.nama{
+	width: 200px;
+	margin: 0 0 0 10px;
+	float: left;
+	padding: 10px 0 0 0;
+}
+
+.nama:before {
+	transform: rotate( 20deg );
+	content: '';
+	position: absolute;
+	height: inherit;
+	width: 2px;
+	height: 22px;
+	left: 430px;
+	background-color: #eee;
+}
+
 .drink2{
-	padding: 10px 0 0 10px;
-	width: 411px;
-	height: 25px;
+	width: 674px;
+	height: 0px;
+	margin: 0 0 40px 0;
 	border-top: solid 1px #eee;
 	float: left;
 }
 
 .drink_price{
-
-	font-size: 25px;
+	text-align: center;
+	font-size: 15px;
 	padding: 40px 0 0 0;
 	width: 253px;
 	height: 103px;
 	text-align: center;
-	background-color: ;
 	border-top: solid 1px #eee;
-	border-left: solid 1px #eee;
 }
-
-
 
 .drink_price1{
-	font-size: 25px;
-	margin: 0 0 20px 0;
-	padding: 5px 0 0 0;
-	width: 253px;
 	height: 30px;
-	text-align: center;
-	background-color: ;
-	border-top: solid 1px #eee;
-	border-left: solid 1px #eee;
+	margin: 0 100px 0 0;
+	padding: 10px 0 0 106px;
 	float: right;
 }
-/*
-.drink_price2{
-	font-size: 25px;
-	padding: 5px 0 0 0;
-	margin: 0 0 20px 0;
-	width: 674px;
-	height: 30px;
-	border-top: solid 1px #eee;
-	float: left;
-}
-*/
-
 
 .dri_foo_tl{
 	margin: 20px 0 0 0;
@@ -170,13 +175,23 @@
 
 
 .food{
+	position: relative;
     width: 410px;
     height:15px;
     padding: 10px 0 10px 10px;
 	background-color: ;
 	border-top: solid 1px #eee;
-	border-right: solid 1px #eee;
     float: left;
+}
+.food:before {
+	transform: rotate( 20deg );
+	content: '';
+	position: absolute;
+	height: inherit;
+	width: 2px;
+	height: 22px;
+	right: 0;
+	background-color: #eee;
 }
 
 
@@ -188,13 +203,14 @@
     background-color: ;
     border-top: solid 1px #eee;
   	float: left;
+  	text-align: center;
 
 }
 
 .txttxt{
-	margin: 20px 0 0 0;
+	margin: 10px 0 0 10px;
 	width: 600px;
-	height: 100px;
+	height: 30px;
 	background-color: ;
 	float: left;
 	clear: both;
