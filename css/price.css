@@ -3,6 +3,7 @@
 #prc{
 	padding: 10px;
 	overflow: hidden;
+	background-color: white;
 }
 
 /*-----------------------------
@@ -13,26 +14,28 @@
 	height: 300px;
 }
 
-
+.ttt{
+	font-size: 20px;
+	font-weight: bold;
+	clear: both;
+}
 
 .tic1{
 	margin: 0 0 20px 0;
 	float: left;
-	background-color: #ddd;
 	width: 320px;
 }
 
 .tic2{
 	margin: 0 20px 20px 20px;
 	float: right;
-	background-color: #ddd;
 	width: 320px;
 }
 
 .tic3{
 	margin: 0 0 20px 0;
 	float: left;
-	background-color: #ddd;
+	background-color: ;
 	width: 320px;
 }
 
@@ -96,27 +99,23 @@
 .drink{
 	padding: 10px 0 0 10px;
 	height: 25px;
-	background-color: #ddd;
+	background-color: ;
 	border-top: solid 1px #eee;
-	border-left: solid 1px #eee;
+	border-right: solid 1px #eee;
 }
 
 
 .drink1{
 	padding: 10px 0 0 10px;
 	height: 25px;
-	background-color: #ddd;
 	border-top: solid 1px #eee;
-	border-left: solid 1px #eee;
 }
 
 .drink2{
 	padding: 10px 0 0 10px;
-	width: 409px;
+	width: 411px;
 	height: 25px;
-	background-color: #ddd;
 	border-top: solid 1px #eee;
-	border-left: solid 1px #eee;
 	float: left;
 }
 
@@ -124,10 +123,10 @@
 
 	font-size: 25px;
 	padding: 40px 0 0 0;
-	width: 254px;
+	width: 253px;
 	height: 103px;
 	text-align: center;
-	background-color: #ddd;
+	background-color: ;
 	border-top: solid 1px #eee;
 	border-left: solid 1px #eee;
 }
@@ -136,19 +135,27 @@
 
 .drink_price1{
 	font-size: 25px;
-	padding: 5px 0 0 0;
 	margin: 0 0 20px 0;
-	width: 254px;
+	padding: 5px 0 0 0;
+	width: 253px;
 	height: 30px;
 	text-align: center;
-	background-color: #ddd;
+	background-color: ;
 	border-top: solid 1px #eee;
 	border-left: solid 1px #eee;
 	float: right;
 }
-
-
-
+/*
+.drink_price2{
+	font-size: 25px;
+	padding: 5px 0 0 0;
+	margin: 0 0 20px 0;
+	width: 674px;
+	height: 30px;
+	border-top: solid 1px #eee;
+	float: left;
+}
+*/
 
 
 .dri_foo_tl{
@@ -166,7 +173,7 @@
     width: 410px;
     height:15px;
     padding: 10px 0 10px 10px;
-	background-color: #ddd;
+	background-color: ;
 	border-top: solid 1px #eee;
 	border-right: solid 1px #eee;
     float: left;
@@ -178,7 +185,7 @@
     width: 243px;
     height: 15px;
     padding: 10px 0 10px 10px;
-    background-color: #ddd;
+    background-color: ;
     border-top: solid 1px #eee;
   	float: left;
 
@@ -188,7 +195,7 @@
 	margin: 20px 0 0 0;
 	width: 600px;
 	height: 100px;
-	background-color: #ddd;
+	background-color: ;
 	float: left;
 	clear: both;
 }

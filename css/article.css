@@ -7,10 +7,8 @@
 ----------------------*/
 
 #day{
-    font-size: 20px;
     width: 100%;
     height: 100px;
-    background-color: #52cbca;
     position: relative;
     overflow: hidden;
 }
@@ -20,7 +18,8 @@
     padding: 5px;
     width: 80px;
     height: 80px;
-    background-color: #eee;
+    font-size: 30px;
+    background-color: #ddd;
     list-style: none;
     border-radius: 10px;
     float: left;
@@ -82,25 +81,26 @@
 }
 
 .sttt{
+    color: white;
     font-size: 20px;
+    font-weight: bold;
     margin: 10px 0 0 0;
     padding: 10px 0 0 5px;
     width: 695px;
     height: 30px;
-    background-color: red;
+    background-color: gold;
     clear: both;
 }
 .screenimg{
     margin: 0 1px 0 0;
     width: 100px;
-    height: 183px;
+    height: 153px;
     background-color: #fff;
     float: left;
 }
 
 .iimmgg{
     margin: 20px 0 0 10px;
-
     width: 80px;
     height: 80px;
     background-color: #eee;
@@ -109,7 +109,7 @@
 .lst{
     width: 599px;
     float: right;
-    height: 60px;
+    height: 50px;
     border-bottom: dotted 1px #eee;
     background-color: white;
 }
@@ -119,7 +119,7 @@
     padding: 5px 0 5px 5px;
     font-size: 10px;
     width: 100px;
-    height: 40px;
+    height: 30px;
     float: left;
     border-right: solid 1px #eee;
 }
@@ -129,7 +129,7 @@
     padding: 5px 0 0 5px;
     font-size: 10px;
     width: 90px;
-    height: 40px;
+    height: 30px;
     float: left;
     border-right: solid 1px #eee;
 }

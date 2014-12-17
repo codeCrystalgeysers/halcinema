@@ -19,6 +19,7 @@
                 <div class="tic_price">一般　1800円</div>
                 <div class="tic_price">子ども(高校生以下)　1000円</div>
                 <div class="tic_price">ペアシート　4000円</div>
+                <div class="tic_price"></div>
             </div>
 
             <div class="tic2">
@@ -61,6 +62,7 @@
             <div class="dri02">
                 <div class="drink2">生ビール</div>
                 <div class="drink_price1">500円</div>
+                <div class="drink_price2"></div>
             </div>
 
             <div class="dri_foo_tl">【フード】</div>
