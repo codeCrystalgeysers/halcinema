@@ -2,6 +2,7 @@
 <meta charset="UTF-8">
 <meta name="Author" content="codeCrystalgeysers">
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
+<script src="js/jq2min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 <title>HAL Cinema</title>
@@ -28,9 +29,9 @@
         <input type="submit" class="form" value="ログイン">
       </div>
 		</form>
-		<a href="registration.php" id="mottenai">アカウントをお持ちでない方はこちら</a>
+		<div id="linkOuter"><a href="registration.php" id="link">アカウントをお持ちでない方はこちら</a></div>
   </div>
-	</div><!--#loginarea　デザイン周り考え中！-->
+	<!--#loginarea　デザイン周り考え中！-->
 </main>
 <?php
     include 'foot.php';

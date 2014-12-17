@@ -1,16 +1,17 @@
 /* ---------------------------------------------
         main
  --------------------------------------------- */
-
+body{
+    background-color: #ececec;
+}
 main {
 	width: 100% !important;
     text-align: center;
-		background-color: pink;
 }
 
 #loginArea {
 	padding: 50px 0;
-	background-color: #ECECEC;
+	background-color: ;/*#ECECEC*/
 }
 
 #formLogin {
@@ -26,15 +27,43 @@ main {
 	letter-spacing: 2px;
 }
 
-#formLogin input {
+#formLogin input{
 	width: 200px;
-	padding: 0 5px;
-	border: 1px solid #aaa;
+    height: 2em;
+	border: 1px solid #fff;
+    box-shadow: none;
+    outline: none;
 	border-radius: 5px;
 }
 
+#formLogin input[type='text'] {
+    margin: 10px 0;
+}
+
 #formLogin input[type='submit'] {
-	margin-top: 10px;
+	margin: 20px 0;
 	padding: 5px 40px;
 	width: auto;
+    color: #fff;
+    background: #52cbca;
+    border: none;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    opacity: 0.7;
+}
+
+#linkOuter{
+    margin-top: 20px;
+}
+
+#link{
+    margin-top: 30px;
+    padding: 5px 10px;
+}
+
+#link:hover{
+    color: ;
+    border: 1px solid #7f7f7f;
 }

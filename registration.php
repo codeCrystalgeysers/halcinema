@@ -2,6 +2,7 @@
 <meta charset="UTF-8">
 <meta name="Author" content="codeCrystalgeysers">
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
+<script src="js/jq2min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/registration.css">
 <title>HAL Cinema</title>
@@ -89,7 +90,7 @@
 <?php
 	if(isset($_GET["error"])){
 		$error = $_GET["error"];
-		
+
 		if($error == "pass"){
 			echo "パスワードが一致していません。";
 		}
@@ -174,11 +175,11 @@
 					<option value="鹿児島県">鹿児島県
 					<option value="沖縄県">沖縄県
 	    		</select>
-				
+
 <?php
 	if(isset($_GET["error"])){
 		$error = $_GET["error"];
-		
+
 		if($error == "state"){
 			echo "都道府県を選択してください。";
 		}

@@ -100,23 +100,21 @@
 
 <div id="contentsWrap">
     <main>
-        <h3 class="ttt">アクセス</h3>
+        <h3>アクセス</h3>
+         <div id="locationBtn">
+            <div class="hal">
+                HAL東京
+            </div>
+            <div class="hal">
+                HAL大阪
+            </div>
+            <div class="hal">
+                HAL名古屋
+            </div>
+        </div>
         <div id="map">
             グーグルマップ
         </div><!--map-->
-
-        <div id="locationBtn">
-            <div class="hal">
-                HAL東京
-            </div><!--hal-->
-            <div class="hal">
-                HAL大阪
-            </div><!--hal-->
-            <div class="hal">
-                HAL名古屋
-            </div><!--hal-->
-        </div>
-
         <table class="details">
             <tr>
                 <td class="detailTitle"><span>住所</span></td>

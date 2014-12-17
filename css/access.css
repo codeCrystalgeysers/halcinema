@@ -3,12 +3,24 @@
 /*--------------------------
 		leftColumn
 --------------------------*/
-
+main{
+	background: #FCFCFC;/*#F2F2F2*/
+	margin: 20px 0;
+}
+h3{
+	width: px;
+	color: #CFCFCF;
+	/*background: #5A5A5A;*/
+	font-size: 1.7em;
+	text-indent: 10px;
+	margin: 25px 20px;
+	padding-bottom: px;
+}
 #map{
-	margin: 20px 16px;
-	width: 668px;
-	height: 398px;
-	border: 1px solid dimgray;
+	margin: 20px 25px;
+	width: 650px;
+	height: 400px;
+	/*border: 1px solid dimgray;*/
 }
 
 #locationBtn{
@@ -17,8 +29,8 @@
 }
 
 .hal{
-	margin: 10px 0;
-	width: 200px;
+	margin-bottom: 10px;
+	width: 182px;
 	height: 50px;
 	background: #52CBCA;
 	color: #fff;
@@ -28,7 +40,7 @@
 }
 
 .details{
-	margin: 20px 0 50px 16px;
+	margin: 20px 0 50px 22px;
 	background: ;
 }
 
