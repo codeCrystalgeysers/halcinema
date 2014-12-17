@@ -19,13 +19,13 @@
 	session_start();
 
 	//セッションチェック
-	if(!isset($_SESSION["id"])){
+	if (!isset($_SESSION["id"])) :
 ?>
 		<form action="login.php">
         	<button id="loginBtnIn">ログイン</button>
 		</form>
 <?php
-	}else{
+	: else :
 ?>
           <div id="loginNowIn">
               <p><?= $_SESSION["id"] ?></p>
@@ -35,7 +35,7 @@
                 </form>
           </div>
 <?php
-	}
+	endif;
 ?>
       </div>
       <nav id="headerMenu">
