@@ -10,6 +10,24 @@ $(function(){
         get: 'post',
         success: function(data){
           $('#seatLoading').html(data);
+          $('rect').hover(
+            function(){
+              var id = $(this).attr('id');
+              
+              var x = $(this).attr('x');
+                  x -= 13;
+                  txtx = x+10;
+                  
+              var y = $(this).attr('y');
+                  y -= 40;
+                  txty = y+20;
+              
+                $(this).before($('<svg id="c"><rect x="'+ x +'" y="'+ y +'" width="50" height="30" fill="#333" /><text x="'+ txtx +'" y="'+ txty +'" fill="#ffffff">'+ id +'</text></svg>'));
+            },
+            function(){
+              $('#c').remove();
+            }
+          );
         }
       });
     }
@@ -70,7 +88,5 @@ $(function(){
         $('#reserveNowDate').text('.');
         $('#reserveNowTitle').text(eigaTitle);
     }//cinemaSelect()
-
-
 
 });

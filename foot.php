@@ -1,4 +1,5 @@
 </div>
+<div id="float"></div>
 <footer>
   <div id="footerlogo">HALCinema</div>
   <div id="footerWrapper">
