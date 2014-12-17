@@ -5,27 +5,22 @@
 --------------------------*/
 
 .h4 {
-	color: #fff;
 	font-weight: bold;
 	font-size: 20px;
-<<<<<<< HEAD
-=======
 	font-weight: bold;
-	color: #52CBCA;
 	/* text-shadow: 1px 1px 0 #eee; */
->>>>>>> origin/master
-	margin: 10px;
+	color: #52CBCA;
+	padding: 20px 0;
 }
 
 .h5 {
 	color: #fff;
 	font-size: 15px;
-<<<<<<< HEAD
 	border-bottom: solid 1px #ddd;
-=======
 	font-weight: bold;
 	color: #52CBCA;
->>>>>>> origin/master
+	margin: 5px 0;
+	margin-left: 100px;
 }
 
 /*--------------------------
@@ -41,27 +36,9 @@
 	height: 30px;
 	margin-top: 30px;
 	font-size: 1.1em;
-	background-color: #444;
+	background-color: gold;
 	border-radius: 3px 3px 0 0;
 	color: whitesmoke;
-}
-.ttt:before {
-	content: '';
-	position: absolute;
-	top: 38px;
-	left: 0;
-	border: 10px solid transparent;
-	border-top: 10px solid #222;
-	border-right: 10px solid #222;
-}
-.ttt:after {
-	content: '';
-	position: absolute;
-	top: 38px;
-	right: 0px;
-	border: 10px solid transparent;
-	border-top: 10px solid #222;
-	border-left: 10px solid #222;
 }
 
 #lefttColumn {
@@ -71,15 +48,11 @@
 }
 
 #box1 {
-<<<<<<< HEAD
-	margin-top: 10px;
 	padding: 10px;
-	background-color: #52cbca;
-=======
->>>>>>> origin/master
 	overflow: hidden;
 	width: 640px;
 	padding: 0 21px;
+	padding-bottom: 10px;
 	background-color: white;
 }
 
@@ -88,11 +61,13 @@
 	width: 200px;
 	height: 200px;
 	margin: 0 10px 0 10px;
+	margin-top: 10px;
 }
 
 #box1 p {
 	color: #666;
 	text-indent: 1em;
+	line-height: 1.4em;
 }
 
 #box2 {
