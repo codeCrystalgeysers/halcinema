@@ -4,6 +4,9 @@
 <meta name="Keywords" content="HALCinema, ハルシネマ, 映画, えいが">
 <script src="js/jq2min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/draggable.js"></script>
+<script src="js/svg_min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <title>HAL Cinema</title>
@@ -115,9 +118,17 @@ include 'remove.php';
     <div id="reserveBreakdown">
       <div id="reserveDetails">
         <dl id="reserveNowSelect">
-          <dt id="reserveNowTitle">愛のむきだし</dt>
-          <dd id="reserveNowDate">10/14 12:00 ~ 14:00</dd>
-          <dd id="reserveNowSeatID">A-31, D-2</dd>
+          <dt id="reserveNowTitle">映画が選択されていません</dt>
+          <dd id="reserveNowDate">
+            <?php
+              if(isset($d)){
+                echo str_replace("-", "/", $d)." ".$a."-".$b;
+              }else{
+                  echo "上映時間が選択されていません";
+              }
+            ?>
+          </dd>
+          <dd id="reserveNowSeatID"></dd>
           <!-- <dd id="reserveNowTickets">
             <span id="ticketTypeAd">大人</span>×1枚
             <span id="ticketTypeSt">学生</span>×2枚
