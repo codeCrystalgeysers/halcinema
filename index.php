@@ -6,7 +6,6 @@
 <script src="js/index.js"></script>
 <script src="js/draggable.js"></script>
 <script src="js/svg_min.js"></script>
-<script src="/socket.io/socket.io.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <title>HAL Cinema</title>
