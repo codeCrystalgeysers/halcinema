@@ -26,13 +26,14 @@ include 'remove.php';
       </ul>
       <ul id="reserveTimetableTime" class="left">
         <?php
-        if(mysql_num_rows($res2) != 0){
-          mysql_data_seek($res2, 0);
-            while ($time = mysql_fetch_array($res2)){
+        if($res2 -> fetch_row() != 0){
+          $res2 -> data_seek(0);
+          // mysql_data_seek($res2, 0);
+            while ($time = $res2 -> fetch_array(MYSQLI_BOTH)){
               $a = substr($time['start_time'],0,strlen($time['start_time'])-3);
               $c = split(":",$a);
-              mysql_data_seek($res, 0);
-              while($movie = mysql_fetch_array($res)){
+              $res -> data_seek(0);
+              while($movie = $res -> fetch_array(MYSQLI_BOTH)){
                 if($movie['movie_id'] == $time['movie_id']){
                   $H = sprintf("%2d",$movie['time']/60);
                   $H = ($c[0]+$H);
@@ -89,8 +90,9 @@ include 'remove.php';
 	<div id="moviesSub" class="moviesList">
 	    <ul>
       <?php
-          mysql_data_seek($res, 0);
-          while($movie = mysql_fetch_array($res)){
+          $res -> data_seek(0);
+          // mysql_data_seek($res, 0);
+          while($movie = $res -> fetch_array(MYSQLI_BOTH)){
             echo("<li>
                     <figure>
                       <img src='img/thumbnail/".$movie['image']."' class='moviesPic' data-id='".$movie['movie_id']."' data-title='".$movie['title']."'>
