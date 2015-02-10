@@ -26,7 +26,7 @@ include 'remove.php';
       </ul>
       <ul id="reserveTimetableTime" class="left">
         <?php
-        if($res2){
+        if(mysql_num_rows($res2) != 0){
           mysql_data_seek($res2, 0);
             while ($time = mysql_fetch_array($res2)){
               $a = substr($time['start_time'],0,strlen($time['start_time'])-3);
@@ -47,6 +47,8 @@ include 'remove.php';
               }
               echo "<li data-time='".$a."-".$b."'>".$a."-".$b."</li>";
             }
+          }else{
+            echo "上映スケジュールがありません";
           }
         ?>
       </ul>
