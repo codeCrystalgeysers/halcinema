@@ -1,4 +1,7 @@
 <?php
+
+error_reporting(0);
+ini_set('display_errors', 'Off');
 	$movieId = $_GET['movieId'];
   header('Content-type: text/html; charset=UTF-8');
   header('Content-Transfer-Encoding: binary');

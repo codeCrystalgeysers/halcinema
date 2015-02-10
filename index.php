@@ -26,25 +26,27 @@ include 'remove.php';
       </ul>
       <ul id="reserveTimetableTime" class="left">
         <?php
-        mysql_data_seek($res2, 0);
-          while ($time = mysql_fetch_array($res2)){
-            $a = substr($time['start_time'],0,strlen($time['start_time'])-3);
-            $c = split(":",$a);
-            mysql_data_seek($res, 0);
-            while($movie = mysql_fetch_array($res)){
-              if($movie['movie_id'] == $time['movie_id']){
-                $H = sprintf("%2d",$movie['time']/60);
-                $H = ($c[0]+$H);
-                $i = $movie['time']%60;
-                $i = ($c[1]+$i);
-                if($i == 60){
-                  $H = $H + 1;
-                  $i = sprintf("%02d",0);
+        if($res2){
+          mysql_data_seek($res2, 0);
+            while ($time = mysql_fetch_array($res2)){
+              $a = substr($time['start_time'],0,strlen($time['start_time'])-3);
+              $c = split(":",$a);
+              mysql_data_seek($res, 0);
+              while($movie = mysql_fetch_array($res)){
+                if($movie['movie_id'] == $time['movie_id']){
+                  $H = sprintf("%2d",$movie['time']/60);
+                  $H = ($c[0]+$H);
+                  $i = $movie['time']%60;
+                  $i = ($c[1]+$i);
+                  if($i == 60){
+                    $H = $H + 1;
+                    $i = sprintf("%02d",0);
+                  }
+                  $b = $H.":".$i;
                 }
-                $b = $H.":".$i;
               }
+              echo "<li data-time='".$a."-".$b."'>".$a."-".$b."</li>";
             }
-            echo "<li data-time='".$a."-".$b."'>".$a."-".$b."</li>";
           }
         ?>
       </ul>
