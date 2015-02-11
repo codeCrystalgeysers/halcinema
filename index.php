@@ -89,6 +89,7 @@ include 'remove.php';
 	<div id="moviesSub" class="moviesList">
 	    <ul>
       <?php
+        if(mysql_num_rows($res) != 0){
           mysql_data_seek($res, 0);
           while($movie = mysql_fetch_array($res)){
             echo("<li>
@@ -101,6 +102,7 @@ include 'remove.php';
                     </figure>
                   </li>");
           }
+        }
       ?>
 	    </ul>
 	</div>
@@ -110,13 +112,26 @@ include 'remove.php';
 </div>
 <div id="reserveArea">
     <div id="seats">
-      <div id="seatLoading"></div>
+      <div id="seatLoading">
+        <div id="lBtn"></div>
+        <div id="rBtn"></div>
+        <div id="seatF">
+          <?php
+          for($j=1;$j<4;$j++){
+            echo "<div class='screen'>";
+              include 'screen'.$j.'.html';
+            echo "</div>";
+          }
+          ?>
+        </div>
+      </div>
       <ul id="seatChara">
         <li><img src="img/human1.png" alt=""></li>
         <li><img src="img/human2.png" alt=""></li>
         <li><img src="img/human3.png" alt=""></li>
       </ul>
-      <div id="seatsBackground"></div>
+      <div id="seatsBackground">
+      </div>
     </div>
     <div id="reserveBreakdown">
       <div id="reserveDetails">

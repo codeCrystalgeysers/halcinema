@@ -240,4 +240,19 @@ $(function(){
   function err(){
     alert("失敗");
   }
+
+  //シートの移動
+  var place = 0;
+  $("#lBtn").click(function(){
+    if(place < 0){
+      place += 960;
+      $("#seatF").animate({"left":place+"px"});
+    }
+      });
+  $("#rBtn").click(function(){
+    if(place > -960*2){
+      place -= 960;
+      $("#seatF").animate({"left":place+"px"});
+    }
+  });
 });
