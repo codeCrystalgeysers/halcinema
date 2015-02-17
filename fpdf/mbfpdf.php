@@ -462,7 +462,7 @@ function _putfonts()
     $this->_out('<</Type /Encoding /BaseEncoding /WinAnsiEncoding /Differences ['.$diff.']>>');
     $this->_out('endobj');
   }
-  //$mqr=get_magic_quotes_runtime();
+  $mqr=get_magic_quotes_runtime();
   //set_magic_quotes_runtime(0);
   foreach($this->FontFiles as $file=>$info)
   {
