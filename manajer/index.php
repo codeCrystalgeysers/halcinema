@@ -14,7 +14,21 @@
 	include 'head.php';
 ?>
 	<div class="maintitle">管理者ページ</div>
-	<div class="main">どーしよー</div>
+	<div class="main">
+		<div class="navi">
+			<div class="box">
+				<a href="#">映画情報登録</a>
+			</div>
+
+			<div class="box">
+				<a href="#">ユーザ情報登録</a>
+			</div>
+
+			<div class="box">
+				<a href="#">PDF作成</a>
+			</div>
+		</div>
+	</div>
 </div><!--wrapper-->
 
 <?php

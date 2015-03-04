@@ -3,9 +3,9 @@
  	<div class="login">ログイン</div>
  	<nav id="headerMenu">
         <ul>
-            <li><a href="#">スケジュール管理</a></li>
-            <li><a href="user.php">ユーザー管理</a></li>
-            <li><a href="#">あああああああ</a></li>
+            <li><a href="#">映画スケジュール管理</a></li>
+            <li><a href="#">ユーザー管理</a></li>
+            <li><a href="#">あああああ</a></li>
         </ul>
   	</nav>
 	
