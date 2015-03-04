@@ -106,6 +106,10 @@
     background-color: #eee;
 }
 
+.iimmgg img{
+	width:80px;
+}
+
 .lst{
     width: 599px;
     float: right;
