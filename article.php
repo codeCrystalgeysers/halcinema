@@ -103,7 +103,7 @@
     	</div>
         <div class="screenimg">
             <div class="iimmgg">
-                <?= $row[2] ?>
+                <img src="img/thumbnail/<?= $row[2] ?>">
             </div>
         </div>
 <?php
