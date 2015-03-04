@@ -149,10 +149,15 @@ textarea {
   margin-top: 40px;
 }
 
-.button {
+.buttom_navi {
   width: 200px;
   clear: both;
-  margin-top: 100px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 200px;
+  margin-top: 50px;
 }
 
 /* ---------------------------------------------

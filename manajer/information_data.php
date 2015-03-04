@@ -27,7 +27,7 @@
 			<br />
 			<textarea></textarea>
 		</div>
-		<input type="button" value="登録する" class="button">
+		<div class="buttom_navi"><input type="button" value="登録する" class="button"></div>
 	</div>
 </div><!--wrapper-->
 
