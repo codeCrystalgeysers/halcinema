@@ -76,6 +76,10 @@
 			$targetDay = ltrim($targetDay,"0");
 		}
 		
+		if($targetMonth < 10){
+			$targetMonth = ltrim($targetMonth,"0");
+		}
+		
 		if(isset($num)){
 			if($i == $num){
 				echo "<li id='".$i."' class='week todayBox'>".$targetMonth."/".$targetDay."<br/>（".$week[$targetWeek]."）</li>";
